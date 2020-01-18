@@ -1,4 +1,3 @@
 # The Great Vote Count Analysis
+a dataset and codebase for research exploring voting patterns by players at MafiaScum
 
-
-a library for data-driven research on how people play mafia at mafiascum.net
