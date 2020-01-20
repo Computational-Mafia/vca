@@ -961,6 +961,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=18920
 Game 1230: Xylbot is Normal I Swear
 Moderator: Cojin
 Current Update: Mafia Win
+Notes: Missing Posts
 
 Players
 HowardRoark replaced Mega, Mafia Goon, survived
@@ -1040,6 +1041,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=18987
 Game 1238: One After the Other
 Moderator: Meransiel
 Current Update: Town Win
+Notes: Missing Posts
 
 Players
 monk, Town Vanilla, lynched Day 2
@@ -1405,7 +1407,7 @@ Fate replaced Psyduck replaced Tangion, Town Roleblocker, lynched Day 3
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=22540
 Game 1352: Leprechaun Mafia
-Moderator: Regfan Slaxx
+Moderator: Slaxx, Regfan
 Current Update: Mafia Win
 
 Players
@@ -2246,7 +2248,7 @@ Aj The Epic, Third Party Serial Killer, lynched Day 2
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=28649
 Game 1456: Revenge
-Moderator: SoraAdvent
+Moderator: SoraAdvent, Rob14
 Current Update: Mafia Win
 
 Players
@@ -5484,7 +5486,7 @@ Lil Uzi Vert, Vanilla Townie, killed night 4
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=69502
 Mini 1861: Musical Mafia
-Moderator: Gamma Emerald
+Moderator: Gamma Emerald, mhsmith0
 Current Update: Town Win
 
 Players
@@ -5859,7 +5861,7 @@ rb, Mafia Goon, survived
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=71675
 Mini Normal 1908
-Moderator: XnadrojX
+Moderator: XnadrojX, ThinkBig
 Current Update: Mafia Win
 
 Players
@@ -5922,7 +5924,7 @@ Gamma Emerald, Mafia 1-Shot Bulletproof, lynched day 3
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=71908
 Mini Normal 1914
-Moderator: Fro99er
+Moderator: Fro99er, mhsmith0
 Current Update: Mafia Win
 
 Players
