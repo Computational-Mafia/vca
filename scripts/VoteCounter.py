@@ -18,42 +18,17 @@
 import os
 
 # to detect slight misspellings
-try:
-    import editdistance as ed
-except ModuleNotFoundError:
-    os.system('pip install editdistance')
-    import editdistance as ed
+import editdistance as ed
     
 # spellchecker to help identify english words
-try:
-    import enchant
-except ModuleNotFoundError:
-    os.system('apt-get -qq install libenchant1c2a')
-    os.system('pip install pyenchant')
-    import enchant
-    
-# for interacting with website
-try:
-    import requests
-except ModuleNotFoundError:
-    os.system('pip install requests')
-    import requests
-    
+from spellchecker import SpellChecker
+spell = SpellChecker()
+
 # to help parse website content
-try:
-    from lxml import html
-except ModuleNotFoundError:
-    os.system('pip install lxml')
-    from lxml import html
+from lxml import html
     
 # sadly we rely on regular expressions
 import re
-
-# list of spellchecker dictionaries relied on
-dEn = enchant.Dict("en")
-dCA = enchant.Dict("en_CA")
-dGB = enchant.Dict("en_GB")
-dUS = enchant.Dict("en_US")
 
 # regex filters
 regall = re.compile('[^a-zA-Z]') # any character that IS NOT a-z OR A-Z
@@ -89,10 +64,7 @@ def englishdivides(playername):
         for p in passes[-2]:
             for i in range(len(''.join(p))+1, len(string)+1):
                 substring = string[len(''.join(p)):i]
-                if (dEn.check(substring) or
-                    dCA.check(substring) or
-                    dGB.check(substring) or
-                    dUS.check(substring)):
+                if (not spell.unknown([substring])):
                     passes[-1].append(p + [substring])
 
                     if len(''.join(p + [substring])) == len(string):
