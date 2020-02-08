@@ -155,9 +155,11 @@ class VoteExtracter:
         # make an acronym dictionary for each player
         self.playerabbrevs, self.players = {}, players
         self.lowplayers = {p.lower():p for p in players}
+        
+        self.englishdivides = {p:englishdivides(p) for p in players}
         for p in players:
             self.playerabbrevs[p] = \
-            ''.join([each[0] for each in englishdivides(p)[0][1:]])
+            ''.join([each[0] for each in self.englishdivides[p][0][1:]])
 
     def fromPost(self, post):
         """tries to identify vote's target from the post"""
@@ -274,7 +276,7 @@ class VoteExtracter:
             # 13 if any length>3 english-divided parts of a player's name
             # are a vote substring
             suboccurrences = [p for p in self.players
-                              if len([s for s in englishdivides(p)[0]
+                              if len([s for s in self.englishdivides[p][0]
                                       if (lowvote.count(s.lower())
                                           > 0 and len(s) > 3)]) > 0]
             if len(suboccurrences) == 1:
@@ -285,7 +287,7 @@ class VoteExtracter:
             # that includes partial english
             acromatches = [p for p in self.players
                            if ed.eval(''.join([each[0] for each in
-                                englishdivides(p)[0][1:3]]).lower(),
+                                self.englishdivides[p][0][1:3]]).lower(),
                                       lowvote) <= 0]
             if len(acromatches) == 1:
                 yield acromatches[0]
