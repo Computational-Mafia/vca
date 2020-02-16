@@ -132,7 +132,7 @@ def findVotes(post):
         # if position of unvote is position of vote - 2, 
         # then the last vote is an unvote
         if unvoteloc > -1 and unvoteloc == voteloc - 2:
-            boldtags[i] = 'not voting'
+            boldtags[i] = 'UNVOTE'
             
         # otherwise vote is immediately after 'vote' text and perhaps some crap
         else:
@@ -150,10 +150,10 @@ def includesVote(post):
 # Initialized with a playerlist to avoid redundant processing, includes a function that uses a series of text processing tricks to match votes found with the findVotes() function to a member of said playerlist. Rather than being very strict about what counts as a vote (ie looking for proper vote formatting and exact target naming), this function is intended to work like human moderators do, or at least have over the D1s of ~300 Mini Normal Games studied to produce the function. The VoteExtractor class has been found to accurately predict which player a moderator assigned a lynch to across nearly all of these studied games.
 
 class VoteExtracter:
-    def __init__(self, players):
+    def __init__(self, players, verbose=False):
         
         # make an acronym dictionary for each player
-        self.playerabbrevs, self.players = {}, players
+        self.playerabbrevs, self.players,self.verbose = {}, players, verbose
         self.lowplayers = {p.lower():p for p in players}
         
         self.englishdivides = {p:englishdivides(p) for p in players}
