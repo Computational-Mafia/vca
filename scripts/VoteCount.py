@@ -49,7 +49,7 @@ class VoteCount:
             voted = ('Not Voting' if i == len(self.slots) else
                      ('No Lynch' if i > len(self.slots) else
                       self.slots[i]))
-            output[voted] = voters
+            output[str(voted)] = voters
         return output
         
     def update(self, voter, voted, postnumber=None):
