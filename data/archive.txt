@@ -351,7 +351,7 @@ Haylen replaced yura-chi, Mafia Godfather, lynched Day 3
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=16918
 Game 1142: Quintessentially English Mafia
-Moderator: ChannelDeliBird
+Moderator: ChannelDelibird
 Current Update: Town Win
 
 Players
@@ -1020,7 +1020,7 @@ Albert B. Rampage, Town Vanilla, killed Night 1
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=18983
 Game 1236: Classic Mafia
-Moderator: weirdalexv
+Moderator: wierdalexv
 Current Update: Mafia Win
 
 Players
@@ -1370,8 +1370,9 @@ roflcopter replaced Psyche, Town Vanilla, endgamed Day 3
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=22466
 Game 1347
-Moderator: Papa Zito mcqueen
+Moderator: Papa Zito, mcqueen
 Current Update: Mafia Win
+Notes: Maestro voted UNVOTE in post 355 but my votecounter detected "NO VOTE" as a vote for McStab resulting in wrong transition prediction; toolfail
 
 Players
 drmyshotgun, Town Doctor, killed Night 2
@@ -1568,7 +1569,7 @@ ChannelDeliBird replaced Hellhound1, Town Vigilante, lynched Day 1
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=23234
 Game 1372
-Moderator: Papa Zito Junpei
+Moderator: Papa Zito, Junpei
 Current Update: Town Win
 
 Players
@@ -1901,6 +1902,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=25003
 Game 1410: Mafia in the Unknown
 Moderator: Quilford
 Current Update: Town Win
+Notes: D1 Norlkaz killed
 
 Players
 Cheery Dog, Vanilla Townie, killed Night 1
@@ -2004,7 +2006,7 @@ mozamis, Vanilla Townie, lynched Day 1
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=25700
 Game 1424: Mafibleh
-Moderator: SleepyKrew
+Moderator: SleepyKrew, TraceyLyn11
 Current Update: Town Win
 
 Players
@@ -2190,6 +2192,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=28250
 Game 1449: Ordinary Town
 Moderator: qwints
 Current Update: Town Win
+Notes: Dessx voted UNVOTE in post 567 but he did not bold the tag and my votecounter did not detect it; toolfail
 
 Players
 GoodCopBadCop, Vanilla Townie, lynched Day 5
@@ -2668,7 +2671,7 @@ Skelda replaced Axxle, Vanilla Townie, lynched Day 5
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=32114
 Mini 1509 - Marriage in Mafiatown
-Moderator: Tierce replaced notscience
+Moderator: Tierce, notscience
 Current Update: Mafia Win
 
 Players
@@ -2689,7 +2692,7 @@ YES YES YES, Vanilla Townie, lynched Day 1
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=32269
 Mini 1511: Insurgency Emergency
-Moderator: JacobSavage replaced Fegelein
+Moderator: JacobSavage, Fegelein
 Current Update: Mafia Win
 
 Players
@@ -2794,7 +2797,7 @@ Yiley, Town Mason, killed night 3
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=34696
 Mini 1527 - The Darkness Within
-Moderator: Tierce replaced Thirdkoopa
+Moderator: Tierce, Thirdkoopa
 Current Update: Town Win
 
 Players
@@ -2878,7 +2881,7 @@ Dessew, Vanilla Townie, lynched Day 3
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=36986
 Mini 1540 - Terror in Eagleland
-Moderator: Tierce replaced 1baldeagle1
+Moderator: Tierce, 1baldeagle1
 Current Update: Town Win
 
 Players
@@ -2959,6 +2962,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=38659
 Mini: 1553 Gone jeeping
 Moderator: jmo16mla
 Current Update: Serial Killer Win
+Notes: at the moment, post numbers aren't scraped correctly for this game!
 
 Players
 DOMO replaced lobstermania, Vanilla Townie, killed night 1
@@ -3149,6 +3153,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=57502
 Mini 1579: The Great Flavor Caper
 Moderator: phokdapolees
 Current Update: Mafia Win
+Notes: votecount reset on post #1250
 
 Players
 Josh_B, Mafia Goon, survived
@@ -3399,7 +3404,7 @@ Riddleton replaced EspressoDan replaced TobyLoby, Mafia Encryptor, Lynched Day 5
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=59089
 Mini Normal 1609: The Case Of Doctor Pepper
-Moderator: Bert replaced DoctorPepper
+Moderator: Bert, DoctorPepper
 Current Update: Mafia Win
 
 Players
@@ -3420,7 +3425,7 @@ Titus replaced Csareo, Vanilla Townie, lynched day 6
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=59547
 Mini 1618: Profia
-Moderator: Tierce replaced Prof Fridays
+Moderator: Tierce, Prof Fridays
 Current Update: Mafia Win
 
 Players
@@ -3546,7 +3551,7 @@ TheDudeAbides, Town Mason, killed night 1
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=60277
 Mini 1636: Mafialand Mayhem!
-Moderator: N replaced Riddleton
+Moderator: N, Riddleton
 Current Update: Mafia Win
 
 Players
@@ -3694,7 +3699,7 @@ West9, Vanilla Town, lynched day 6
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=61056
 Mini 1653: A Game of Pokes
-Moderator: N replaced Iknal
+Moderator: N, Iknal
 Current Update: Mafia Win
 
 Players
@@ -3903,7 +3908,7 @@ BlankFace, Vanilla Townie, endgamed day 6
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=62046
 Mini 1680
-Moderator: N replaced The Bulge
+Moderator: N, The Bulge
 Current Update: Mafia Win
 
 Players
@@ -4050,7 +4055,7 @@ RadiantCowbells replaced Diego1487 replaced ChaosOmega, Vanilla Townie, killed n
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=62630
 Mini 1697 - a Re-balanced Game of Mafia
-Moderator: BBmolla replaced ActionDan
+Moderator: BBmolla, ActionDan
 Current Update: Mafia Win
 
 Players
@@ -4113,7 +4118,7 @@ pieguyn, Mafia Goon, survived
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=62742
 Mini 1700: Space Mafia
-Moderator: Ether replaced 1baldeagle1
+Moderator: Ether, 1baldeagle1
 Current Update: Mafia Win
 
 Players
@@ -4193,8 +4198,8 @@ Ciara24, Vanilla Townie, lynched day 2
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=62993
 Mini 1706 - Pula Mafia
-Moderator: N replaced NakedJogger
-Current Update: Mafin Win
+Moderator: N, NakedJogger, Loranthaceae
+Current Update: Mafia Win
 
 Players
 superbowl9, Town Cop, killed night 3
@@ -4400,6 +4405,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=63492
 MINI 1721
 Moderator: Marquis
 Current Update: Mafia Win
+Notes: Two players are lynched per Day
 
 Players
 Ankamius replaced A Simple Plan, Vanilla Townie, endgamed day 3
@@ -4461,7 +4467,7 @@ JarJarDrinks, Mafia Goon, survived
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=63842
 Mini 1733: Jurassic Monkey
-Moderator: Monkeyman576/Farside22
+Moderator: Monkeyman576, farside22
 Current Update: Mafia Win
 
 Players
@@ -4667,8 +4673,9 @@ Lowell, Vanilla Townie, endgamed day 4
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=65286
 Mini 1762
-Moderator: TheCow/Metrion
+Moderator: TheCow, Metrion
 Current Update: Town Win
+Notes: D1 no majority
 
 Players
 Golden Robster replaced TaishoGal replaced ShortcutButton, Mafia Goon, lynched day 3
@@ -4688,7 +4695,7 @@ Dwlee99 replaced NinoMasaki, 1shot Vigilante, killed night 4
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=65380
 Mini Normal 1763
-Moderator: pisskop replaced ChaosOmega
+Moderator: pisskop, ChaosOmega
 Current Update: Mafia Win
 
 Players
@@ -4814,7 +4821,7 @@ Killthestory, Serial Killer 1-shot Bulletproof, lynched Day 3
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=65928
 Mini 1782
-Moderator: Ircher/Dierfire
+Moderator: Ircher, Dierfire
 Current Update: Town Win
 
 Players
@@ -4879,6 +4886,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=66300
 Mini 1789: Puppy Mafia!
 Moderator: UpTooLate
 Current Update: Mafia Win
+Notes: Trivium voted Zulfy in post #691 but the moderator did not count it as it did not occur on its own line; toolfail
 
 Players
 Thestatusquo, Mafia Goon, lynched day 3
@@ -5250,7 +5258,7 @@ Lil Uzi Vert, Mafia Goon, lynched day 4
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=68519
 Mini 1836: Space Mafia
-Moderator: Something_Smart
+Moderator: Something_Smart, Aristophanes
 Current Update: Town Win
 Notes: D1 no majority
 
@@ -5524,7 +5532,7 @@ Aj The Epic, Mafia Role Cop, lynched day 3
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=69704
 Mini 1862
-Moderator: XnadrojX
+Moderator: XnadrojX, inspectorscout
 Current Update: Town Win
 
 Players
@@ -5566,7 +5574,7 @@ Firebringer, Mafia 1-Shot Roleblocker, survived
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=69937
 Mini 1870
-Moderator: sickofit1138
+Moderator: Sickofit1138
 Current Update: Town Win
 
 Players
@@ -5754,6 +5762,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=71047
 Mini 1893
 Moderator: mhsmith0
 Current Update: Mafia Win
+Notes: D1 Fro99er vote resetted
 
 Players
 Transcend, Town Fruit Vendor, killed night 1
@@ -5902,6 +5911,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=71697
 Mini Normal 1909
 Moderator: nancy
 Current Update: Mafia Win
+Notes: ignore post 2437 so that real phase transition at 2501 is predicted
 
 Players
 Leonshade replaced Prism replaced rb, Mafia Goon, lynched day 3
