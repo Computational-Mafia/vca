@@ -2,6 +2,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15787
 Game 1091: Mafia Mania
 Moderator: Nobody Special
 Current Update: Mafia Win
+Notes: D2 toolfail; Dekes voted Substrike in post 634 but votecounter did not detect a vote in "[b]Unovte; Vote: Substrike[/b]"
 
 Players
 Beefster, Town Vanilla, lynched Day 1
@@ -22,6 +23,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15783
 Game 1094: Mariposa Peak Mafia
 Moderator: DemonHybrid
 Current Update: Town Win
+Notes: D2 toolfail; Nachomamma8 voted for a Deadline Extension in post 554 but my votecounter extracted a vote for singersigner; D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for ['Reckamonic']
 
 Players
 singersigner, Town Vanilla, survived
@@ -42,6 +44,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15828
 Game 1098: The Mafia Experiment!
 Moderator: el simo
 Current Update: Town Win
+Notes: D3 toolfail; Shattered Viewpoint voted Scott Brosius in post 602 but Scott Brosius was dead so my votecounter interpreted "[b]Vote: ScottBro[/b]" a vote for Amor
 
 Players
 EmpTyger replaced Nul, Serial Killer, lynched Day 4
@@ -102,6 +105,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15934
 Game 1105: A Mafia Invasion!
 Moderator: Zachrulez
 Current Update: Town Win
+Notes: Agar killed on post 283; Zdenek killed on post 490
 
 Players
 RobCapone, Mafia 2-Shot Rolecop, lynched Day 3
@@ -166,7 +170,7 @@ Moderator: jimfinn
 Current Update: Town Win
 
 Players
-edgerobin, Mafia A Goon, lynched Day 3
+Edgerobin, Mafia A Goon, lynched Day 3
 Shattered Viewpoint replaced Prox, Mafia B Goon, lynched Day 4
 magnus_orion, Town Medical Student, survived
 RobCapone, Town Cop, killed Night 4
@@ -185,6 +189,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=16214
 Game 1117: Manhattan Special
 Moderator: InflatablePie
 Current Update: Mafia Win
+Notes: D3 No majority
 
 Players
 Empking, Town Vanilla, killed Night 6
@@ -276,7 +281,7 @@ Parama, Mafia Traitor, killed Night 3
 crazypianist1116, Town Vanilla, killed Day 5
 DemonHybrid, Town Vanilla, endgamed Day 6
 Maemuki replaced sordros, Town Watcher, killed Night 2
-Bud Bidderskins, Mafia Goon, survived
+Bub Bidderskins, Mafia Goon, survived
 AGar replaced ConfidAnon, Town Vanilla, lynched Day 6
 Cecily, Town Vanilla, lynched Day 2
 Twistedspoon, Town Vanilla, killed Night 4
@@ -320,7 +325,7 @@ Faraday replaced P.T. Barnum, Mafia Goon, survived
 Jahudo, Town Vanilla, killed Night 1
 Bub Bidderskins replaced Jerbs, Town Vanilla, endgamed Day 5
 mikemike778, Mafia Traitor Neighborizor, survived
-Satael replaced Idiotking, Town Vanilla, endgamed Day 5
+Setael replaced Idiotking, Town Vanilla, endgamed Day 5
 tarsonisocelot replaced Jinxx, Town One-Shot Vigilante, killed Night 2
 Voidedmafia, Town One-Shot Neighborizer, lynched Day 1
 Cecily, Town Vanilla, lynched Day 4
@@ -332,6 +337,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=16852
 Game 1140: Mafia Mishmash
 Moderator: havingfitz
 Current Update: Mafia Win
+Notes: D2 toolfail; Haylen voted andrew94 in post 803 but typed [b]Vote Andrew[/b] within a fieldset tag
 
 Players
 andrew94, 3rd Party Serial Killer, lynched Day 2
@@ -391,6 +397,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=16959
 Game 1146: Don't Get Slapped in the Face by a Fish Mafia
 Moderator: chesskid3
 Current Update: Town Win
+Notes: empking killed on post 234
 
 Players
 gandalf5166, Town Vanilla, survived
@@ -412,6 +419,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17143
 Game 1147: Royal Mafia at the Round Table
 Moderator: neil1113
 Current Update: Mafia Win
+Notes: ender241 killed on post 420
 
 Players
 Twistedspoon, Mafia Roleblocker, lynched Day 4
@@ -433,6 +441,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17173
 Game 1152
 Moderator: Me=Weird
 Current Update: Draw
+Notes: D3 no majority
 
 Players
 Jeromus, Town Mason, survived
@@ -475,6 +484,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17276
 Game 1157: Witch-Hunt Nightless
 Moderator: Ythan
 Current Update: Town Win
+Notes: D2 No Majority;
 
 Players
 dramonic, Mafia Goon, lynched Day 4
@@ -523,7 +533,7 @@ Faraday replaced bigbenwd, Town Vanilla, survived
 Empking, Town Vanilla, lynched Day 1
 DarthYoshi replaced Juls, Town Vanilla, survived
 Vi, Mafia Role Cop, lynched Day 4
-Quilford, Town Vanilla, survived
+Setael replaced Quilford, Town Vanilla, survived
 charter, Town Tracker, killed Night 2
 pappums rat, Town Vigilante, killed Night 1
 Sloth, Town Vanilla, survived
@@ -554,6 +564,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17401
 Game 1166: Town Hall Mafia
 Moderator: Beefster
 Current Update: Mafia Win
+Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for EmpTyger for example on post 456
 
 Players
 Mitsuru Kirijo, Town Doctor, killed Night 1
@@ -574,7 +585,7 @@ Current Update: Mafia Win
 
 Players
 charter replaced Necessary Evil, Town Watcher, killed Night 1
-Elfin, Town Vanilla, endgamed Day 3
+Elfen, Town Vanilla, endgamed Day 3
 CooLskins, Mafia Goon, survived
 Nobody Special replaced kondi2424 replaced WingDamage9001, Town Vanilla, killed Night 1
 LordChronos, Town Vanilla, endgamed Day 3
@@ -613,7 +624,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17606
 Game 1177: Normal Game
 Moderator: Bunnylover
 Current Update: Town Win
-Notes: D1 LittleGrey voted jilynne1991 in post 597 but LittleGrey mistakenly typed "Jelly" (indicating petroleumjelly) and corrected it in their successive post; toolfail
+Notes: D1 LittleGrey voted jilynne1991 in post 597 but LittleGrey mistakenly typed "Jelly" (indicating petroleumjelly) and corrected it in their successive post; D1 toolfail
 
 Players
 Internet Stranger, Town Vanilla, lynched Day 4
@@ -694,6 +705,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17792
 Game 1190: A Day in the Life
 Moderator: Twistedspoon
 Current Update: Town Win
+Notes: D2 no majority
 
 Players
 SleepyKrew, Mafia Goon, lynched Day 1
@@ -757,6 +769,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17940
 Game 1199: Plissken's Pit
 Moderator: SnakePlissken
 Current Update: Mafia Win
+Notes: D3 no majority
 
 Players
 SomeRandomGuy, Mafia Goon, survived
@@ -816,6 +829,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=18287
 Game 1204: Generic Mafia
 Moderator: theplague42
 Current Update: Mafia Win
+Notes: D3 moderator ended day on post 1018 but players posted until phase transition on post 1024
 
 Players
 killerjester replaced Does Bo Know replaced drmyshottyizsik, Town Vanilla, killed Night 2
@@ -942,6 +956,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=18910
 Game 1227: Small Town Scumbags
 Moderator: Papa Zito
 Current Update: Town Win
+Notes: D3 no majority
 
 Players
 don_johnson, Town Mason, killed Night 3
@@ -956,14 +971,14 @@ Verity, Town Vanilla, modkilled Day 3
 Whiskers, Town Bodyguard, killed Night 4
 David Xanatos, Mafia Goon, lynched Day 4
 killerjester replaced Protoplasm, Town Vanilla, survived
-Zdenek replaced Hayker, Mafia Rolecop, lynched D7
+Zdenek replaced Hayker, Mafia Rolecop, lynched Day 7
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=18920
 Game 1230: Xylbot is Normal I Swear
 Moderator: Cojin
 Current Update: Mafia Win
-Notes: Missing Posts
+Notes: Missing Posts; Jackal711 is a doublevoter
 
 Players
 HowardRoark replaced Mega, Mafia Goon, survived
@@ -985,6 +1000,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=18916
 Game 1231: 8p Swift
 Moderator: Battousai
 Current Update: Mafia Win
+Notes: D2 toolfail; D2 players voted No Lynch but votecounter extracted these as for Korts
 
 Players
 Ironhead, Town Vanilla, lynched Day 5
@@ -1001,6 +1017,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=18952
 Game 1234: Masquerade Mafia
 Moderator: Mute
 Current Update: Mafia Win
+Notes: Whiskers did not vote in post 1164 but my votecounter interpreted "Vote: Mi--" in pink font as a vote for ['Mist Beauty', 'Guthrie']
 
 Players
 theamateur, Town Vanilla, lynched Day 1
@@ -1026,7 +1043,7 @@ Current Update: Mafia Win
 Players
 Jase, Town Vanilla, lynched Day 5
 hitogoroshi, Town Vanilla, killed Night 4
-Cogito Ergo Sum, , Town Gunsmith,	killed Night 3
+Cogito Ergo Sum, Town Gunsmith,	killed Night 3
 VisceraEyes, Mafia	Roleblocker, survived
 Odysseus replaced Draken, Town Vanilla, killed Night 3
 Lunitawolf, Town Vanilla, lynched Day 4
@@ -1064,6 +1081,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=19034
 Game 1241: Lab Mafia
 Moderator: Empking
 Current Update: Town Win
+Notes: moderator failed to count el simo in post 353 but corrected error on post 380
 
 Players
 el simo, Town Vigilante, killed Night 3
@@ -1083,6 +1101,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=21340
 Game 1317
 Moderator: kdowns
 Current Update: Mafia Win
+Notes: hokorippoi voted thezmon221 in 637 but moderator did not accept it as the format did not follow rules; D2 toolfail
 
 Players
 thezmon221, Town Cop, endgamed Day 5
@@ -1146,6 +1165,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=21454
 Game 1323: Mafia on the BEACH
 Moderator: theamatuer
 Current Update: Mafia Win
+Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for ['GreyICE', 'crypto']
 
 Players
 MonkeyMan576, Town Cop, lynched Day 4
@@ -1237,7 +1257,7 @@ TeChNoWC, Town Vanilla, killed Night 2
 Thomith, Town Vanilla, lynched Day 4
 Junpei replaced Milk, Town Jack-of-all-Trades, killed Night 3
 Seacore, Town Hider, killed Night 2
-UberNinja replaced UnofficialRulerOfEveryone, Town Vanilla, endgamed D5
+UberNinja replaced UnofficialRulerOfEveryone, Town Vanilla, endgamed Day 5
 DTMaster, Mafia Roleblocker, lynched Day 3
 Humble Poirot, Town Vanilla, killed Night 4
 SensFan, Town Vanilla, lynched Day 1
@@ -1250,6 +1270,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22083
 Game 1338: Cyborgian Reenactment Mafia
 Moderator: Timeater
 Current Update: Town Win
+Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for ['Oman']
 
 Players
 BBmolla replaced Mallard, Town Vanilla, killed Night 1
@@ -1291,7 +1312,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22206
 Game 1341
 Moderator: Jackal711
 Current Update: Mafia Win
-Notes: Shattered Viewpoint is a doublevoter
+Notes: Shattered Viewpoint is a doublevoter but allowed to distribute just one vote; D2 toolfail; D2 Shattered Viewpoint voted Pine in post 429 but "[b]Vote: Pine -- Mod, please note this is only one vote, thanks.[/b]" was detected as a vote for Junpei
 
 Players
 Junpei replaced ac1983fan, Mafia Rolecop, survived
@@ -1357,7 +1378,7 @@ Moderator: Amrun
 Current Update: Mafia Win
 
 Players
-RainbowDash replaced Deltabacon, Town Cop, killed Night 2
+Rainbowdash replaced Deltabacon, Town Cop, killed Night 2
 Slaxx replaced Robbnva, Town Vanilla, endgamed Day 3
 Junpei, Mafia Roleblocker, survived
 FatCat, Town Vanilla, lynched Day 1
@@ -1372,7 +1393,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22466
 Game 1347
 Moderator: Papa Zito, mcqueen
 Current Update: Mafia Win
-Notes: Maestro voted UNVOTE in post 355 but my votecounter detected "NO VOTE" as a vote for McStab resulting in wrong transition prediction; toolfail
+Notes: D1 Maestro voted UNVOTE in post 355 but my votecounter detected "NO VOTE" as a vote for McStab resulting in wrong transition prediction; D1 toolfail; D2 mcqueen left a long twilight after post 1082 and ended the Day on post 1136; D3 mcqueen left a long twilight after post 1170 and ended the Day on post 1254
 
 Players
 drmyshotgun, Town Doctor, killed Night 2
@@ -1508,6 +1529,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22900
 Game 1361: Rainy Days Mafia
 Moderator: Midnight's Sorrow
 Current Update: Town Win
+Notes: charter did not vote Yabbaguy in post 560 but my votecounter extracted it from "[b]VigVote Yabba[/b]"; toolfail
 
 Players
 PMysterious, Mafia Goon, killed Night 1
@@ -1529,6 +1551,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22984
 Game 1365: Generic Village Mafia
 Moderator: triangle123
 Current Update: Town Win
+Notes: D2 CooLDoG voted fatlikepig in post 891 but [b]unvote, vtoe: flp[/b] was detected as an unvote; D2 toolfail 
 
 Players
 image, Town Vanilla, killed Night 1
@@ -1692,6 +1715,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=23588
 Game 1385: Thirsty Souls Mafia
 Moderator: Konowa
 Current Update: Town Win
+Notes: D2 Konowa declares end of day on post 769 but after an invalid vote begins transition on post 772
 
 Players
 Dunhamganger replaced Pine, Town Vanilla, lynched Day 3
@@ -1703,7 +1727,7 @@ PMysterious, Town Vanilla, survived
 roflcopter, Town Vanilla, killed Night 2
 greygnarl replaced RXK, Mafia Goon, lynched Day 5
 Xelath, Town Vanilla, survived
-Red Coyote replaced ak8, Town Vanilla, killed Night 3
+RedCoyote replaced ak8, Town Vanilla, killed Night 3
 qwints, Mafia Goon, lynched Day 6
 MonkeyMan576, Town Vanilla, lynched Day 4
 ThAdmiral replaced fish-riding-a-bike-2000, Town Vanilla, survived
@@ -1734,6 +1758,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=23772
 Game 1390
 Moderator: nhammen
 Current Update: Town Win
+Notes: D2 toolfail; JacobSavage voted Kinetic in post 1217 but my votecounter extracted "[vote]VOTE: (mv^2)/2[/vote]" as a vote for Thor665
 
 Players
 Thor665 replaced Abaddon, Town Bodyguard, killed Night 2
@@ -1763,7 +1788,7 @@ denisatp, Mafia Goon, lynched Day 6
 AngryPidgeon, Town Vanilla, killed Night 3
 Thor665, Mafia Neighbor Godfather, lynched Day 1
 projectmatt, Town Vanilla, survived
-charter, , Town Neighbor Cop, survived
+charter, Town Neighbor Cop, survived
 Slandaar, Mafia Goon, lynched Day 5
 CooLDoG, Town Vanilla, survived
 Lord Voldemort, Town Vanilla, killed Night 1
@@ -1869,10 +1894,10 @@ Empire replaced ICEninja, Vanilla Townie, killed Night 4
 Rob14, Mafia Roleblocker, lynched Day 3
 RedPanda replaced Lincolm, Town Watcher, killed Night 5
 havingfitz replaced implosion, Mafia Goon, survived
-denisatp, Town Tracker, killed Night 1
+denisatp, Town Tracker, killed Night 2
 projectmatt, Vanilla Townie, lynched Day 6
 Human Destroyer replaced Breakfast, Mafia Goon, lynched Day 1
-chkflip, Vanilla Townie, killed Night 2
+chkflip, Vanilla Townie, killed Night 1
 Master Mew replaced Ion67, Vanilla Townie, lynched Day 5
 DeasVail replaced RayFrost replaced PeregrineV, Vanilla Townie, endgamed
 
@@ -1881,6 +1906,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=24640
 Game 1408: Playing with Fire
 Moderator: killerjester
 Current Update: Mafia Win
+Notes: D3 no majority
 
 Players
 qwints, Vanilla Townie, killed Night 3
@@ -1902,7 +1928,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=25003
 Game 1410: Mafia in the Unknown
 Moderator: Quilford
 Current Update: Town Win
-Notes: D1 Norlkaz killed
+Notes: Norlkaz killed in post 159; havingfitz killed in post 703; votecount reset on post 703
 
 Players
 Cheery Dog, Vanilla Townie, killed Night 1
@@ -1985,7 +2011,7 @@ q21, Mafia Goon, lynched Day 2
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=25648
 Game 1422: White Room Mafia
-Moderator: The Mini-Librarian
+Moderator: The Mini-Librarian, Regfan
 Current Update: Mafia Win
 
 Players
@@ -2025,6 +2051,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=25751
 Game 1426: Hell's Bottom
 Moderator: 10506670
 Current Update: Mafia Win
+Notes: jeromus killed on post 451
 
 Players
 jeromus, Vanilla Townie, killed Day 2
@@ -2072,7 +2099,7 @@ RachMarie replaced HadMatter, Vanilla Townie, killed Night 2
 BBmolla replaced Revenus replaced Deltabacon, Vanilla Townie, survived
 Hiraki, Town Tracker, survived
 Human Destroyer replaced Majiffy replaced RandomYoshi replaced Ms Marangal, Vanilla Townie, survived
-Dr Zoidberg MD, Vanilla Townie, survived
+Doctor Zoidberg MD, Vanilla Townie, survived
 Bacde, Mafia Goon, lynched Day 3
 Lurker, Third Party Serial Killer, lynched Day 1
 absta101, Vanilla Townie, killed Night 3
@@ -2108,6 +2135,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=27042
 Game 1440: Unoriginal Mafia
 Moderator: Phenenas
 Current Update: Town Win
+Notes: D3 toolfail; D3 Bomberman voted Nero in post 705 but because he voted 3 other slots first the moderator did not count the vote even though votecounter interpreted each vote as valid
 
 Players
 Fegelein, Vanilla Townie, killed Night 1
@@ -2137,7 +2165,7 @@ ArcAngel9, Mafia Goon, survived
 Jebus, Vanilla Townie, lynched Day 4
 Varsoon, Vanilla Townie, killed Night 2
 Magical7, Vanilla Townie, killed Night 5
-KidA, Vanilla Townie, killed Night 4
+Kid A, Vanilla Townie, killed Night 4
 Fuzzyman, Vanilla Townie, lynched Day 1
 Amethyst Actor, Vanilla Townie, killed Night 7
 Diabolik replaced Squidward, Vanilla Townie, lynched Day 7
@@ -2150,6 +2178,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=27393
 Game 1445: Overly Cheerful Moderator Mafia
 Moderator: Zoidberg
 Current Update: Mafia Win
+Notes: D2 no majority
 
 Players
 Equinox replaced jeremylu, Vanilla Townie, endgamed
@@ -2192,7 +2221,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=28250
 Game 1449: Ordinary Town
 Moderator: qwints
 Current Update: Town Win
-Notes: Dessx voted UNVOTE in post 567 but he did not bold the tag and my votecounter did not detect it; toolfail
+Notes: Dessx voted UNVOTE in post 567 but he did not bold the tag and my votecounter did not detect it; D1 toolfail
 
 Players
 GoodCopBadCop, Vanilla Townie, lynched Day 5
@@ -2256,6 +2285,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=28649
 Game 1456: Revenge
 Moderator: SoraAdvent, Rob14
 Current Update: Mafia Win
+Notes: D2 no majority
 
 Players
 Ankamius replaced Chevre, Town One-Shot Neighborizer, killed Night 2
@@ -2408,7 +2438,7 @@ Shamrock replaced Metal Sonic replaced pandashnoo, Town Odd-Night Doctor, endgam
 Cheery Dog, Mafia Goon, survived
 Naomi-Tan, Vanilla Townie, endgamed
 serrapaladin replaced pitoli, Town Jack of All Trades, killed Night 2
-Surviva316 replaced projectmatt replaced Reecer6, Mafia Goon, survived
+surviva316 replaced projectmatt replaced Reecer6, Mafia Goon, survived
 NSin replaced Yates replaced hapahauli, Mafia Goon, survived
 Kalimar replaced Nul, Town Innocent Child, endgamed
 Team Rocket, Vanilla Townie, lynched Day 2
@@ -2631,6 +2661,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=31636
 Game 1501: We're On A Boat
 Moderator: pitoli
 Current Update: Serial Killer Win
+Notes: D2 toolfail; D2 notscience voted SleepyKrew in post 1219 but votecounter extracted "[vote]VOTE: SKs slot because I can't check OP atm[/vote]" as for notscience
 
 Players
 SpyreX, Third Party One-Shot Bulletproof Serial Killer Neighbor, survived
@@ -2652,6 +2683,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=31972
 Game 1505: N is for Normal
 Moderator: N
 Current Update: Mafia Win
+Notes: D2 toolfail; D2 Sharpest-knife-on-tree voted Slandaar in post 1375 but votecounter extracted from "[b]vote saalndar[/b]" a vote for T S O
 
 Players
 havingfitz replaced TCold replaced redFF, Town Rolecop, killed Night 2
@@ -2673,6 +2705,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=32114
 Mini 1509 - Marriage in Mafiatown
 Moderator: Tierce, notscience
 Current Update: Mafia Win
+Notes: D3 toolfail; JKLM voted redtail896 in post 969 but votecounter interpreted "[vote]red tail[/vote]" as a vote for I Am Innocent
 
 Players
 Brian Skies, Town Hider, killed Night 1
@@ -2757,6 +2790,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=33249
 Mini 1517 - The Sun Sets on Duskville
 Moderator: Alduskkel
 Current Update: Mafia Win
+Notes: D2 Sir Bastion did not vote Haschel Cedricson in post 1565 but my votecounter detected "[b]Unvote, vote HC[b][/quote" as a vote for Haschel Cedricson; D2 toolfail
 
 Players
 NicCage replaced Illume, Weak Doctor, killed night 1
@@ -2799,6 +2833,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=34696
 Mini 1527 - The Darkness Within
 Moderator: Tierce, Thirdkoopa
 Current Update: Town Win
+Notes: D2 no majority
 
 Players
 Albert B. Rampage, Vanilla Townie, survived
@@ -2829,7 +2864,7 @@ Naio, Vanilla Towne, killed Night 2
 Benmage, Vanilla Towne, killed Night 1
 Titus replaced snifit, Vanilla Towne, Endgamed Night 3
 T S O, Vanilla Towne, Lynched Day 2
-jingle replaced Emerald Kitty, Mafia Encryptor, Survived
+Jingle replaced Emerald Kitty, Mafia Encryptor, Survived
 toolenduso, Mafia Goon, Survived
 goodmorning, Town Desperado, Suicided Day 1
 Kazekirimaru, Vanilla Towne, Endgamed Night 3
@@ -2841,11 +2876,12 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=34923
 Mini 1532: Mac's Mini Normal
 Moderator: Mac
 Current Update: Town Win
+Notes: D3 no majority
 
 Players
 Sound of Silence, Mafia Goon, lynched day 1
 XScorpion replaced Mephistopheles, Vanilla Townie, killed night 1
-HayatoBL, Mafia Goon, lynched day 4
+hayatoBL, Mafia Goon, lynched day 4
 Aegor replaced WBOCampfire1104, Mafia Goon, lynched day 2
 TunnelVision, Town Odd-Night Vigilante, survived
 My Milked Eek, Town Two-Shot Cop, killed night 3
@@ -2921,6 +2957,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=37251
 Mini 1543--Natirasha's On Parole!
 Moderator: Natirasha
 Current Update: Mafia Win
+Notes: D3 no majority
 
 Players
 MafiaSSK, Town Doctor, killed night 4
@@ -2942,6 +2979,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=37632
 Mini 1544: Dry, Bland and Tasteless
 Moderator: caledfwitch
 Current Update: Town Win
+Notes: D2 toolfail; Zekrom typed "[b]Vote: Rainbowdash / or / Nikanor[/b]" and my votecounter extracted a vote for Rainbowdash from this but the moderator disagreed and did not count it
 
 Players
 Mr Glidder, Vanilla Townie, lynched day 2
@@ -2984,6 +3022,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=39665
 Mini 1556: Greetings Without Spain
 Moderator: Bicephalous Bob
 Current Update: Mafia Win
+Notes: Rubicon voted evilpacman18 in post 893 but my votecounter detected "[vote]epicpacman[/vote]" as a vote for N
 
 Players
 RedCoyote replaced pisskop, Mafia Goon, survived
@@ -3025,7 +3064,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=41311
 Mini 1560 - Reck's Walk of Shame
 Moderator: xRECKONERx
 Current Update: Town Win
-Notes: D1 Slandaar voted CooLDoG in post 730 but my votecounter assigned it to ChannelDelibird; toolfail
+Notes: D1 Slandaar voted CooLDoG in post 730 but my votecounter assigned it to ChannelDelibird; D1 toolfail
 
 Players
 AGar replaced ChannelDelibird, Vanilla Townie, survived
@@ -3061,14 +3100,14 @@ Shattered Viewpoint, Vanilla Townie, killed night 1
 mlearn2 replaced Raging Bull, Vanilla Townie, endgamed day 4
 Formerfish replaced Tanzklaue, Vanilla Townie, lynched day 4
 Number_0ne, Vanilla Townie, lynched day 2
-enomis replaced Blue Yoshi who replaced thenewearth replaced dwsnsl5, Mafia Encryptor, survived
+enomis replaced Blue Yoshi replaced thenewearth replaced dwsnsl5, Mafia Encryptor, survived
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=48071
 Mini 1569: The Golden Cookie Heist!
 Moderator: Kalimar
 Current Update: Town Win
-Notes: D1 kushm4sta voted vonflare in post 306 but he typed "whateverthisdudesnameis" in a post quoting vonflare and my votecounter failed; toolfail
+Notes: D1 kushm4sta voted vonflare in post 306 but he typed "whateverthisdudesnameis" in a post quoting vonflare and my votecounter failed; D1 toolfail
 
 Players
 bjc, Town Vigilante, killed night 3
@@ -3113,7 +3152,7 @@ Moderator: Wake88
 Current Update: Mafia Win
 
 Players
-T S O replaced Varsoon, Vanilla Townie, killed night
+T S O replaced Varsoon, Vanilla Townie, killed night 4
 Titus, Vanilla Townie, killed night 3
 Aegor replaced Bitmap replaced ICEninja, Mafia Goon, lynched day 5
 Nobody Special, Vanilla Townie, lynched day 2
@@ -3134,16 +3173,16 @@ Moderator: Equinox
 Current Update: Town Win
 
 Players
-4nxi3ty, Town Mason, killed night 3
+4nxi3ty, Town Mason, killed night 2
 bjc replaced Dannflor, Town Vanilla, survived
-IceGuy replaced iamsteve, Maifa Goon, lynched day 4
+IceGuy replaced iamsteve, Mafia Goon, lynched day 4
 Justin Playfair, Town Vanilla, killed night 3
 MafiaSSK, Town Vanilla, lynched day 2
 mykonian, Town Bulletproof, lynched day 1
-Natirasha, Maifa Goon, lynched day 6
-Quilford, Maifa Goon, lynched day 5
+Natirasha, Mafia Goon, lynched day 6
+Quilford, Mafia Goon, lynched day 5
 RedCoyote, Town Vanilla, lynched day 3
-roflcopter replaced Kenobi, Town Mason, killed night 2
+roflcopter replaced Kenobi, Town Mason, killed night 1
 Salamence20 replaced PrivateI replaced Nobody Special, Town One-Shot Commuter, killed night 4
 snscompt1 replaced zabriel replaced Maziek, Town Vanilla, killed night 5
 Wolfy, Town Vanilla, survived
@@ -3153,7 +3192,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=57502
 Mini 1579: The Great Flavor Caper
 Moderator: phokdapolees
 Current Update: Mafia Win
-Notes: votecount reset on post #1250
+Notes: D1 votecount reset on post 1250; D3 T S O killed on post 1534
 
 Players
 Josh_B, Mafia Goon, survived
@@ -3224,7 +3263,7 @@ Misaka Network, Vanilla Town, lynched day 2
 sthar8 replaced BroodKingEXE, Vanilla Town, endgamed day 6
 chaoslord54, Town Tracker, killed night 3
 evilpacman18, Vanilla Town, lynched day 6
-Riddleton Replaced Antihero) replaced Jakuzure Nonon, Vanilla Town, lynched day 3
+Riddleton replaced Antihero replaced Jakuzure Nonon, Vanilla Town, lynched day 3
 Guyett replaced Super Mario, Mafia Strongman, survived
 don_johnson, Town Jailkeeper, killed night 2
 startfromtheheart, Town Bodyguard, killed night 4
@@ -3258,7 +3297,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=58383
 Mini 1589: The Train of Death
 Moderator: Aronis
 Current Update: Mafia Win
-Notes: D1 xfdagentx42 killed
+Notes: D1 votecount reset on post 82; xfdagentx42 killed on post 82
 
 Players
 SleepyKrew replaced Fusion, Town Vanilla, endgamed day 5
@@ -3289,7 +3328,7 @@ chaoslord54, Vanilla Townie, lynched day 3
 Clusk92, Vanilla Townie, survived
 phokdapolees replaced Derivan, Vanilla Townie, killed night 5
 Espressojet, Mafia Goon, lynched day 1
-Havingfitz, Vanilla Townie, survived
+havingfitz, Vanilla Townie, survived
 Hiraki, Vanilla Townie, killed night 1
 Marky Mark, Mafia Goon, lynched day 2
 Prof Fridays, Town Doctor, lynched day 5
@@ -3378,7 +3417,7 @@ shaddowez, Vanilla Townie, lynched Day 2
 notscience replaced tman2nd, Town One-Shot Friendly Neighborizer, survived
 neil1113 replaced Flames682, Mafia Goon, lynched Day 1
 DeasVail replaced Elias_the_thief, Town Bodyguard, killed Night 2
-sthar8 reaplced Grandi replaced rack, Mafia Encryptor, lynched Day 5
+sthar8 replaced Grandi replaced rack, Mafia Encryptor, lynched Day 5
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=58899
@@ -3451,7 +3490,7 @@ Current Update: Mafia Win
 
 Players
 Beck, Mafia Even-Night Cop, survived
-Bookitty replaced LandoWise, Town Mason, killed night 3
+Bookitty replaced LandoWise, Town Mason, killed night 2
 Egg replaced Clusk92, Mafia Encryptor, survived
 Flubbernugget, Town Mason, killed night 4
 JohnnyFarrar replaced emogirl123, Town Vanilla, endgamed day 5
@@ -3492,7 +3531,7 @@ Moderator: GuyInFreezer
 Current Update: Town Win
 
 Players
-Whomping WIllow, Vanilla Townie, survived
+Whomping Willow, Vanilla Townie, survived
 Thor665 replaced Originalchris, Mafia Jack of All Trades, lynched day 5
 crazypianist1116, Vanilla Townie, survived
 TellTaleHeart replaced istott, Vanilla Townie, survived
@@ -3501,7 +3540,7 @@ Munkir, Mafia Goon, lynched day 4
 droog, Town One-shot Bulletproof Neighbor, killed night 3
 GGG, Vanilla Townie, survived
 AWA, Werewolf One-shot Gunsmith, lynched day 1
-ChannelDeliBird replaced kuror0, Vanilla Townie, lynched day 3
+ChannelDelibird replaced kuror0, Vanilla Townie, lynched day 3
 DrippingGoofball replaced Goblin replaced Riddleton, Werewolf Neighbor, lynched day 2
 TierShift replaced Flames682, Vanilla Townie, killed night 1
 Flubbernugget, Town Jailkeeper, survived
@@ -3595,6 +3634,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=60635
 Mini 1645: BooneyToonz I - The Creepy Caravansary
 Moderator: Boonskiies
 Current Update: Mafia Win
+Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for ['Aneninen']
 
 Players
 pisskop, Vanilla Town, endgamed day 5
@@ -3616,7 +3656,6 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=60738
 Mini #1647: Eine Kleine Nacht-Mord
 Moderator: petroleumjelly
 Current Update: Mafia Win
-Notes: N0 Cogito Ergo Sum killed
 
 Players
 ChannelDelibird, Townie, endgamed Day 4
@@ -3658,7 +3697,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=60920
 Mini 1651: One Flew Over The Monkey's Nest
 Moderator: MonkeyMan576
 Current Update: Mafia Win
-Notes: D1 no majority
+Notes: D1 no majority; oddmusic killed on post 501; Taly killed on post 864
 
 Players
 Boonskiies replaced Aeronaut, Vanilla Townie, endgamed day 3
@@ -3722,6 +3761,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=61070
 Mini 1655: Delicious Mafia
 Moderator: Aeronaut
 Current Update: Mafia Win
+Notes: D2 House voted tn5421 in post 2479 but typed "[vote]zipcode[/vote]" which my votecounter interpreted as a vote for T S O; D2 toolfail
 
 Players
 T S O, Mafia Two-Shot Rolecop, survived
@@ -3783,7 +3823,7 @@ Formerfish, Mafia Goon, lynched day 5
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=61419
 mini 1662: Paint the village red
-Moderator: kelbris
+Moderator: kelbris, N
 Current Update: Town Win
 
 Players
@@ -3810,7 +3850,7 @@ Current Update: Mafia Win
 Players
 dragonspawn, Town Tracker, lynched day 2
 MonkeyMan576, Vanilla Townie, killed night 1
-Prolasped Brain replaced Zerediah, Mafia Roleblocker, lynched day 3
+Prolapsed Brain replaced Zerediah, Mafia Roleblocker, lynched day 3
 Riabi, One-Shot Bulletproof Townie, killed night 4
 Kitty Galore, Mafia Neighbor, survived
 Titus replaced VictorDeAngelo, Town Cop, killed night 3
@@ -3931,6 +3971,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=62118
 Mini 1685: BooneyToonz II - Looney Tunes
 Moderator: Boonskiies
 Current Update: Mafia Win
+Notes: D3 Salamence20 voted Salamence20 in post 1690 but moderator ignored it; D3 toolfail?
 
 Players
 Pegasus30 replaced DrDolittle, Town Innocent Child, endgamed day 5
@@ -3952,6 +3993,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=62181
 Mini 1687: Refraction Mafia
 Moderator: Aeronaut
 Current Update: Werewolf Win
+Notes: D2 toolfail; D2 Lapsa voted RadiantCowbells in post 1931 but votecounter interpreted "[vote]DullBellcows[/vote]" as a vote for toolenduso
 
 Players
 Persivul replaced Mathdino, Town Jack of All Trades, killed night 2
@@ -3982,7 +4024,7 @@ Fro99er, Mafia Goon, survived
 Metal Sonic replaced Glork, Mafia Encryptor, survived
 Green Crayons, Town Encryptor-Enabler, endgamed day 4
 KayP, Mafia Backup Encryptor, survived
-SleepyKrew replaced Kitty Galore, Town Backup Innocent Child,, endgamed day 4
+SleepyKrew replaced Kitty Galore, Town Backup Innocent Child, endgamed day 4
 lalaladucks, Vanilla Townie, lynched day 4
 RedCoyote replaced Shadoxx8, Vanilla Townie, lynched day 2
 TellTaleHeart, Town Backup Innocent Child, killed night 1
@@ -4034,8 +4076,9 @@ Shiro, Vanilla Townie, lynched day 4
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=62339
 Mini Normal 1692 – A Crack In Time?
-Moderator: Aneninen
+Moderator: Aneninen, Ether
 Current Update: Mafia Win
+Notes: D3 no majority
 
 Players
 pirate mollie replaced zakk, Vanilla Townie, killed night 3
@@ -4118,8 +4161,9 @@ pieguyn, Mafia Goon, survived
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=62742
 Mini 1700: Space Mafia
-Moderator: Ether, 1baldeagle1
+Moderator: Ether, 1baldeagle1, N
 Current Update: Mafia Win
+Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for someone else
 
 Players
 Fraggernaut, Vanilla Townie, lynched day 5
@@ -4179,6 +4223,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=62909
 Mini 1705
 Moderator: Not_Mafia
 Current Update: Mafia Win
+Notes: D3 toolfail; SamX did not make a clear vote in post 1218 but votecounter extracted votes for Klingoncelt and Salamence20
 
 Players
 St Constantine the Hermit replaced juckter, Vanilla Townie, killed night 3
@@ -4342,6 +4387,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=63250
 Mini Normal 1716 - Flavourless Mafia
 Moderator: Draynth
 Current Update: Mafia Win
+Notes: D3 no majority
 
 Players
 Guyett, Vanilla Townie, killed night 1
@@ -4427,6 +4473,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=63625
 Mini 1725
 Moderator: ChaosOmega
 Current Update: Mafia Win
+Notes: D3 no lynch; D3 toolfail
 
 Players
 Slandaar, Town Encryptor Enabler, killed night 2
@@ -4490,7 +4537,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=64070
 Mini 1735: Radjarok 2
 Moderator: Radja
 Current Update: Mafia Win
-Notes: D1 pisskop voted Blockyman in post 129 but my votecounter detects "vote rikky6" as a vote for pisskop; toolfail
+Notes: D1 pisskop voted Blockyman in post 129 but my votecounter detects "vote rikky6" as a vote for pisskop; D1 toolfail
 
 Players
 BlockyMan, Mafia Rolecop, lynched day 1
@@ -4559,7 +4606,7 @@ toolenduso, Vanilla Townie, killed night 2
 Thestatusquo replaced Scarycereal replaced Burning_Earth replaced TheCow, Town Cop, endgamed day 5
 Flubbernugget replaced Metrion, Vanilla Townie, lynched day 2
 Swordsworth, Town Even-Night Commuter, killed night 1
-Raskolkinov replaced BirdythePhoenix replaced lolbabe, Vanilla Townie, lynched day 3
+Raskolnikov replaced BirdythePhoenix replaced lolbabe, Vanilla Townie, lynched day 3
 iraonavp, Mafia Godfather, survived
 Chaotic Neutrality, Mafia Goon, lynched day 1
 Syndesis, Vanilla Townie, killed night 4
@@ -4574,7 +4621,7 @@ Current Update: Mafia Win
 Players
 Frozen Angel, Mafia Goon, survived
 Lowell, Town Odd-Night Cop, killed night 1
-Aj the Epic replaced Radja, , endgamed day 6
+Aj The Epic replaced Radja, endgamed day 6
 Mathilda, Vanilla Townie, lynched day 1
 Firebringer replaced Dwlee99, Mafia Motion Detector, lynched day 2
 Dierfire, Vanilla Townie, lynched day 4
@@ -4582,7 +4629,7 @@ Albert B. Rampage, Mafia Ascetic, lynched day 3
 Garmr, Town 1-Shot Bulletproof Bodyguard, killed night 4
 Aeronaut, Town Party Animal, killed night 5
 MattP, Town 1-Shot Vigilante, killed night 1
-Davesaz replaced Taly, Town Miller, killed night 5
+davesaz replaced Taly, Town Miller, killed night 5
 iraonavp, Vanilla Townie, killed night 2
 AlwaysInnocent, Vanilla Townie, lynched day 6
 
@@ -4591,7 +4638,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=64784
 Mini 1752: Back to December
 Moderator: Equinox
 Current Update: Town Win
-Notes: N0 Marquis killed
+Notes: D2 toolfail; D2 Xtoxm voted Aj The Epic in post 447 but my votecounter extracted a vote for Alchemist21 from "[vote]Aj[/vote]"; D2 Raskolnikov voted Aj The Epic in post 447 but my votecounter extracted a vote for Alchemist21 from "[vote]AJ[/vote]"; D2 curiouskarmadog voted Aj The Epic in post 530 but my votecounter extracted a vote for Alchemist21 from "[b]vote AJ[/b]"
 
 Players
 Aj The Epic, mafia goon, lynched day 2
@@ -4695,7 +4742,7 @@ Dwlee99 replaced NinoMasaki, 1shot Vigilante, killed night 4
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=65380
 Mini Normal 1763
-Moderator: pisskop, ChaosOmega
+Moderator: pisskop, ChaosOmega, N
 Current Update: Mafia Win
 
 Players
@@ -4721,7 +4768,7 @@ Current Update: Mafia Win
 
 Players
 Ircher replaced OceanWind replaced malkin7gr89, Vanilla Townie, Endgamed Day 4
-Boonskies replaced Phoenix Wright, Town 1-shot Vigilante, Killed Night 3
+Boonskiies replaced Phoenix Wright, Town 1-shot Vigilante, Killed Night 3
 KainTepes, Mafia Goon, survived
 popsofctown, Vanilla Townie, Endgamed Day 4
 BlueBloodedToffee, Vanilla Townie, Endgamed Day 4
@@ -4765,14 +4812,14 @@ Players
 Jake from State Farm, Town 1 Shot BulletProof, lynched day 5
 Jeanne11, Vanilla Townie, killed night 2
 KuroiXHF, Vanilla Townie, killed night 1
-FireBringer replaced Aristophanes, Vanilla Townie, endgamed day 5
+Firebringer replaced Aristophanes, Vanilla Townie, endgamed day 5
 Wisdom, Town Joat, killed night 3
 Masquerade, Vanilla Townie, killed night 4
 Killthestory, Vanilla Townie, lynched day 1
 Dierfire, Mafia Goon, killed night 1
 Shiro, Mafia 1 Shot BulletProof, survived
 nnn_thekushmountains, Mafia Joat, survived
-SnarkySnowman, Vanilla Townie, lynched day 2
+SnarkySnowman, Vanilla Townie, lynched day 3
 a plain farmer, Town Jailkeeper, lynched day 2
 Expedience replaced Maestro, Vanilla Townie, endgamed day 5
 
@@ -4809,7 +4856,7 @@ I Am Innocent, Town Citizen, survived
 emogirl123, Town Citizen, survived
 Edward Elric, Town Citizen, survived
 Dierfire, Town Seer, survived
-Kelbris replaced Golden Robster replaced golden009, Town Citizen, survived
+kelbris replaced Golden Robster replaced golden009, Town Citizen, survived
 Masquerade, Werewolf Goon, lynched Day 1
 PantherPunt replaced choof, Town Jailkeeper, killed Night 1
 yessiree, Town Citizen, killed Night 1
@@ -4865,6 +4912,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=66258
 Mini 1787: Peruvian Nightclub Mafia
 Moderator: Zulfy
 Current Update: Town Win
+Notes: D2 toolfail; D2 Zachstralkita voted Floof in post 1524 but moderator refused to count the vote
 
 Players
 toolenduso, mafia tracker, lynched day 7
@@ -4886,7 +4934,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=66300
 Mini 1789: Puppy Mafia!
 Moderator: UpTooLate
 Current Update: Mafia Win
-Notes: Trivium voted Zulfy in post #691 but the moderator did not count it as it did not occur on its own line; toolfail
+Notes: Trivium voted Zulfy in post #691 but the moderator did not count it as it did not occur on its own line; D1 toolfail
 
 Players
 Thestatusquo, Mafia Goon, lynched day 3
@@ -4908,7 +4956,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=66377
 Mini 1791: Mildly Dangerous Mafia
 Moderator: Postie
 Current Update: Town Win
-Notes: toolfail; D1 Asphodel voted heuristically_alone in post 1268 but "ha" was detected as Bellaphant instead of heuristically_alone
+Notes: D1 toolfail; D1 Asphodel voted heuristically_alone in post 1268 but "ha" was detected as Bellaphant instead of heuristically_alone
 
 Players
 RadiantCowbells, Vanilla Townie, lynched day 3
@@ -4936,9 +4984,9 @@ Nero Cain replaced KickAssAndGiggle replaced ConvergentConclusion, Mafia Encrypt
 MURDERCAT, VT, survived
 KuroiXHF replaced zefiend, Mafia Goon, lynched day 2
 Chumba, Town Doctor, killed night 4
-Mathblade replaced Accountant, Town Gunslinger, killed night 3
+MathBlade replaced Accountant, Town Gunslinger, killed night 3
 chilledtea, Mafia Roleblocker, lynched day 4
-BlackStar, VT, survived
+Titus replaced BlackStar, VT, survived
 RachMarie replaced NightmareGaunt, Town Cop, killed night 1
 pirate mollie replaced I Am Innocent, VT, killed night 2
 Dunnstral, VT, lynched day 3
@@ -4961,7 +5009,7 @@ Kappy, Town Double Voter, Killed Night 1
 dramonic, Werewolf Goon, lynched Day 3
 Nahdia, 1 Shot Bullet Proof Serial Killer, lynched day 5
 Not_Mafia, Town Cop, Killed Night 2
-Murdercat replaced Killthestory, Town Mason, survived
+MURDERCAT replaced Killthestory, Town Mason, survived
 Necrogirl, Mafia Goon, lynched Day 2
 Sickofit1138, Mafia Goon, lynched Day 1
 snoe, Town Mason, survived
@@ -4986,12 +5034,15 @@ Masquerade replaced Mizzytastic, Townie, endgamed night 3
 karnos, mafia neapolitan, survived
 JohnnyFarrar replaced ShadyHood, Townie, lynched day 1
 Wingback replaced Sickofit1138, Townie, killed night 2
+qubixes, Townie, killed night 2
+Dierfire, Townie, lynched Day 2
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=67069
 Mini 1805
 Moderator: Sméagol
 Current Update: Mafia Win
+Notes: Eggman voted MarioManiac4 in post 1426 but votecounter did not interpret "[b]FoS: Dragon, Vote: MM4[/b]" as a vote
 
 Players
 DrippingGoofball replaced Smithereens, Town 3-Shot Vigilante, lynched day 3
@@ -5013,6 +5064,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=67181
 Mini Normal 1809
 Moderator: Dierfire
 Current Update: Town Win
+Notes: Robbnva killed on post 747
 
 Players
 Robbnva, Town Jailkeeper, modkilled day 1
@@ -5130,7 +5182,7 @@ algebra, town doctor, killed night 2
 gerryoat, town tracker, lynched day 2
 Mimikyu, vanilla townie, killed night 3
 texcat, town vigilante, killed night 3
-dwlee99 replaced Zyf, town 1-shot bulletproof, endgamed day 4
+Dwlee99 replaced Zyf, town 1-shot bulletproof, endgamed day 4
 Saru, vanilla townie, killed night 2
 
 
@@ -5159,6 +5211,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=68153
 Mini Normal 1827 - No Flavor Mafia
 Moderator: Dunnstral
 Current Update: Mafia Win
+Notes: light_ganski killed on post 784
 
 Players
 xyzzy, Vanilla Town, lynched day 1
@@ -5207,7 +5260,7 @@ gerryoat, Mafia Traitor, survived
 Gamma Emerald, Vanilla Townie, endgamed
 Grendel, Vanilla Townie, killed night 2
 House replaced RhazhBash, Town Bodyguard, killed night 3
-CCC, , Vanilla Townie, endgamed
+CCC, Vanilla Townie, endgamed
 Huntress replaced GreenNope, Town One-Shot Bulletproof, lynched day 3
 Manuel87, Mafia Role Cop, survived
 malpascp replaced The_Jester, Vanilla Townie, lynched day 4
@@ -5260,7 +5313,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=68519
 Mini 1836: Space Mafia
 Moderator: Something_Smart, Aristophanes
 Current Update: Town Win
-Notes: D1 no majority
+Notes: D1 no majority; D2 no majority
 
 Players
 Toto, Vanilla Townie, survived
@@ -5303,9 +5356,10 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=68685
 Mini 1839
 Moderator: Foxbird
 Current Update: Mafia Win
+Notes: D2 no majority
 
 Players
-Mathblade replaced LmkGuy, Town Innocent Child, killed night 5
+MathBlade replaced LmkGuy, Town Innocent Child, killed night 5
 Saru, Vanilla Townie, endgamed
 Nero Cain, Vanilla Townie, lynched day 4
 karnos, Vanilla Townie, endgamed
@@ -5389,7 +5443,7 @@ Moderator: LicketyQuickety
 Current Update: Town Win
 
 Players
-garmr, Vanilla Townie, survived
+Garmr, Vanilla Townie, survived
 drealmerz7, Mafia Goon, killed night 1
 boring replaced 1Shot Vanilla Town, Vanilla Townie, survived
 gerryoat, Vanilla Townie, killed night 1
@@ -5401,13 +5455,14 @@ Flubbernugget, Vanilla Townie, lynched day 2
 Lil Uzi Vert, Town Vigilante, killed night 3
 Dark Horse, Town Doctor, killed night 2
 Shadow_step replaced ThinkBig, Vanilla Townie, killed night 2
-kmd4390 replaced PenguinPower, Vanilla Townie, survived
+Kmd4390 replaced PenguinPower, Vanilla Townie, survived
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=68980
 Mini Normal 1848
 Moderator: keyenpeydee
 Current Update: Town Win
+Notes: D3 toolfail; D3 players voted Road Kamelot as in post 2899 and 2898 but votecounter interpreted "[vote]RK[/vote]" as votes for rb
 
 Players
 Road Kamelot replaced MisaTange, Vanilla Townie, lynched day 3
@@ -5450,6 +5505,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=69244
 Mini 1854
 Moderator: Dierfire
 Current Update: Town Win
+Notes: D3 toolfail; "[vote]AJ[/vote]" misinterpreted as vote for Aristophanes
 
 Players
 TwoFace, Town Citizen, survived
@@ -5492,6 +5548,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=69456
 Mini 1860
 Moderator: eagerSnake
 Current Update: Town Win
+Notes: D3 no majority
 
 Players
 PsychoticDave, Town Doctor, killed night 1
@@ -5576,6 +5633,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=69937
 Mini 1870
 Moderator: Sickofit1138
 Current Update: Town Win
+Notes: D2 toolfail; D2 players voting "Mudkip" to indicate XnadrojX based on his avatar in post 2259 for example
 
 Players
 Gamma Emerald, Vanilla Townie, survived
@@ -5662,7 +5720,7 @@ Players
 havingfitz replaced Naomi-Tan, Vanilla Townie, killed night 5
 gerryoat, Vanilla Townie, killed night 4
 Fro99er, Vanilla Townie, lynched day 3
-AJ The Epic, Town Follower, killed night 3
+Aj The Epic, Town Follower, killed night 3
 Cooperative Sheep, Mafia Even Night Jailkeeper, lynched day 1
 Lowell, Mafia Goon, survived
 Hawk, Town Universal Backup, killed night 1
@@ -5762,22 +5820,22 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=71047
 Mini 1893
 Moderator: mhsmith0
 Current Update: Mafia Win
-Notes: D1 Fro99er vote resetted
+Notes: D1 Fro99er vote reset on post 1274
 
 Players
 Transcend, Town Fruit Vendor, killed night 1
 gerryoat, Mafia Goon, lynched day 4
-Mathblade replaced ThinkBig replaced Contradiction replaced Darklyn, Town One-Shot Bulletproof, endgamed
+MathBlade replaced ThinkBig replaced Contradiction replaced Darklyn, Town One-Shot Bulletproof, endgamed
 Juri, Town Roleblocker, lynched day 2
 IAlwaysWinSometimes replaced Trivium, Vanilla Townie, lynched day 6
 Boring replaced Crash, Vanilla Townie, killed night 4
 Titus replaced Impoetic, Mafia Goon, lynched day 3
 DeltaW replaced projectmatt, Vanilla Townie, lynched day 5
 Dunnstral, Town Jailkeeper, killed night 3
-Hapahauli replaced JaeReed, Vanilla Townie, killed night 2
+hapahauli replaced JaeReed, Vanilla Townie, killed night 2
 Fro99er replaced RadiantCowbells replaced nancy, Vanilla Townie, lynched day 1
 Gamma Emerald replaced momo replaced Alisae, Vanilla Townie, lynched day 6
-TheFuzzyLogic99 replaced usagichan, Mafia Encryptor, survived
+TheFuzzylogic99 replaced usagichan, Mafia Encryptor, survived
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=71119
@@ -5837,7 +5895,7 @@ schadd_, Vanilla Townie, killed night 1
 Fart, Town Gunsmith, killed night 2
 Eddie Cane, Mafia Loud Fruit Vendor, lynched day 2
 Ircher, Vanilla Townie, killed night 2
-Mathblade replaced RadiantCowbells, Vanilla Townie, endgamed
+MathBlade replaced RadiantCowbells, Vanilla Townie, endgamed
 Alisae replaced Fro99er, Vanilla Townie, killed night 1
 Antihuman, Ascetic Townie, lynched day 1
 ThinkBig replaced Lexa, Mafia Goon, survived
@@ -5881,7 +5939,7 @@ Melanora, Town Ascetic Jack of All Trades, killed night 3
 Tywin Lannister, Town Loud Role Cop, lynched day 1
 Backhand, Town Citizen, lynched day 4
 Flubbernugget, Mafia Goon, lynched day 2
-TheFuzzyLogic99, Mafia Goon, survived
+TheFuzzylogic99, Mafia Goon, survived
 rb, Mafia Goon, survived
 
 
@@ -5984,7 +6042,7 @@ Hiraki replaced Raya36, Mafia Night Two Rolecop, lynched day 3
 CCC, Mafia Goon, lynched day 4
 Grendel, Vanilla Townie, survived
 MuttonChopMagic, Town Loyal Friendly Neighbour, survived
-SlingShotWaffles replaced notsure, Vanilla Townie, killed night 2
+SlingshotWaffles replaced notsure, Vanilla Townie, killed night 2
 Backhand, Vanilla Townie, survived
 Nero Cain replaced Accountant, Mafia Goon, lynched day 2
 NotTheRealPaul, Town Neighbor Motion Detector, survived
@@ -6101,6 +6159,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=72581
 Mini Normal 1929
 Moderator: Ircher
 Current Update: Mafia Win
+Notes: D2 toolfail; D2 players voted No Lynch but votecounter extracted these as for ['Mulch', 'Io']
 
 Players
 awesomeusername, Town 3-shot Doctor, killed night 4
