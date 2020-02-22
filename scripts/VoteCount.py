@@ -51,6 +51,30 @@ class VoteCount:
                       self.slots[i]))
             output[str(voted)] = voters
         return output
+
+    def killplayer(self, killed, postnumber=None):
+        self.votelog.append(
+            '{} killed in post {}'.format(killed, str(postnumber)))
+
+        # get killedslot
+        killedslot = next(self.slots.index(s) for s in self.slots if s.count(killed) > 0)
+
+        # collect slots voting killed slot and reset their votes
+        for voterslot in [s for s in self.votesByVoter if s == killedslot]:
+            self.votesByVoter[voterslot] = len(slots)
+            self.votesByVoted[len(slots)].append(voterslot)
+
+        # remove killedslot
+        del self.slots[killedslot]
+        del self.votesByVoter[killedslot]
+        del votesByVoted[killedslot]
+
+        # update slot indices
+        self.votesByVoter = [v - (v > killedslot) for v in self.votesByVoter]
+        for i in range(len(votesByVoted)):
+            for j in range(len(votesByVoted[i])):
+                v = self.votesByVoted[i][j]
+                self.votesByVoted[i][j] = v - (v > killedslot)
         
     def update(self, voter, voted, postnumber=None):
         self.votelog.append(
