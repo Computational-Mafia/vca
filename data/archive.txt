@@ -105,7 +105,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15934
 Game 1105: A Mafia Invasion!
 Moderator: Zachrulez
 Current Update: Town Win
-Notes: Agar killed on post 283; Zdenek killed on post 490
+Notes: AGar killed on post 283; Zdenek killed on post 490
 
 Players
 RobCapone, Mafia 2-Shot Rolecop, lynched Day 3
@@ -1928,7 +1928,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=25003
 Game 1410: Mafia in the Unknown
 Moderator: Quilford
 Current Update: Town Win
-Notes: Norlkaz killed in post 159; havingfitz killed in post 703; votecount reset on post 703
+Notes: Norlkaz killed on post 159; havingfitz killed on post 703; votecount reset on post 703
 
 Players
 Cheery Dog, Vanilla Townie, killed Night 1
@@ -3064,7 +3064,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=41311
 Mini 1560 - Reck's Walk of Shame
 Moderator: xRECKONERx
 Current Update: Town Win
-Notes: D1 Slandaar voted CooLDoG in post 730 but my votecounter assigned it to ChannelDelibird; D1 toolfail
+Notes: D1 Slandaar voted CooLDoG in post 730 with "[vote]CD[/vote]" but my votecounter assigned it to ChannelDelibird; D1 toolfail
 
 Players
 AGar replaced ChannelDelibird, Vanilla Townie, survived
@@ -4223,7 +4223,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=62909
 Mini 1705
 Moderator: Not_Mafia
 Current Update: Mafia Win
-Notes: D3 toolfail; SamX did not make a clear vote in post 1218 but votecounter extracted votes for Klingoncelt and Salamence20
+Notes: D3 toolfail; SamX did not make a clear vote in post 1218 with [vote]KLINGAMENCE[/vote]" and "[vote]SALONCELT[/vote]" but votecounter extracted votes for Klingoncelt and Salamence20
 
 Players
 St Constantine the Hermit replaced juckter, Vanilla Townie, killed night 3
@@ -5762,7 +5762,7 @@ Players
 momo replaced Pants98, Vanilla Townie, lynched day 2
 DogWatch, 1-Shot Mafia Ninja, survived
 Transcend, Town Follower, killed night 1
-mozamis, Town 1-Shot Desperado, killed himself day 2
+mozamis, Town 1-Shot Desperado, killed day 2
 FireScreamer, Town Even-Night Watcher, endgamed
 WhemeStar replaced aronagrundy, Vanilla Townie, lynched day 3
 FrankJaeger, Vanilla Townie, lynched day 1
