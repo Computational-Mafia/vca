@@ -23,7 +23,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15783
 Game 1094: Mariposa Peak Mafia
 Moderator: DemonHybrid
 Current Update: Town Win
-Notes: D2 toolfail; Nachomamma8 voted for a Deadline Extension in post 554 but my votecounter extracted a vote for singersigner; D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for ['Reckamonic']
+Notes: D2; toolfail; Nachomamma8 wanted a Deadline Extension in post 554 but my votecounter extracted a vote for singersigner; D3; D3 No Lynch
 
 Players
 singersigner, Town Vanilla, survived
@@ -564,7 +564,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17401
 Game 1166: Town Hall Mafia
 Moderator: Beefster
 Current Update: Mafia Win
-Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for EmpTyger for example on post 456
+Notes: D3 toolfail; D3 no lynch
 
 Players
 Mitsuru Kirijo, Town Doctor, killed Night 1
@@ -624,7 +624,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17606
 Game 1177: Normal Game
 Moderator: Bunnylover
 Current Update: Town Win
-Notes: D1 LittleGrey voted jilynne1991 in post 597 but LittleGrey mistakenly typed "Jelly" (indicating petroleumjelly) and corrected it in their successive post; D1 toolfail
+Notes: D1; LittleGrey voted jilynne1991 in post 597 but LittleGrey mistakenly typed "Jelly" (indicating petroleumjelly) and corrected it in their successive post; toolfail; Slaxx tried to vote E_Lou_Sive in post 586 but moderator rejected "[b] vote elusive[\b]" as a valid vote
 
 Players
 Internet Stranger, Town Vanilla, lynched Day 4
@@ -645,7 +645,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17645
 Game 1180
 Moderator: Substrike22
 Current Update: Town Win
-Notes: D1 jilynne1991 voted UNVOTE in post 729 but the moderator ignored it(???)
+Notes: D1; jilynne1991 tried to UNVOTE in post 729 but the moderator ignored it(???)
 
 Players
 wierdalexv, Town Vanilla, survived
@@ -1000,7 +1000,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=18916
 Game 1231: 8p Swift
 Moderator: Battousai
 Current Update: Mafia Win
-Notes: D2 toolfail; D2 players voted No Lynch but votecounter extracted these as for Korts
+Notes: D2 no lynch
 
 Players
 Ironhead, Town Vanilla, lynched Day 5
@@ -1101,7 +1101,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=21340
 Game 1317
 Moderator: kdowns
 Current Update: Mafia Win
-Notes: hokorippoi voted thezmon221 in 637 but moderator did not accept it as the format did not follow rules; D2 toolfail
+Notes: D2; hokorippoi voted thezmon221 in post 637 but moderator did not accept it as the format did not follow rules; toolfail
 
 Players
 thezmon221, Town Cop, endgamed Day 5
@@ -1165,7 +1165,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=21454
 Game 1323: Mafia on the BEACH
 Moderator: theamatuer
 Current Update: Mafia Win
-Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for ['GreyICE', 'crypto']
+Notes: D3 no lynch
 
 Players
 MonkeyMan576, Town Cop, lynched Day 4
@@ -1270,7 +1270,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22083
 Game 1338: Cyborgian Reenactment Mafia
 Moderator: Timeater
 Current Update: Town Win
-Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for ['Oman']
+Notes: D3 no lynch
 
 Players
 BBmolla replaced Mallard, Town Vanilla, killed Night 1
@@ -1312,7 +1312,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22206
 Game 1341
 Moderator: Jackal711
 Current Update: Mafia Win
-Notes: Shattered Viewpoint is a doublevoter but allowed to distribute just one vote; D2 toolfail; D2 Shattered Viewpoint voted Pine in post 429 but "[b]Vote: Pine -- Mod, please note this is only one vote, thanks.[/b]" was detected as a vote for Junpei
+Notes: Shattered Viewpoint is a doublevoter but allowed to distribute just one vote; D2; toolfail; Shattered Viewpoint voted Pine in post 429 but "[b]Vote: Pine -- Mod, please note this is only one vote, thanks.[/b]" was detected as a vote for Junpei
 
 Players
 Junpei replaced ac1983fan, Mafia Rolecop, survived
@@ -1393,7 +1393,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22466
 Game 1347
 Moderator: Papa Zito, mcqueen
 Current Update: Mafia Win
-Notes: D1 Maestro voted UNVOTE in post 355 but my votecounter detected "NO VOTE" as a vote for McStab resulting in wrong transition prediction; D1 toolfail; D2 mcqueen left a long twilight after post 1082 and ended the Day on post 1136; D3 mcqueen left a long twilight after post 1170 and ended the Day on post 1254
+Notes: D1; Maestro voted UNVOTE in post 355 but my votecounter detected "NO VOTE" as a vote for McStab resulting in wrong transition prediction; toolfail; D2; mcqueen left a long twilight after post 1082 and ended the Day on post 1136; D3 mcqueen left a long twilight after post 1170 and ended the Day on post 1254
 
 Players
 drmyshotgun, Town Doctor, killed Night 2
@@ -1529,7 +1529,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22900
 Game 1361: Rainy Days Mafia
 Moderator: Midnight's Sorrow
 Current Update: Town Win
-Notes: charter did not vote Yabbaguy in post 560 but my votecounter extracted it from "[b]VigVote Yabba[/b]"; toolfail
+Notes: D2; charter did not vote Yabbaguy in post 560 but my votecounter extracted it from "[b]VigVote Yabba[/b]"; toolfail
 
 Players
 PMysterious, Mafia Goon, killed Night 1
@@ -1551,7 +1551,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22984
 Game 1365: Generic Village Mafia
 Moderator: triangle123
 Current Update: Town Win
-Notes: D2 CooLDoG voted fatlikepig in post 891 but [b]unvote, vtoe: flp[/b] was detected as an unvote; D2 toolfail 
+Notes: D2; CooLDoG voted fatlikepig in post 891 but [b]unvote, vtoe: flp[/b] was detected as an unvote; toolfail 
 
 Players
 image, Town Vanilla, killed Night 1
@@ -1758,7 +1758,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=23772
 Game 1390
 Moderator: nhammen
 Current Update: Town Win
-Notes: D2 toolfail; JacobSavage voted Kinetic in post 1217 but my votecounter extracted "[vote]VOTE: (mv^2)/2[/vote]" as a vote for Thor665
+Notes: D2; toolfail; JacobSavage voted Kinetic in post 1217 but my votecounter extracted "[vote]VOTE: (mv^2)/2[/vote]" as a vote for Thor665
 
 Players
 Thor665 replaced Abaddon, Town Bodyguard, killed Night 2
@@ -1928,7 +1928,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=25003
 Game 1410: Mafia in the Unknown
 Moderator: Quilford
 Current Update: Town Win
-Notes: Norlkaz killed on post 159; havingfitz killed on post 703; votecount reset on post 703
+Notes: D1; Norlkaz killed on post 159; votecount reset on post 159; havingfitz killed on post 703; votecount reset on post 703
 
 Players
 Cheery Dog, Vanilla Townie, killed Night 1
@@ -2051,7 +2051,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=25751
 Game 1426: Hell's Bottom
 Moderator: 10506670
 Current Update: Mafia Win
-Notes: jeromus killed on post 451
+Notes: D2; jeromus killed on post 451
 
 Players
 jeromus, Vanilla Townie, killed Day 2
@@ -2135,7 +2135,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=27042
 Game 1440: Unoriginal Mafia
 Moderator: Phenenas
 Current Update: Town Win
-Notes: D3 toolfail; D3 Bomberman voted Nero in post 705 but because he voted 3 other slots first the moderator did not count the vote even though votecounter interpreted each vote as valid
+Notes: D3; toolfail; Bomberman tried to vote Nero in post 705 but because he voted 3 other slots first the moderator did not count the vote even though votecounter interpreted each vote as valid
 
 Players
 Fegelein, Vanilla Townie, killed Night 1
@@ -2221,7 +2221,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=28250
 Game 1449: Ordinary Town
 Moderator: qwints
 Current Update: Town Win
-Notes: Dessx voted UNVOTE in post 567 but he did not bold the tag and my votecounter did not detect it; D1 toolfail
+Notes: D1; Dessx voted UNVOTE in post 567 but he did not bold the tag and my votecounter did not detect it; toolfail
 
 Players
 GoodCopBadCop, Vanilla Townie, lynched Day 5
@@ -2661,7 +2661,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=31636
 Game 1501: We're On A Boat
 Moderator: pitoli
 Current Update: Serial Killer Win
-Notes: D2 toolfail; D2 notscience voted SleepyKrew in post 1219 but votecounter extracted "[vote]VOTE: SKs slot because I can't check OP atm[/vote]" as for notscience
+Notes: D2; toolfail; notscience voted SleepyKrew in post 1219 but votecounter extracted "[vote]VOTE: SKs slot because I can't check OP atm[/vote]" as for notscience
 
 Players
 SpyreX, Third Party One-Shot Bulletproof Serial Killer Neighbor, survived
@@ -2683,7 +2683,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=31972
 Game 1505: N is for Normal
 Moderator: N
 Current Update: Mafia Win
-Notes: D2 toolfail; D2 Sharpest-knife-on-tree voted Slandaar in post 1375 but votecounter extracted from "[b]vote saalndar[/b]" a vote for T S O
+Notes: D2; toolfail; Sharpest-knife-on-tree voted Slandaar in post 1375 but votecounter extracted from "[b]vote saalndar[/b]" a vote for T S O
 
 Players
 havingfitz replaced TCold replaced redFF, Town Rolecop, killed Night 2
@@ -2705,7 +2705,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=32114
 Mini 1509 - Marriage in Mafiatown
 Moderator: Tierce, notscience
 Current Update: Mafia Win
-Notes: D3 toolfail; JKLM voted redtail896 in post 969 but votecounter interpreted "[vote]red tail[/vote]" as a vote for I Am Innocent
+Notes: D3; toolfail; JKLM voted redtail896 in post 969 but votecounter interpreted "[vote]red tail[/vote]" as a vote for I Am Innocent
 
 Players
 Brian Skies, Town Hider, killed Night 1
@@ -2790,7 +2790,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=33249
 Mini 1517 - The Sun Sets on Duskville
 Moderator: Alduskkel
 Current Update: Mafia Win
-Notes: D2 Sir Bastion did not vote Haschel Cedricson in post 1565 but my votecounter detected "[b]Unvote, vote HC[b][/quote" as a vote for Haschel Cedricson; D2 toolfail
+Notes: D2; Sir Bastion did not vote Haschel Cedricson in post 1565 but my votecounter detected "[b]Unvote, vote HC[b][/quote" as a vote for Haschel Cedricson; toolfail
 
 Players
 NicCage replaced Illume, Weak Doctor, killed night 1
@@ -3022,7 +3022,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=39665
 Mini 1556: Greetings Without Spain
 Moderator: Bicephalous Bob
 Current Update: Mafia Win
-Notes: Rubicon voted evilpacman18 in post 893 but my votecounter detected "[vote]epicpacman[/vote]" as a vote for N
+Notes: D3; Rubicon voted evilpacman18 in post 893 but my votecounter detected "[vote]epicpacman[/vote]" as a vote for N
 
 Players
 RedCoyote replaced pisskop, Mafia Goon, survived
@@ -3064,7 +3064,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=41311
 Mini 1560 - Reck's Walk of Shame
 Moderator: xRECKONERx
 Current Update: Town Win
-Notes: D1 Slandaar voted CooLDoG in post 730 with "[vote]CD[/vote]" but my votecounter assigned it to ChannelDelibird; D1 toolfail
+Notes: D1; Slandaar voted CooLDoG in post 730 with "[vote]CD[/vote]" but my votecounter assigned it to ChannelDelibird; toolfail
 
 Players
 AGar replaced ChannelDelibird, Vanilla Townie, survived
@@ -3107,7 +3107,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=48071
 Mini 1569: The Golden Cookie Heist!
 Moderator: Kalimar
 Current Update: Town Win
-Notes: D1 kushm4sta voted vonflare in post 306 but he typed "whateverthisdudesnameis" in a post quoting vonflare and my votecounter failed; D1 toolfail
+Notes: D1; kushm4sta voted vonflare in post 306 but he typed "whateverthisdudesnameis" in a post quoting vonflare and my votecounter failed; toolfail
 
 Players
 bjc, Town Vigilante, killed night 3
@@ -3192,7 +3192,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=57502
 Mini 1579: The Great Flavor Caper
 Moderator: phokdapolees
 Current Update: Mafia Win
-Notes: D1 votecount reset on post 1250; D3 T S O killed on post 1534
+Notes: D1; votecount reset on post 1250; D3; T S O killed on post 1534
 
 Players
 Josh_B, Mafia Goon, survived
@@ -3297,7 +3297,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=58383
 Mini 1589: The Train of Death
 Moderator: Aronis
 Current Update: Mafia Win
-Notes: votecount reset on post 82; xfdagentx42 killed on post 82
+Notes: D1; votecount reset on post 82; xfdagentx42 killed on post 82; TheNoggyOne voted Espressojet on post 205 but did not include tags and mod counted it anyway;
 
 Players
 SleepyKrew replaced Fusion, Town Vanilla, endgamed day 5
@@ -3634,7 +3634,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=60635
 Mini 1645: BooneyToonz I - The Creepy Caravansary
 Moderator: Boonskiies
 Current Update: Mafia Win
-Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for ['Aneninen']
+Notes: D3 no lynch
 
 Players
 pisskop, Vanilla Town, endgamed day 5
@@ -3697,7 +3697,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=60920
 Mini 1651: One Flew Over The Monkey's Nest
 Moderator: MonkeyMan576
 Current Update: Mafia Win
-Notes: D1 no majority; oddmusic killed on post 501; Taly killed on post 864
+Notes: D1; D1 no majority; oddmusic killed on post 501; Taly killed on post 864
 
 Players
 Boonskiies replaced Aeronaut, Vanilla Townie, endgamed day 3
@@ -3761,7 +3761,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=61070
 Mini 1655: Delicious Mafia
 Moderator: Aeronaut
 Current Update: Mafia Win
-Notes: D2 House voted tn5421 in post 2479 but typed "[vote]zipcode[/vote]" which my votecounter interpreted as a vote for T S O; D2 toolfail
+Notes: D2; House voted tn5421 in post 2479 but typed "[vote]zipcode[/vote]" which my votecounter interpreted as a vote for T S O; toolfail
 
 Players
 T S O, Mafia Two-Shot Rolecop, survived
@@ -3971,7 +3971,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=62118
 Mini 1685: BooneyToonz II - Looney Tunes
 Moderator: Boonskiies
 Current Update: Mafia Win
-Notes: D3 Salamence20 voted Salamence20 in post 1690 but moderator ignored it; D3 toolfail?
+Notes: D3; Salamence20 voted Salamence20 in post 1690 but moderator ignored it; D3 toolfail?
 
 Players
 Pegasus30 replaced DrDolittle, Town Innocent Child, endgamed day 5
@@ -3993,7 +3993,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=62181
 Mini 1687: Refraction Mafia
 Moderator: Aeronaut
 Current Update: Werewolf Win
-Notes: D2 toolfail; D2 Lapsa voted RadiantCowbells in post 1931 but votecounter interpreted "[vote]DullBellcows[/vote]" as a vote for toolenduso
+Notes: D2; toolfail; Lapsa voted RadiantCowbells in post 1931 but votecounter interpreted "[vote]DullBellcows[/vote]" as a vote for toolenduso
 
 Players
 Persivul replaced Mathdino, Town Jack of All Trades, killed night 2
@@ -4163,7 +4163,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=62742
 Mini 1700: Space Mafia
 Moderator: Ether, 1baldeagle1, N
 Current Update: Mafia Win
-Notes: D3 toolfail; D3 players voted No Lynch but votecounter extracted these as for someone else
+Notes: D3 no lynch
 
 Players
 Fraggernaut, Vanilla Townie, lynched day 5
@@ -4223,7 +4223,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=62909
 Mini 1705
 Moderator: Not_Mafia
 Current Update: Mafia Win
-Notes: D3 toolfail; SamX did not make a clear vote in post 1218 with [vote]KLINGAMENCE[/vote]" and "[vote]SALONCELT[/vote]" but votecounter extracted votes for Klingoncelt and Salamence20
+Notes: D3; toolfail; SamX did not make a clear vote in post 1218 with [vote]KLINGAMENCE[/vote]" and "[vote]SALONCELT[/vote]" but votecounter extracted votes for Klingoncelt and Salamence20
 
 Players
 St Constantine the Hermit replaced juckter, Vanilla Townie, killed night 3
@@ -4473,7 +4473,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=63625
 Mini 1725
 Moderator: ChaosOmega
 Current Update: Mafia Win
-Notes: D3 no lynch; D3 toolfail
+Notes: D3 no lynch
 
 Players
 Slandaar, Town Encryptor Enabler, killed night 2
@@ -4537,7 +4537,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=64070
 Mini 1735: Radjarok 2
 Moderator: Radja
 Current Update: Mafia Win
-Notes: D1 pisskop voted Blockyman in post 129 but my votecounter detects "vote rikky6" as a vote for pisskop; D1 toolfail
+Notes: D1; pisskop voted BlockyMan in post 129 but my votecounter detects "vote rikky6" as a vote for pisskop; toolfail
 
 Players
 BlockyMan, Mafia Rolecop, lynched day 1
@@ -4638,7 +4638,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=64784
 Mini 1752: Back to December
 Moderator: Equinox
 Current Update: Town Win
-Notes: D2 toolfail; D2 Xtoxm voted Aj The Epic in post 447 but my votecounter extracted a vote for Alchemist21 from "[vote]Aj[/vote]"; D2 Raskolnikov voted Aj The Epic in post 447 but my votecounter extracted a vote for Alchemist21 from "[vote]AJ[/vote]"; D2 curiouskarmadog voted Aj The Epic in post 530 but my votecounter extracted a vote for Alchemist21 from "[b]vote AJ[/b]"
+Notes: D2; toolfail; Aj The Epic;
 
 Players
 Aj The Epic, mafia goon, lynched day 2
@@ -4912,7 +4912,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=66258
 Mini 1787: Peruvian Nightclub Mafia
 Moderator: Zulfy
 Current Update: Town Win
-Notes: D2 toolfail; D2 Zachstralkita voted Floof in post 1524 but moderator refused to count the vote
+Notes: D2; toolfail; Zachstralkita tried to vote Floof in post 1524 but moderator refused to count the vote
 
 Players
 toolenduso, mafia tracker, lynched day 7
@@ -4934,7 +4934,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=66300
 Mini 1789: Puppy Mafia!
 Moderator: UpTooLate
 Current Update: Mafia Win
-Notes: Trivium voted Zulfy in post #691 but the moderator did not count it as it did not occur on its own line; D1 toolfail
+Notes: D1; Trivium tried to vote Zulfy in post 691 but the moderator did not count it as it did not occur on its own line; toolfail
 
 Players
 Thestatusquo, Mafia Goon, lynched day 3
@@ -4956,7 +4956,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=66377
 Mini 1791: Mildly Dangerous Mafia
 Moderator: Postie
 Current Update: Town Win
-Notes: D1 toolfail; D1 Asphodel voted heuristically_alone in post 1268 but "ha" was detected as Bellaphant instead of heuristically_alone
+Notes: D1 toolfail; Asphodel voted heuristically_alone in post 1268 but "ha" was detected as Bellaphant instead of heuristically_alone
 
 Players
 RadiantCowbells, Vanilla Townie, lynched day 3
@@ -5042,7 +5042,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=67069
 Mini 1805
 Moderator: Sméagol
 Current Update: Mafia Win
-Notes: Eggman voted MarioManiac4 in post 1426 but votecounter did not interpret "[b]FoS: Dragon, Vote: MM4[/b]" as a vote
+Notes: D2; Eggman voted MarioManiac4 in post 1426 but votecounter did not interpret "[b]FoS: Dragon, Vote: MM4[/b]" as a vote
 
 Players
 DrippingGoofball replaced Smithereens, Town 3-Shot Vigilante, lynched day 3
@@ -5064,7 +5064,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=67181
 Mini Normal 1809
 Moderator: Dierfire
 Current Update: Town Win
-Notes: Robbnva killed on post 747
+Notes: D1; Robbnva killed on post 747
 
 Players
 Robbnva, Town Jailkeeper, modkilled day 1
@@ -5211,7 +5211,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=68153
 Mini Normal 1827 - No Flavor Mafia
 Moderator: Dunnstral
 Current Update: Mafia Win
-Notes: light_ganski killed on post 784
+Notes: D1; light_ganski killed on post 784
 
 Players
 xyzzy, Vanilla Town, lynched day 1
@@ -5462,7 +5462,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=68980
 Mini Normal 1848
 Moderator: keyenpeydee
 Current Update: Town Win
-Notes: D3 toolfail; D3 players voted Road Kamelot as in post 2899 and 2898 but votecounter interpreted "[vote]RK[/vote]" as votes for rb
+Notes: D3 toolfail; players wanted Road Kamelot as in post 2899 and 2898 but votecounter interpreted "[vote]RK[/vote]" as votes for rb
 
 Players
 Road Kamelot replaced MisaTange, Vanilla Townie, lynched day 3
@@ -5505,7 +5505,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=69244
 Mini 1854
 Moderator: Dierfire
 Current Update: Town Win
-Notes: D3 toolfail; "[vote]AJ[/vote]" misinterpreted as vote for Aristophanes
+Notes: D3 toolfail; Aj The Epic
 
 Players
 TwoFace, Town Citizen, survived
@@ -5820,7 +5820,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=71047
 Mini 1893
 Moderator: mhsmith0
 Current Update: Mafia Win
-Notes: D1 Fro99er vote reset on post 1274
+Notes: Fro99er vote reset on post 1274
 
 Players
 Transcend, Town Fruit Vendor, killed night 1
@@ -6159,7 +6159,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=72581
 Mini Normal 1929
 Moderator: Ircher
 Current Update: Mafia Win
-Notes: D2 toolfail; D2 players voted No Lynch but votecounter extracted these as for ['Mulch', 'Io']
+Notes: D2 no lynch
 
 Players
 awesomeusername, Town 3-shot Doctor, killed night 4
