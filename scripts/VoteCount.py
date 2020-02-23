@@ -22,11 +22,12 @@ class VoteCount:
         # with len(slots) equivalent to voting "UNVOTE", 
         # and len(slots)+1 equivalent to "NO LYNCH"
         # start votecount with everyone voting no one
-        self.slots, self.votesByVoter, self.votesByVoted = slots, {}, {}
+        self.slots, self.votesByVoter, self.votesByVoted = slots.copy(), [], []
         for i in range(len(slots)):
-            self.votesByVoter[i] = len(slots)
-            self.votesByVoted[i] = []
-        self.votesByVoted[len(slots)] = list(range(len(slots)))
+            self.votesByVoter.append(len(slots))
+            self.votesByVoted.append([])
+        self.votesByVoted.append(list(range(len(slots)))) # non voters
+        self.votesByVoted.append([]) # no lynch voters
         self.choice, self.votelog, self.meta = None, [], meta
         
     def __str__(self):
@@ -44,7 +45,7 @@ class VoteCount:
     
     def todict(self):
         output = {}
-        for i in self.votesByVoted.keys():
+        for i in range(len(self.votesByVoted)):
             voters = [self.slots[voter] for voter in self.votesByVoted[i]]
             voted = ('Not Voting' if i == len(self.slots) else
                      ('No Lynch' if i > len(self.slots) else
@@ -60,19 +61,21 @@ class VoteCount:
         killedslot = next(self.slots.index(s) for s in self.slots if s.count(killed) > 0)
 
         # collect slots voting killed slot and reset their votes
-        for voterslot in [s for s in self.votesByVoter if s == killedslot]:
-            self.votesByVoter[voterslot] = len(slots)
-            self.votesByVoted[len(slots)].append(voterslot)
+        for voterslot in [i for i, s in enumerate(self.votesByVoter) if s == killedslot]:
+            self.votesByVoter[voterslot] = len(self.slots)
+            self.votesByVoted[len(self.slots)].append(voterslot)
 
         # remove killedslot
+        killedtarget = self.votesByVoter[killedslot]
+        del self.votesByVoted[killedtarget][self.votesByVoted[killedtarget].index(killedslot)]
         del self.slots[killedslot]
         del self.votesByVoter[killedslot]
-        del votesByVoted[killedslot]
+        del self.votesByVoted[killedslot]
 
         # update slot indices
         self.votesByVoter = [v - (v > killedslot) for v in self.votesByVoter]
-        for i in range(len(votesByVoted)):
-            for j in range(len(votesByVoted[i])):
+        for i in range(len(self.votesByVoted)):
+            for j in range(len(self.votesByVoted[i])):
                 v = self.votesByVoted[i][j]
                 self.votesByVoted[i][j] = v - (v > killedslot)
         

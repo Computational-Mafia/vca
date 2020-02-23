@@ -105,7 +105,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15934
 Game 1105: A Mafia Invasion!
 Moderator: Zachrulez
 Current Update: Town Win
-Notes: ["AGar"] killed on post 283; ["Zdenek", "Dizzle"] killed on post 490
+Notes: AGar killed on post 283; Zdenek killed on post 490
 
 Players
 RobCapone, Mafia 2-Shot Rolecop, lynched Day 3
@@ -397,7 +397,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=16959
 Game 1146: Don't Get Slapped in the Face by a Fish Mafia
 Moderator: chesskid3
 Current Update: Town Win
-Notes: ["Empking"] killed on post 234
+Notes: Empking killed on post 234
 
 Players
 gandalf5166, Town Vanilla, survived
@@ -419,7 +419,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17143
 Game 1147: Royal Mafia at the Round Table
 Moderator: neil1113
 Current Update: Mafia Win
-Notes: ["ender241"] killed on post 420
+Notes: ender241 killed on post 420
 
 Players
 Twistedspoon, Mafia Roleblocker, lynched Day 4
@@ -1928,7 +1928,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=25003
 Game 1410: Mafia in the Unknown
 Moderator: Quilford
 Current Update: Town Win
-Notes: ["Norlkaz", "jeromus"] killed on post 159; ["havingfitz", "Shepherd Book"] killed on post 703; votecount reset on post 703
+Notes: Norlkaz killed on post 159; havingfitz killed on post 703; votecount reset on post 703
 
 Players
 Cheery Dog, Vanilla Townie, killed Night 1
@@ -3297,7 +3297,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=58383
 Mini 1589: The Train of Death
 Moderator: Aronis
 Current Update: Mafia Win
-Notes: votecount reset on post 82; ["xfdagentx42"] killed on post 82
+Notes: votecount reset on post 82; xfdagentx42 killed on post 82
 
 Players
 SleepyKrew replaced Fusion, Town Vanilla, endgamed day 5
@@ -3697,7 +3697,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=60920
 Mini 1651: One Flew Over The Monkey's Nest
 Moderator: MonkeyMan576
 Current Update: Mafia Win
-Notes: D1 no majority; ["oddmusic"] killed on post 501; ["Taly"] killed on post 864
+Notes: D1 no majority; oddmusic killed on post 501; Taly killed on post 864
 
 Players
 Boonskiies replaced Aeronaut, Vanilla Townie, endgamed day 3
@@ -5064,7 +5064,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=67181
 Mini Normal 1809
 Moderator: Dierfire
 Current Update: Town Win
-Notes: ["Robbnva"] killed on post 747
+Notes: Robbnva killed on post 747
 
 Players
 Robbnva, Town Jailkeeper, modkilled day 1
@@ -5211,7 +5211,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=68153
 Mini Normal 1827 - No Flavor Mafia
 Moderator: Dunnstral
 Current Update: Mafia Win
-Notes: ["light_ganski"] killed on post 784
+Notes: light_ganski killed on post 784
 
 Players
 xyzzy, Vanilla Town, lynched day 1
