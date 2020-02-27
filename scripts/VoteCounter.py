@@ -178,6 +178,11 @@ class VoteExtracter:
             if vote == 'UNVOTE':
                 yield 'UNVOTE'
                 continue
+                
+            # check for no lynch votes
+            if ed.eval(lowvote, 'no lynch') < 2:
+                yield "NO LYNCH"
+                continue
 
             # make sure player isn't asking for a votecount
             if (lowvote[:5] == 'count' and
