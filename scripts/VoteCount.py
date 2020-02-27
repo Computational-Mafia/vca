@@ -17,7 +17,7 @@
 
 class VoteCount:
     
-    def __init__(self, slots, meta={}):
+    def __init__(self, slots, meta={}, doublevoters=[]):
         # each slot is assigned an index in range(len(slots)), 
         # with len(slots) equivalent to voting "UNVOTE", 
         # and len(slots)+1 equivalent to "NO LYNCH"
@@ -28,6 +28,7 @@ class VoteCount:
             self.votesByVoted.append([])
         self.votesByVoted.append(list(range(len(slots)))) # non voters
         self.votesByVoted.append([]) # no lynch voters
+        self.doublevoters = doublevoters
         self.choice, self.votelog, self.meta = None, [], meta
         
     def __str__(self):
@@ -42,11 +43,23 @@ class VoteCount:
                 string += each + '\n'
             string += '\n'
         return string[:-1]
-    
+        
+        current_votecount = self.todict()
+        for each in current_votecount:
+            if current_votecount[each]:
+                string += "{} - {}\n".format(each, len(current_votecount[each]))
+                for voter in current_votecount[each]:
+                    string += '{}\n'.format(voter)
+                string += '\n'
+
     def todict(self):
         output = {}
         for i in range(len(self.votesByVoted)):
-            voters = [self.slots[voter] for voter in self.votesByVoted[i]]
+            voters = []
+            for voter in self.votesByVoted[i]:
+                voters.append(self.slots[voter])
+                if self.slots[voter] in self.doublevoters:
+                    voters.append(self.slots[voter])
             voted = ('Not Voting' if i == len(self.slots) else
                      ('No Lynch' if i > len(self.slots) else
                       self.slots[i]))
@@ -101,8 +114,21 @@ class VoteCount:
         self.votesByVoted[votedslot].append(voterslot)
         
         # if voted has a majority of votes, mark as voters' choice
+        self.check_choice(votedslot)
+                
+    def check_choice(self, votedslot):
+        
+        # only matters if votedslot is a player or NO LYNCH
         if votedslot < len(self.slots) or votedslot == len(self.slots)+1:
-            if len(self.votesByVoted[votedslot]) > len(self.slots)/2.0:
+            
+            # calculate a length, weighting for potential doublevoters
+            total = 0
+            for each in self.votesByVoted[votedslot]:
+                total += 1
+                if self.slots[each] in self.doublevoters:
+                    total += 1
+
+            if total > len(self.slots)/2.0:
                 self.choice = (self.slots[votedslot]
                                if votedslot < len(self.slots)
                                else 'NO LYNCH')
