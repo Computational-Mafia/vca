@@ -122,12 +122,12 @@ def findVotes(post):
     
     # they need to have 'vote' or 'veot' early in their string
     boldtags = [b for b in boldtags
-                if b[:7].lower().count('vote') + b[:7].lower().count('veot') > 0]
+                if b[:7].lower().count('vote') or b[:7].lower().count('veot') > 0 or b[:7].lower().count('vtoe') > 0 or b[:7].lower().count('ovte') > 0]
     
     # rfind 'vote' and 'unvote' (and their key mispellings) to locate vote
     for i, v in enumerate(boldtags):
-        voteloc = max(v.lower().rfind('vote'), v.lower().rfind('veot'))
-        unvoteloc = max(v.lower().rfind('unvote'), v.lower().rfind('unveot'))
+        voteloc = max(v.lower().rfind('vote'), v.lower().rfind('veot'), v.lower().rfind('vtoe'), v.lower().rfind('ovte'))
+        unvoteloc = max(v.lower().rfind('unvote'), v.lower().rfind('unveot'), v.lower().rfind('unvtoe'), v.lower().rfind('unovte'))
         
         # if position of unvote is position of vote - 2, 
         # then the last vote is an unvote
@@ -140,7 +140,7 @@ def findVotes(post):
                 ': ', ' ').replace(':', ' ').replace('\n', ' ').rstrip().lstrip()
 
     votes = boldtags
-    return votes
+    return [v for v in votes if len(v.strip()) > 0]
 
 def includesVote(post):
     """Returns whether a vote is present in the post's content or not"""
@@ -160,14 +160,18 @@ class VoteExtracter:
         for p in players:
             self.playerabbrevs[p] = \
             ''.join([each[0] for each in self.englishdivides[p][0][1:]])
-
+            
     def fromPost(self, post):
         """tries to identify vote's target from the post"""
-
         votes = findVotes(post)
+        yield from self.fromVotes(votes, post=post)
 
+    def fromVotes(self, votes, post=None):
+        """tries to identify targets from list of votes"""
+        
         # yield a list of votes in a post and process them all 'in order'
         # with the exception of same-line unvote-then-vote happenings
+        votes = [v for v in votes if len(v) > 0]
         for vote in votes:
             
             # pre-computation of values i'll need repeatedly
@@ -178,15 +182,21 @@ class VoteExtracter:
             if vote == 'UNVOTE':
                 yield 'UNVOTE'
                 continue
-                
+
             # check for no lynch votes
-            if ed.eval(lowvote, 'no lynch') < 2:
+            if (set(regall.sub('', lowvote)) >= set('nolynch')
+                or ed.eval(regall.sub('', lowvote), 'nolynch') < 2 
+                or ed.eval(regall.sub('', lowvote), 'nl') < 1):
                 yield "NO LYNCH"
                 continue
 
             # make sure player isn't asking for a votecount
             if (lowvote[:5] == 'count' and
                 len([p for p in self.lowplayers if p[:5]=='count'])==0):
+                    continue
+
+            # make sure player isn't asking for a deadline extension
+            if ed.eval(regall.sub('', lowvote), 'deadlineextension') < 2:
                     continue
 
             # first check if vote is a 0char misspelling of a playername
@@ -355,8 +365,16 @@ class VoteExtracter:
             if len(matches) == 1:
                 yield self.lowplayers[matches[0]]
                 continue
+            
+            if post:
+                print('LAST RESORT', vote, min(distances, key=distances.get), post['number'], post['user'])
+            else:
+                print('LAST RESORT', vote, min(distances, key=distances.get))
+            yield from self.fromVotes([vote[:vote.rfind(' ')]])
+            
 
             # 19 the last resort, the playername closest to the vote
-            yield min(distances, key=distances.get)
+            #print('LAST RESORT', vote)
+            #yield min(distances, key=distances.get)
 
 

@@ -17,7 +17,7 @@
 
 class VoteCount:
     
-    def __init__(self, slots, meta={}, doublevoters=[]):
+    def __init__(self, slots, meta={}, lessOneForMislynch=False, doublevoters=[]):
         # each slot is assigned an index in range(len(slots)), 
         # with len(slots) equivalent to voting "UNVOTE", 
         # and len(slots)+1 equivalent to "NO LYNCH"
@@ -29,6 +29,7 @@ class VoteCount:
         self.votesByVoted.append(list(range(len(slots)))) # non voters
         self.votesByVoted.append([]) # no lynch voters
         self.doublevoters = doublevoters
+        self.lessOneForMislynch = lessOneForMislynch
         self.choice, self.votelog, self.meta = None, [], meta
         
     def __str__(self):
@@ -128,7 +129,7 @@ class VoteCount:
                 if self.slots[each] in self.doublevoters:
                     total += 1
 
-            if total > len(self.slots)/2.0:
+            if total > len(self.slots)/2.0 or (votedslot == len(self.slots)+1 and self.lessOneForMislynch and total == len(self.slots)/2.0):
                 self.choice = (self.slots[votedslot]
                                if votedslot < len(self.slots)
                                else 'NO LYNCH')

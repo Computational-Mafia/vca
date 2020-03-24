@@ -2,7 +2,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15787
 Game 1091: Mafia Mania
 Moderator: Nobody Special
 Current Update: Mafia Win
-Notes: D2 toolfail; Dekes voted Substrike22 in post 634 but votecounter did not detect a vote in "[b]Unovte; Vote: Substrike[/b]"
+Notes: D2 toolfail; boberz did not vote boberz in post 484 but votecounter interpreted vote for dead player "[b]vote beefster[/b]" as vote for SOMEONE_ELSE
 
 Players
 Beefster, Town Vanilla, lynched Day 1
@@ -23,7 +23,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15783
 Game 1094: Mariposa Peak Mafia
 Moderator: DemonHybrid
 Current Update: Town Win
-Notes: D2 toolfail; Nachomamma8 wanted a Deadline Extension in post 554 but my votecounter extracted a vote for singersigner from "[b]Vote: Deadline Extension[/b]"; Lateralus22 wanted a Deadline Extension in post 556 but my votecounter extracted a vote for ConfidAnon from "[b]Vote: Deadline Extention[/b]"; D3 No Lynch; one less for no lynch; D4 long twilight
+Notes: D1 toolfail; Blood Queen voted Reckamonic in post 10 but votecounter interpreted "[b]vote Dramonerx[/b]" as vote for SOMEONE_ELSE; D3 No Lynch; one less for no lynch; D4 long twilight
 
 Players
 singersigner, Town Vanilla, survived
@@ -106,7 +106,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15934
 Game 1105: A Mafia Invasion!
 Moderator: Zachrulez
 Current Update: Town Win
-Notes: AGar killed on post 283; Zdenek killed on post 490
+Notes: AGar killed on post 283; Zdenek killed on post 490; D2 toolfail; GreyICE voted pappums rat in post 477 but bolded claims about others' votes, registering more;
 
 Players
 RobCapone, Mafia 2-Shot Rolecop, lynched Day 3
@@ -128,7 +128,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=15982
 Game 1107: Just a Game
 Moderator: Tasky
 Current Update: Town Win
-Notes: D3 no lynch; one less for NO LYNCH; 
+Notes: D1; ICEninja voted UNVOTE in post 18 but also did a fakevote "[b]Vote Tasky[/b]"for moderator that got interpreted as one for Riceballtail; D3 no lynch; one less for NO LYNCH; 
 
 Players
 Withnail, Town Vanilla, survived
@@ -192,7 +192,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=16214
 Game 1117: Manhattan Special
 Moderator: InflatablePie
 Current Update: Mafia Win
-Notes: D3 no majority; players attempted hammer after deadline; D6 no lynch; one less for NO LYNCH
+Notes: D3 no majority; D3 hammer after deadline; D6 no lynch; one less for NO LYNCH
 
 Players
 Empking, Town Vanilla, killed Night 6
@@ -446,7 +446,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17173
 Game 1152
 Moderator: Me=Weird
 Current Update: Draw
-Notes: D3 no majority; D5 no lynch; D6 no lynch; one less for no lynch
+Notes: D3 no majority; D5 no lynch; Occult tried to vote NO LYNCH in post 889 but moderator ignored it; D6 no lynch; one less for no lynch
 
 Players
 jeromus, Town Mason, survived
@@ -1110,7 +1110,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=21340
 Game 1317
 Moderator: kdowns
 Current Update: Mafia Win
-Notes: D2; hokorippoi tried to vote thezmon221 in post 637 but moderator did not accept it as the format did not follow rules; toolfail
+Notes: D2; hokorippoi tried to vote thezmon221 in post 637 but moderator did not accept it as the format did not follow rules; toolfail; D4 no lynch; one less for no lynch
 
 Players
 thezmon221, Town Cop, endgamed Day 5
@@ -1404,7 +1404,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22466
 Game 1347
 Moderator: Papa Zito, mcqueen
 Current Update: Mafia Win
-Notes: D1; Maestro voted UNVOTE in post 355 but my votecounter detected "NO VOTE" as a vote for McStab resulting in wrong transition prediction; toolfail; D2 long twilight; D3 long twilight; D4 no majority
+Notes: D2 long twilight; D3 long twilight; D4 no majority
 
 Players
 drmyshotgun, Town Doctor, killed Night 2
@@ -1563,7 +1563,6 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=22984
 Game 1365: Generic Village Mafia
 Moderator: triangle123
 Current Update: Town Win
-Notes: D2; CooLDoG voted fatlikepig in post 891 but [b]unvote, vtoe: flp[/b] was detected as an unvote; toolfail 
 
 Players
 image, Town Vanilla, killed Night 1
@@ -1921,7 +1920,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=24640
 Game 1408: Playing with Fire
 Moderator: killerjester
 Current Update: Mafia Win
-Notes: D3 no majority; players attempted to hammer after deadline
+Notes: D3 no majority; D3 hammer after deadline
 
 Players
 qwints, Vanilla Townie, killed Night 3
@@ -2621,7 +2620,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=31030
 Game 1494: A Murder in Murderville
 Moderator: SalmonellaDreams
 Current Update: Town Win
-Notes: D4 no lynch; one less for no lynch
+Notes: D4 no lynch; Lord Mhork voted NO LYNCH in post 606 but votecounter interpreted "[b]Vote to No Lynch[/b]" as a vote for Toomai; killerjester voted NO LYNCH in post 608 but votecounter interpreted [vote]NL[/vote] as vote for notscience
 
 Players
 DoctorPepper, Vanilla Townie, killed Night 4
@@ -2979,7 +2978,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=37251
 Mini 1543--Natirasha's On Parole!
 Moderator: Natirasha
 Current Update: Mafia Win
-Notes: D3 no majority; players attempted to hammer after deadline; Nachomamma8 tried to vote UNVOTE in post 3818 but the moderator did not count it; D6 no lynch
+Notes: D3 no majority; D3 hammer after deadline; Nachomamma8 tried to vote UNVOTE in post 3818 but the moderator did not count it; D6 no lynch
 
 Players
 MafiaSSK, Town Doctor, killed night 4
@@ -3022,7 +3021,6 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=38659
 Mini: 1553 Gone jeeping
 Moderator: jmo16mla
 Current Update: Serial Killer Win
-Notes: at the moment, post numbers aren't scraped correctly for this game!
 
 Players
 DOMO replaced lobstermania, Vanilla Townie, killed night 1
@@ -5346,7 +5344,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=68519
 Mini 1836: Space Mafia
 Moderator: Something_Smart, Aristophanes
 Current Update: Town Win
-Notes: D1 no majority; D2 no majority; D5; TwoFace voted Xkfyu in post 3231 but votecounter interpreted "[vote]xf[/vote]" as for TwoFace
+Notes: D1 no majority; D2 no majority; D2 hammer after deadline; D5; TwoFace voted Xkfyu in post 3231 but votecounter interpreted "[vote]xf[/vote]" as for TwoFace
 
 Players
 Toto, Vanilla Townie, survived

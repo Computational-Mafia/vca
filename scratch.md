@@ -1,52 +1,24 @@
 # New Issues
-- "one less for no lynch" handling
-- no FALSE if transition prediction noted impossible (long twilight, no majority)
-- rescrape posts to avoid duplicates, 1553 issue
-- reject votes w/ no content
 - ?? explore rejecting at final step by some threshold
 - ?? explore search for votes in longer lines - perhaps in first several words
 - ?? explore snipping long votes or otherwise inferring votes on basis of initial text
-- support sameline vote extraction when vote or unvote is misspelled (Unovte or vtoe)
 - Accept nested urls/votes
 - Reject bold votes in weird colors
 - accept nested fieldtags/votes
 - support nickname notes
-- Add support for voting no lynch with NL
-- prevent punctuation from interfering with no lynch vote extraction
 - individually investigate every acronym/subset/nearspelling error individually
 - note support for replacements
-
-## Diverse Rules for No Lynches
-We should enforce a rule that requires one less vote for no lynches if "one less for NO LYNCH" is noted.
-
-## Don't Penalize Impossible Predictions
-Under No Majority, Long twilight, etc, it's impossible to predict transitions and I shouldn't include penalties for those.
-
-## Handling Votes After Deadlines?
-Votes after a deadline are invalid, but I have no way of noting these happenings byeond a vague "attempted hammer after deadline" note.
-
-## Rescrape Posts!
-1553 is borked and I have two copies of every post after the initial scrape (though I already have code for removing these inside `scrapeMiniNormals`). I must run it again and figure out what caused the first issue.
-
-### Example
-https://forum.mafiascum.net/viewtopic.php?f=53&t=38659
-Mini: 1553 Gone jeeping
-Moderator: jmo16mla
-Current Update: Serial Killer Win
-Notes: at the moment, post numbers aren't scraped correctly for this game!
 
 ## Patterns in Votecounter Errors
 ### Potentially too aggressive at assigning votes (Fake votes and/or for non-near players not sorted as those)
 In general, I'd rather votes be assigned to the closest guy even if there is no near match. But there are some cases w/ broad import that I can explicitly handle. I will reject votes w/o content. And I will explore the possibility of rejecting "far" matches. Perhaps include an confidence metric in votecounter? That'd handle deliberate ambiguity, too. It's not designed to work that way though...
 
-#### Nothing Inside Vote Tags
-Don't count votes if there's no text inside the vote...
-
-https://forum.mafiascum.net/viewtopic.php?f=53&t=69244
-Mini 1854
-Moderator: Dierfire
+#### Voting the moderator
+https://forum.mafiascum.net/viewtopic.php?f=53&t=15982
+Game 1107: Just a Game
+Moderator: Tasky
 Current Update: Town Win
-Notes: D3 toolfail; Aj The Epic; D4 toolfail; Lil Uzi Vert didn't vote Joshz in post 2436 but votecounter extracted a vote for Joshz from "[vote][/vote]"
+Notes: D1; ICEninja voted UNVOTE in post 18 but also did a fakevote "[b]Vote Tasky[/b]"for moderator that got interpreted as one for Riceballtail; D3 no lynch; one less for NO LYNCH; 
 
 #### Voting dead slots
 I have to exclude dead slots (and ambivalently wish I could exclude replaced slots) for votecounter to have increased accuracy as games proceed.
@@ -63,14 +35,14 @@ Moderator: rapidcanyon
 Current Update: Town Win
 Notes: D5; toolfail; JacobSavage did not vote on post 772 but votecounter interpreted "[vote]Revenus[/vote]" (a dead slot) as for YOLO
 
+https://forum.mafiascum.net/viewtopic.php?f=53&t=15787
+Game 1091: Mafia Mania
+Moderator: Nobody Special
+Current Update: Mafia Win
+Notes: D2 toolfail; boberz did not vote boberz in post 484 but votecounter interpreted vote for dead player "[b]vote beefster[/b]" as vote for SOMEONE_ELSE
+
 #### Fake votes and Catastrophic Failures
 The problem with being aggressive is that fake votes will be assigned to faraway players and distort everything. Can I set some sort of threshold? How are these votes being assigned?
-
-https://forum.mafiascum.net/viewtopic.php?f=53&t=15783
-Game 1094: Mariposa Peak Mafia
-Moderator: DemonHybrid
-Current Update: Town Win
-Notes: D2 toolfail; Nachomamma8 wanted a Deadline Extension in post 554 but my votecounter extracted a vote for singersigner from "[b]Vote: Deadline Extension[/b]"; Lateralus22 wanted a Deadline Extension in post 556 but my votecounter extracted a vote for ConfidAnon from "[b]Vote: Deadline Extention[/b]"; D3 No Lynch; one less for no lynch; D4 long twilight
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=18412
 Game 1207: LIPD Mafia
@@ -188,22 +160,6 @@ Moderator: pitoli
 Current Update: Serial Killer Win
 Notes: D2; toolfail; notscience voted SleepyKrew in post 1219 but votecounter extracted "[vote]SKs slot because I can't check OP atm[/vote]" as for notscience
 
-### Sameline Unvote/Vote Drives Detection Failure
-Ambiguous how this works. In our two examples, it looks like a bad enough misspelling brings us into the "Including a comment inside vote can prevent vote detection" category. In the second example, maybe vote was misspelled too much for detection, or the first UNVOTE obscured detection of stuff afterward. 
-
-#### Examples
-https://forum.mafiascum.net/viewtopic.php?f=53&t=15787
-Game 1091: Mafia Mania
-Moderator: Nobody Special
-Current Update: Mafia Win
-Notes: D2 toolfail; Dekes voted Substrike22 in post 634 but votecounter did not detect a vote in "[b]Unovte; Vote: Substrike[/b]"
-
-https://forum.mafiascum.net/viewtopic.php?f=53&t=22984
-Game 1365: Generic Village Mafia
-Moderator: triangle123
-Current Update: Town Win
-Notes: D2; CooLDoG voted fatlikepig in post 891 but [b]unvote, vtoe: flp[/b] was detected as an unvote; toolfail 
-
 ### Inconsistent handling of nested tags
 We should accept votes within fieldset tags and that overlap with URLs. But by my intuition, if the font is a different color bold text shouldn't be a vote. How much do I gain from working on this?
 
@@ -225,6 +181,19 @@ Game 1407
 Moderator: Cheery Dog
 Current Update: Mafia Win
 Notes: D4; havingfitz voted projectmatt in post 1008 but used vote tag and url tag at the same time so votecounter disregarded it; toolfail;
+
+LAST RESORT s on totally separate lines from now on. SodaSpirit17 26 yabbaguy
+LAST RESORT s on totally separate lines from now SodaSpirit17
+LAST RESORT s on totally separate lines from SodaSpirit17
+LAST RESORT s on totally separate lines SodaSpirit17
+LAST RESORT s on totally separate SodaSpirit17
+LAST RESORT s on totally Konowa
+LAST RESORT s on RXK
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=22625
+Game 1354: Vedere le Viste!
+Moderator: Phillammon
+Current Update: Town Win
 
 ### Idiosyncracies Potentially Beyond Capacity of Votecounter to Handle
 Some of these I just can't handle broadly. But I might benefit from a broader NOTE strategy - nickname assignment instead of just post-by-post vote assignment. Gotta be careful not to let that get used to paper over bad votecounter code, though.
@@ -332,50 +301,6 @@ Mini 1582: Formerfish's First Foray
 Moderator: Formerfish
 Current Update: Town Win
 Notes: D2; doublevoter controls each vote individually;
-
-### Inflexible NO LYNCH detection
-Add support for NL and prevent punctuation from interfering with extraction.
-
-#### Examples
-https://forum.mafiascum.net/viewtopic.php?f=53&t=17864
-Game 1195: The Beehive Mystery
-Moderator: Klazam
-Current Update: Mafia Win
-Notes: D5 no lynch; toolfail; Scott Brosius voted NO LYNCH in post 1503 but votecounter interpreted "[b]Vote: No-lynch.[/b]" as vote for Sotty7
-
-https://forum.mafiascum.net/viewtopic.php?f=53&t=59638
-Mini 1620 — The Mod is Using Comic Sans
-Moderator: Marquis
-Current Update: Mafia Win
-Notes: D4 no lynch; Flubbernugget voted NO LYNCH in post 1333 but votecounter interpreted "[vote]nl[/vote]" as for Lissa
-
-https://forum.mafiascum.net/viewtopic.php?f=53&t=60961
-Mini 1652: Sweet Dreams
-Moderator: Cheetory6
-Current Update: Mafia Win
-Notes: D5 no lynch; pisskop voted NO LYNCH in post 1704 but votecounter interpreted "[b]vote: NL[/b]" as for Prolapsed Brain
-
-https://forum.mafiascum.net/viewtopic.php?f=53&t=65667
-Mini 1773 : Symphonic Metal Mafia
-Moderator: Frozen Angel
-Current Update: Mafia Win
-Notes: D4 no lynch; toolfail; Jake from State Farm voted NO LYNCH in post 2138 but votecounter interpreted "[b]vote NL[/b]" as a vote for Shiro
-
-### Inflexible UNVOTE detection
-Add "Unovte" as a key misspelling of unvote. "NO VOTE", too - though this is more risky. Maybe I'll want similar stuff for votes?
-
-#### Examples
-https://forum.mafiascum.net/viewtopic.php?f=53&t=22466
-Game 1347
-Moderator: Papa Zito, mcqueen
-Current Update: Mafia Win
-Notes: D1; Maestro voted UNVOTE in post 355 but my votecounter detected "NO VOTE" as a vote for McStab resulting in wrong transition prediction; toolfail; D2 long twilight; D3 long twilight; D4 no majority
-
-https://forum.mafiascum.net/viewtopic.php?f=53&t=15787
-Game 1091: Mafia Mania
-Moderator: Nobody Special
-Current Update: Mafia Win
-Notes: D2 toolfail; Dekes voted Substrike22 in post 634 but votecounter did not detect a vote in "[b]Unovte; Vote: Substrike[/b]"
 
 ### Extremely Bad/Nonexistent Tags
 If I were the mod, I wouldn't accept any of these votes. I'll just use NOTES for these. The case of borked quote tags is troublesome, but that's uncommon enough that I doubt I need special code for that either.
@@ -494,3 +419,433 @@ Mini 1560 - Reck's Walk of Shame
 Moderator: xRECKONERx
 Current Update: Town Win
 Notes: D1; Slandaar voted CooLDoG in post 730 but my votecounter assigned "[vote]CD[/vote]" to ChannelDelibird (who had been replaced); toolfail
+
+## LAST RESORT ERRORS
+
+### VOTE FOR DEAD PLAYER (MORE EXAMPLES ABOVE)
+LAST RESORT Maxwell monk 969 tarsonisocelot
+LAST RESORT Maxwel monk
+LAST RESORT Maxwe monk
+LAST RESORT Maxw monk
+LAST RESORT Max monk
+LAST RESORT Ma monk
+2
+https://forum.mafiascum.net/viewtopic.php?f=53&t=18952
+Game 1234: Masquerade Mafia
+Moderator: Mute
+Current Update: Mafia Win
+Notes: D3 toolfail; Whiskers did not vote in post 1164 but my votecounter interpreted "Vote: Mi--" in pink font as a vote for ['Mist Beauty', 'Guthrie']; D4 toolfail; Whiskers did not vote in post 1602 but my votecounter interpreted "Vote: Friendship" in bold/purple font as a vote for GLaDOS; Whiskers voted Charlie in post 1614 but votecounter interpreted "[b]Mein Vӧttenhammer: Charlie[/b]" as not a vote at all
+
+LAST RESORT TheTrollie Maestro 1141 havingfitz
+LAST RESORT TheTrolli Maestro
+LAST RESORT TheTroll Maestro
+LAST RESORT TheTrol Maestro
+LAST RESORT TheTro Maestro
+LAST RESORT TheTr Kimor
+LAST RESORT TheT Pine
+3
+https://forum.mafiascum.net/viewtopic.php?f=53&t=23438
+Game 1379
+Moderator: MattP
+Current Update: Mafia Win
+
+### VOTE FOR MOD
+https://forum.mafiascum.net/viewtopic.php?f=53&t=16263
+Game 1121: Nexusville Mafia
+Moderator: Nexus
+Current Update: Mafia Win
+
+https://forum.mafiascum.net/viewtopic.php?f=53&t=16813
+Game 1137: Long Overdue Mafia
+Moderator: Rhinox
+Current Update: Mafia win
+
+LAST RESORT ythan Kise 116 Kise
+LAST RESORT ytha Kise
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17276
+Game 1157: Witch-Hunt Nightless
+Moderator: Ythan
+Current Update: Town Win
+Notes: D2 No Majority; D8 Slaxx tried to vote Slaxx in post 1150 but while voteextractor interpreted "[b] vote:slaxx[\b]" correctly the mod rejected its formatting; toolfail
+
+### VOTE "ANALYSIS"
+Game 1122
+
+### Fuck RVS?
+LAST RESORT Fuck RVS Beck 21 chkflip
+LAST RESORT Bezu/Jily Bezukhov 451 Internet Stranger
+LAST RESORT Bezu/Jil Bezukhov
+LAST RESORT Bezu/Ji Bezukhov
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17606
+Game 1177: Normal Game
+Moderator: Bunnylover
+Current Update: Town Win
+Notes: D1; LittleGrey voted jilynne1991 in post 597 but LittleGrey mistakenly typed "Jelly" (indicating petroleumjelly) and corrected it in their successive post; toolfail; Slaxx tried to vote E_Lou_Sive in post 586 but moderator rejected "[b] vote elusive[\b]" as a valid vote
+
+### HAPPILY EVER AFTER
+LAST RESORT happily ever after The Rufflig 891 Occult
+LAST RESORT happily ever Hero764
+LAST RESORT happily Hero764
+LAST RESORT happil Hero764
+LAST RESORT happi Hero764
+LAST RESORT happ Hero764
+LAST RESORT hap Hero764
+5
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17173
+Game 1152
+Moderator: Me=Weird
+Current Update: Draw
+Notes: D3 no majority; D5 no lynch; Occult tried to vote NO LYNCH in post 889 but moderator ignored it; D6 no lynch; one less for no lynch
+
+### ABANDON GAME
+LAST RESORT abandon game RandomActs 521 bionicchop2
+LAST RESORT abandon benoni
+2
+https://forum.mafiascum.net/viewtopic.php?f=53&t=18920
+Game 1230: Xylbot is Normal I Swear
+Moderator: Cojin
+Current Update: Mafia Win
+Notes: Missing Posts; D1; Jackal711 is a doublevoter who can put votes on different people
+
+### OLD METHOD WORKED (UNSURE IF NEW METHOD FAILED)
+LAST RESORT BGGscum bgg1996 693 CryMeARiver
+LAST RESORT BGGscu bgg1996
+2
+https://forum.mafiascum.net/viewtopic.php?f=53&t=16852
+Game 1140: Mafia Mishmash
+Moderator: havingfitz
+Current Update: Mafia Win
+Notes: D2 toolfail; Haylen voted andrew94 in post 803 but typed [b]Vote Andrew[/b] within a fieldset tag
+
+LAST RESORT StrangerouCancergeron. Surprise_Carcinogen 41 populartajo
+LAST RESORT StrangerouCancergeron Surprise_Carcinogen
+LAST RESORT StrangerouCancergero Surprise_Carcinogen
+LAST RESORT StrangerouCancerger Surprise_Carcinogen
+LAST RESORT StrangerouCancerge Surprise_Carcinogen
+LAST RESORT StrangerouCancerg DeathRowKitty
+LAST RESORT StrangerouCancer DeathRowKitty
+LAST RESORT StrangerouCance DeathRowKitty
+LAST RESORT StrangerouCanc Parama
+LAST RESORT StrangerouCan Parama
+LAST RESORT StrangerouCa Parama
+LAST RESORT StrangerouC Pine
+LAST RESORT Strangerou Pine
+LAST RESORT Strangero Pine
+LAST RESORT Stranger Pine
+LAST RESORT Strange Pine
+LAST RESORT Strang Parama
+LAST RESORT Stran GMan
+LAST RESORT Stra Pine
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=16918
+Game 1142: Quintessentially English Mafia
+Moderator: ChannelDelibird
+Current Update: Town Win
+
+LAST RESORT [L] (L-1) -L- 287 imaginality
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17289
+Game 1159: Powerrox93's Mini Normal I
+Moderator: Powerrox93
+Current Update: Town Win
+
+LAST RESORT Hopitty Hoppster 420 SleepyKrew
+LAST RESORT Hopitt Thomith
+LAST RESORT Hopit Thomith
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17792
+Game 1190: A Day in the Life
+Moderator: Twistedspoon
+Current Update: Town Win
+Notes: D2 no majority
+
+LAST RESORT ice ice baby ICEninja 1494 Beck
+4
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17864
+Game 1195: The Beehive Mystery
+Moderator: Klazam
+Current Update: Mafia Win
+Notes: D5 no lynch; toolfail; Scott Brosius voted NO LYNCH in post 1503 but votecounter interpreted "[b]Vote: No-lynch.[/b]" as vote for Sotty7
+
+LAST RESORT Malps malpascp 200 Swiftstrike
+LAST RESORT Malps malpascp 204 smallpeoples343
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17940
+Game 1199: Plissken's Pit
+Moderator: SnakePlissken
+Current Update: Mafia Win
+Notes: D3 no majority
+
+LAST RESORT hitogashi hitogoroshi 191 killerX029
+LAST RESORT hitogash hitogoroshi
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=18983
+Game 1236: Classic Mafia
+Moderator: wierdalexv
+Current Update: Mafia Win
+
+LAST RESORT abstaaaa absta101 143 Peabody
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=22900
+Game 1361: Rainy Days Mafia
+Moderator: Midnight's Sorrow
+Current Update: Town Win
+Notes: D2; charter did not vote yabbaguy in post 560 but my votecounter extracted it from "[b]VigVote Yabba[/b]"; toolfail; charter voted deadjoker in post 560 but the above note negates it on its own;
+
+LAST RESORT Stephan StefanB 599 Zoroaster
+3
+https://forum.mafiascum.net/viewtopic.php?f=53&t=23503
+Game 1382: The Mystery at Village Lake
+Moderator: Zar
+Current Update: Town Win
+
+LAST RESORT sland /[b] Slandaar 1579 kwll
+3
+https://forum.mafiascum.net/viewtopic.php?f=53&t=23772
+Game 1390
+Moderator: nhammen
+Current Update: Town Win
+Notes: D2; toolfail; JacobSavage voted Kinetic in post 1217 but my votecounter extracted "[vote]VOTE: (mv^2)/2[/vote]" as a vote for Thor665
+
+
+LAST RESORT They May Take Our Lives But They Will Never Take Our Freedom TMTOLBTWNTOF 20 BROseidon
+LAST RESORT They May Take Our Lives But They Will Never Take Our TMTOLBTWNTOF
+LAST RESORT They May Take Our Lives But They Will Never Take TMTOLBTWNTOF
+LAST RESORT They May Take Our Lives But They Will Never TMTOLBTWNTOF
+LAST RESORT They May Take Our Lives But They Will TMTOLBTWNTOF
+LAST RESORT They May Take Our Lives But They TMTOLBTWNTOF
+LAST RESORT They May Take Our Lives But RadiantCowbells
+LAST RESORT They May Take Our Lives RadiantCowbells
+LAST RESORT They May Take Our Does Bo Know
+LAST RESORT They May Take ThAdmiral
+LAST RESORT They May ThAdmiral
+LAST RESORT They Yates
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=28480
+Game 1452: Inevitable Mafia
+Moderator: Kitoari
+Current Update: Town Win
+
+### OLD METHOD INSUFFICIENT?
+LAST RESORT ICEpick Beck 1264 Whiskers
+3
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17864
+Game 1195: The Beehive Mystery
+Moderator: Klazam
+Current Update: Mafia Win
+Notes: D5 no lynch; toolfail; Scott Brosius voted NO LYNCH in post 1503 but votecounter interpreted "[b]Vote: No-lynch.[/b]" as vote for Sotty7
+
+LAST RESORT DBK/b] baboon 451 baboon
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=18287
+Game 1204: Generic Mafia
+Moderator: theplague42
+Current Update: Mafia Win
+Notes: D3 long twilight
+
+LAST RESORT LLD--that's a hammer AlmasterGM 201 mastin2
+LAST RESORT LLD--that's a AlmasterGM
+LAST RESORT LLD--that's AlmasterGM
+LAST RESORT LLD--that' AlmasterGM
+LAST RESORT LLD--that mastin2
+LAST RESORT LLD--tha Riddick
+LAST RESORT LLD--th Riddick
+LAST RESORT LLD--t Slaxx
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=18412
+Game 1207: LIPD Mafia
+Moderator: AurorusVox
+Current Update: Town Win
+Notes: D5; Slaxx did not vote in post 1117 but moderator was being silly; Hoppster did not vote in post 1118 but moderator was being silly; Hinduragi did not vote in post 1165 but moderator was being silly; 
+
+LAST RESORT IS hiplop 95 Bub Bidderskins
+2
+https://forum.mafiascum.net/viewtopic.php?f=53&t=21350
+Game 1318: This Little Town
+Moderator: Oversoul
+Current Update: Mafia Win
+
+
+### NEW METHOD FKED COMPARED TO OLD
+LAST RESORT SleepyKrew WormyKrew 70 Gerhard Krause
+LAST RESORT SleepyKre WormyKrew
+LAST RESORT SleepyKr Soben
+LAST RESORT SleepyK Soben
+LAST RESORT Sleepy Soben
+LAST RESORT Sleep Soben
+LAST RESORT Slee Soben
+LAST RESORT Sle Soben
+LAST RESORT Sl Soben
+LAST RESORT S Soben
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17645
+Game 1180
+Moderator: Substrike22
+Current Update: Town Win
+Notes: D1; jilynne1991 tried to UNVOTE in post 729 but the moderator ignored it(???)
+
+LAST RESORT Hopitty Hoppster 420 SleepyKrew
+LAST RESORT Hopitt Thomith
+LAST RESORT Hopit Thomith
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17792
+Game 1190: A Day in the Life
+Moderator: Twistedspoon
+Current Update: Town Win
+Notes: D2 no majority
+
+LAST RESORT marble Llamarble 1024 Beck
+LAST RESORT marbl Llamarble
+LAST RESORT marb Beck
+LAST RESORT marble Llamarble 1077 Beck
+LAST RESORT marbl Llamarble
+LAST RESORT marb Beck
+2
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17864
+Game 1195: The Beehive Mystery
+Moderator: Klazam
+Current Update: Mafia Win
+Notes: D5 no lynch; toolfail; Scott Brosius voted NO LYNCH in post 1503 but votecounter interpreted "[b]Vote: No-lynch.[/b]" as vote for Sotty7
+
+LAST RESORT killer killerX029 3 Parama
+LAST RESORT kille killerX029
+LAST RESORT kill Beck
+LAST RESORT kil Beck
+LAST RESORT ki Beck
+LAST RESORT k Beck
+LAST RESORT Killer killerX029 23 Grimmjow
+LAST RESORT Kille killerX029
+LAST RESORT Kill Beck
+LAST RESORT Kil Beck
+LAST RESORT Ki Beck
+LAST RESORT K Beck
+LAST RESORT killer killerX029 66 Supreme Overlord
+LAST RESORT kille killerX029
+LAST RESORT kill Beck
+LAST RESORT kil Beck
+LAST RESORT ki Beck
+LAST RESORT k Beck
+LAST RESORT Killer killerX029 121 charter
+LAST RESORT Kille killerX029
+LAST RESORT Kill Beck
+LAST RESORT Kil Beck
+LAST RESORT Ki Beck
+LAST RESORT K Beck
+LAST RESORT Killer killerX029 156 David Xanatos
+LAST RESORT Kille killerX029
+LAST RESORT Kill Beck
+LAST RESORT Kil Beck
+LAST RESORT Ki Beck
+LAST RESORT K Beck
+LAST RESORT Killer killerX029 165 Grimmjow
+LAST RESORT Kille killerX029
+LAST RESORT Kill Beck
+LAST RESORT Kil Beck
+LAST RESORT Ki Beck
+LAST RESORT K Beck
+LAST RESORT killer killerX029 173 Parama
+LAST RESORT kille killerX029
+LAST RESORT kill Beck
+LAST RESORT kil Beck
+LAST RESORT ki Beck
+LAST RESORT k Beck
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=18910
+Game 1227: Small Town Scumbags
+Moderator: Papa Zito
+Current Update: Town Win
+Notes: D3 no majority; D6 no lynch
+
+### Couldn't Investigate Yet
+https://forum.mafiascum.net/viewtopic.php?f=53&t=22206
+Game 1341
+Moderator: Jackal711
+Current Update: Mafia Win
+Notes: Shattered Viewpoint is a doublevoter but allowed to distribute just one vote; D2; toolfail; Shattered Viewpoint voted Pine in post 429 but "[b]Vote: Pine -- Mod, please note this is only one vote, thanks.[/b]" was detected as a vote for Junpei; transition prediction failure due to unpredictable distribution
+
+5
+https://forum.mafiascum.net/viewtopic.php?f=53&t=25357
+Game 1414: Mafia and Werewolves
+Moderator: rapidcanyon
+Current Update: Town Win
+Notes: D5; toolfail; JacobSavage did not vote on post 772 but votecounter interpreted "[vote]Revenus[/vote]" as for YOLO
+
+
+### ???
+LAST RESORT ; Hi Mute 756 Empking
+LAST RESORT ; Mute
+3
+https://forum.mafiascum.net/viewtopic.php?f=53&t=18987
+Game 1238: One After the Other
+Moderator: Meransiel, Papa Zito
+Current Update: Town Win
+Notes: Missing Posts
+
+LAST RESORT goddamnit monk 132 Whiskers
+LAST RESORT goddamni monk
+LAST RESORT goddamn monk
+LAST RESORT goddam monk
+LAST RESORT godda monk
+LAST RESORT godd monk
+LAST RESORT god monk
+LAST RESORT go monk
+1
+https://forum.mafiascum.net/viewtopic.php?f=53&t=18987
+Game 1238: One After the Other
+Moderator: Meransiel, Papa Zito
+Current Update: Town Win
+Notes: Missing Posts
+
+LAST RESORT ATOLAEXSTAXOSEEETETETETXEOE] Slaxx 1135 Parama
+LAST RESORT ATOLAEXSTAXOSEEETETETETXEOE Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETETETETXEO Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETETETETXE Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETETETETX Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETETETET Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETETETE Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETETET Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETETE Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETET Slaxx
+LAST RESORT ATOLAEXSTAXOSEEETE Slaxx
+LAST RESORT ATOLAEXSTAXOSEEET Slaxx
+LAST RESORT ATOLAEXSTAXOSEEE Slaxx
+LAST RESORT ATOLAEXSTAXOSEE Slaxx
+LAST RESORT ATOLAEXSTAXOSE Slaxx
+LAST RESORT ATOLAEXSTAXOS Slaxx
+LAST RESORT ATOLAEXSTAXO Slaxx
+LAST RESORT ATOLAEXSTAX Slaxx
+LAST RESORT ATOLAEXSTA Slaxx
+LAST RESORT ATOLAEXST Slaxx
+LAST RESORT ATOLAEXS Slaxx
+LAST RESORT ATOLAEX Slaxx
+LAST RESORT ATOLAE Slaxx
+LAST RESORT ATOLA Parama
+LAST RESORT ATOL Slaxx
+LAST RESORT ATO Slaxx
+8
+https://forum.mafiascum.net/viewtopic.php?f=53&t=17276
+Game 1157: Witch-Hunt Nightless
+Moderator: Ythan
+Current Update: Town Win
+Notes: D2 No Majority; D8 Slaxx tried to vote Slaxx in post 1150 but while voteextractor interpreted "[b] vote:slaxx[\b]" correctly the mod rejected its formatting; toolfail
+
+LAST RESORT no kill CF Riot 763 theamatuer
+5
+https://forum.mafiascum.net/viewtopic.php?f=53&t=22792
+Game 1359: A Death Already Died
+Moderator: UberNinja
+Current Update: Mafia Win
+Notes: D5 no lynch
+
+LAST RESORT guy who scumclaimed projectmatt 870 Hibiki
+LAST RESORT guy who crypto
+LAST RESORT guy Sach
+LAST RESORT gu Sach
+3
+https://forum.mafiascum.net/viewtopic.php?f=53&t=23221
+Game 1373: Oh My!
+Moderator: Empking
+Current Update: Town Win
+
