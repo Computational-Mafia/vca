@@ -4650,7 +4650,7 @@ Current Update: Mafia Win
 Players
 Frozen Angel, Mafia Goon, survived
 Lowell, Town Odd-Night Cop, killed night 1
-Aj The Epic replaced Radja, endgamed day 6
+Aj The Epic replaced Radja, Vanilla Townie, endgamed day 6
 Mathilda, Vanilla Townie, lynched day 1
 Firebringer replaced Dwlee99, Mafia Motion Detector, lynched day 2
 Dierfire, Vanilla Townie, lynched day 4

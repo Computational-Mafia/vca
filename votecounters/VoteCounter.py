@@ -158,8 +158,7 @@ class VoteExtracter:
         
         self.englishdivides = {p:englishdivides(p) for p in players}
         for p in players:
-            self.playerabbrevs[p] = \
-            ''.join([each[0] for each in self.englishdivides[p][0][1:]])
+            self.playerabbrevs[p] = ''.join([each[0] for each in self.englishdivides[p][0][1:]])
             
     def fromPost(self, post):
         """tries to identify vote's target from the post"""
