@@ -44,14 +44,6 @@ class VoteCount:
                 string += each + '\n'
             string += '\n'
         return string[:-1]
-        
-        current_votecount = self.todict()
-        for each in current_votecount:
-            if current_votecount[each]:
-                string += "{} - {}\n".format(each, len(current_votecount[each]))
-                for voter in current_votecount[each]:
-                    string += '{}\n'.format(voter)
-                string += '\n'
 
     def todict(self):
         output = {}
