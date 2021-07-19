@@ -1,0 +1,27 @@
+Add votecounter metadata to dataframe:
+
+    Phase-based metadata:
+        ✘ Grow dataframe instead of list @cancelled(21-07-17 13:44)
+        Using a dataframe instead of a list results in slower processing. 
+        
+        Maybe instead, I should construct (at the end of processing) separate dfs for each game and concat in one move at the end? 
+
+        ✔ Build list of phase-specific dfs. @30m @started(21-07-17 13:45) @done(21-07-17 15:39) @lasted(1h54m14s)
+
+        ✔ Track if Lynch Correctly is Predicted @done(21-07-17 15:45)
+        ✔ Track if Transition Correctly Predicted @done(21-07-17 15:45)
+
+    ✔ Match Confidence Metric @10m @started(21-07-17 15:50) @done(21-07-17 16:03) @lasted(13m44s)
+    This one requires updating votecounter.fromPost to return metadata. 
+
+Now what?? I have to figure out the relevant analysis.
+
+I think to build momentum now I need to engage more with the limitations of my main votecounter. This means adding support for confidence metrics to my main votecoutner and generating the df for that context.
+
+The question I should primarily ask of my DF is:
+    How many votes are being labeled correctly?
+    How does my votecounter fail?
+    Things like that. 
+
+    What will I do with that information? 
+    My head can't process the question. So I'll stop for the day? 

@@ -1,0 +1,37 @@
+We want to be able to include a terse (under 500 word) post detailing how the main votecounter works and what its limitations are:
+
+    Update the main votecounter to include performance metadata
+
+    Store 
+
+
+✔ I want to be able to recapitaluate the single-phase analysis from votecounter test without re-running the vote extractor. What would I have to store in the table in order to do that? @30m @started(21-07-18 13:45) @done(21-07-18 14:19) @lasted(34m30s)
+
+Main parameters are game_index, phase, and post number. 
+
+From there, I 
+extract relevant game info, (in archive.txt)
+find and display the selected post (both the text and the rendered html) (in posts.jsonl)
+    So I need post bodies to fully evaluate my votecounter. Technically a link to a post can be extracted from the thread and post number, though, so it's not required.
+also display the votes extracted from the post (in df)
+transition results (in df)
+votecount simulation up to the post number, then displayed (can simulate from df)
+also the final votecount (can simulate from df)
+also a log of all votes up to the final votecount (can simulate from df)
+
+So to summarize I don't really need anything extra, oddly. I just need to be able to retrieve posts, and maybe even the votecounter for spotchecking sometimes.
+
+✔ Let's add, though, the main performance metadata I was interested in. @30m @started(21-07-18 14:19) @done(21-07-18 15:01) @lasted(42m41s)
+
+✔ But there's a problem! My last resort is a repeat of previous steps! How can I track this combination? A boolean? Switch to a loop instead of using recursion? Sure, the loop. Then integers above 19 indicate a looped result? @20m @started(21-07-18 15:14) @done(21-07-18 15:17) @lasted(3m30s)
+
+✔ Now I have to test it @20m @started(21-07-18 15:32) @done(21-07-18 16:56) @lasted(1h24m46s)
+It worksss. Even without the hand-labels.
+
+A 93% transition success rate though indicates that around 100 phases weren't predicted right out of 1406, which could suggest plenty of issues with the votecounter across other phases as well. I shouldn't overlook the matter.
+
+The votecounter with manual inputs doesn't have a much higher success rate (95%) so it's not something to worry a lot about yet.
+
+Next step is to set up a separate VotecounterTest that's more comfortable working with the dataframe instead of the votecounter. And uses plots to characterize performance!
+
+What do I have in mind exactly? 
