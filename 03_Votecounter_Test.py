@@ -238,7 +238,7 @@ relevant_players = []
 for slot in relevant_slots:
     relevant_players += slot
 votecount = VoteCount(relevant_slots, meta={'correct': correct}, lessOneForMislynch=lessOneForMislynch, doublevoters=doublevoters)
-votecounter = VoteCounter(players=relevant_players)
+votecounter = VoteCounter(players=relevant_players, verbose=True)
 
 tphase, transition_start, transition_end, transition_match, transition_url = time.time(), None, None, False, None
 

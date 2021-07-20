@@ -196,7 +196,7 @@ Notes: D3 no majority; D3 hammer after deadline; D6 no lynch; one less for NO LY
 
 Players
 Empking, Town Vanilla, killed Night 6
-sapovirus, Mafia Goon, lynched Day 5
+saporovirus, Mafia Goon, lynched Day 5
 Nexus replaced TheLonging, Town Bodyguard, killed Night 3
 ShadoWolf, Town Vanilla, lynched Day 1
 NavyCherub replaced Pergol, Town Cop, killed Night 2
@@ -446,7 +446,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=17173
 Game 1152
 Moderator: Me=Weird
 Current Update: Draw
-Notes: D3 no majority; D5 no lynch; Occult tried to vote NO LYNCH in post 889 but moderator ignored it; D6 no lynch; one less for no lynch
+Notes: D3 no majority; D5 no lynch; Occult tried to vote NO LYNCH in post 889 but moderator reset it for mechanic reasons; D6 no lynch; one less for no lynch
 
 Players
 jeromus, Town Mason, survived
@@ -879,7 +879,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=18412
 Game 1207: LIPD Mafia
 Moderator: AurorusVox
 Current Update: Town Win
-Notes: D5; Slaxx did not vote in post 1117 but moderator was being silly; Hoppster did not vote in post 1118 but moderator was being silly; Hinduragi did not vote in post 1165 but moderator was being silly; 
+Notes: D5; Slaxx did not vote in post 1117 but votecounter matched "No lolwagons" to nbtnbt5Town; Hoppster did not vote in post 1118 but but votecounter matched "No lolwagons" to nbtnbt5Town; Hinduragi did not vote in post 1165 but but votecounter matched "No lolwagons" to nbtnbt5Town
 
 Players
 mastin2 replaced theplague42, Town Miller, killed Night 2
@@ -1985,7 +1985,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=25357
 Game 1414: Mafia and Werewolves
 Moderator: rapidcanyon
 Current Update: Town Win
-Notes: D5; toolfail; JacobSavage did not vote on post 772 but votecounter interpreted "[vote]Revenus[/vote]" as for YOLO
+Notes: D5 toolfail; JacobSavage did not vote on post 772 but votecounter interpreted "[vote]Revenus[/vote]" as for YOLO
 
 Players
 Navarre, Vanilla Townie, lynched Day 1
@@ -2811,7 +2811,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=33249
 Mini 1517 - The Sun Sets on Duskville
 Moderator: Alduskkel
 Current Update: Mafia Win
-Notes: D2; Sir Bastion did not vote Haschel Cedricson in post 1565 but my votecounter detected "[b]Unvote, vote HC[b][/quote" as a vote for Haschel Cedricson; toolfail
+Notes: D2 toolfail; Sir Bastion did not vote Haschel Cedricson in post 1565 but due to broken quote my votecounter detected "[b]Unvote, vote HC[b][/quote" as a vote for Haschel Cedricson; 
 
 Players
 NicCage replaced Illume, Weak Doctor, killed night 1
@@ -2978,7 +2978,7 @@ https://forum.mafiascum.net/viewtopic.php?f=53&t=37251
 Mini 1543--Natirasha's On Parole!
 Moderator: Natirasha
 Current Update: Mafia Win
-Notes: D3 no majority; D3 hammer after deadline; Nachomamma8 tried to vote UNVOTE in post 3818 but the moderator did not count it; D6 no lynch
+Notes: D3 no majority; D3 hammer after deadline; Nachomamma8 tried to vote UNVOTE in post 3818 but the moderator missed it; D6 no lynch
 
 Players
 MafiaSSK, Town Doctor, killed night 4

@@ -119,11 +119,21 @@ def findVotes(post):
     #  we want votetags to have priority, so add them to the pool here
     boldtags = boldtags + votetags
     boldtags = [b.rstrip().lstrip() for b in boldtags]
-    
+
     # they need to have 'vote' or 'veot' early in their string
-    boldtags = [b for b in boldtags
-                if b[:7].lower().count('vote') or b[:7].lower().count('veot') > 0 or b[:7].lower().count('vtoe') > 0 or b[:7].lower().count('ovte') > 0]
-    
+    early_enough = []
+    for i in range(len(boldtags)):
+        first_three_words = ' '.join(boldtags[i].split(' ')[:3]).lower()
+        if (first_three_words.count('vote') or 
+            first_three_words.count('veot') > 0 or 
+            first_three_words.count('vtoe') > 0 or 
+            first_three_words.count('ovte') > 0):
+            early_enough.append(True)
+        else:
+            early_enough.append(False)
+
+    boldtags = [boldtags[i] for i in range(len(boldtags)) if early_enough[i]]
+
     # rfind 'vote' and 'unvote' (and their key mispellings) to locate vote
     for i, v in enumerate(boldtags):
         voteloc = max(v.lower().rfind('vote'), v.lower().rfind('veot'), v.lower().rfind('vtoe'), v.lower().rfind('ovte'))
@@ -153,7 +163,7 @@ class VoteExtracter:
     def __init__(self, players, verbose=False):
         
         # make an acronym dictionary for each player
-        self.playerabbrevs, self.players,self.verbose = {}, players, verbose
+        self.playerabbrevs, self.players, self.verbose = {}, players, verbose
         self.lowplayers = {p.lower():p for p in players}
         
         self.englishdivides = {p:englishdivides(p) for p in players}
@@ -163,6 +173,8 @@ class VoteExtracter:
     def fromPost(self, post):
         """tries to identify vote's target from the post"""
         votes = findVotes(post)
+        if self.verbose:
+            print('Initially identified votes: ', votes)
         yield from self.fromVotes(votes, post=post)
 
     def fromVotes(self, votes, post=None):
@@ -172,6 +184,9 @@ class VoteExtracter:
         # with the exception of same-line unvote-then-vote happenings
         votes = [v for v in votes]
         for vote in votes:
+            if self.verbose:
+                print()
+                print('Processing:', vote)
             
             original_text = vote
             result_code = 0 
@@ -249,8 +264,8 @@ class VoteExtracter:
                     break
                 result_code += 1
 
-                # 6th check if vote's shortest english-word acronym of a name
-                # with levenshtein distance threshold ranging up to 1;
+                # 6th check if vote is the shortest english-word acronym of a 
+                # name with levenshtein distance threshold ranging up to 1;
                 acromatches = [p for p in self.players if ed.eval(
                     self.playerabbrevs[p].lower(),lowvote) <= 1]
                 if len(acromatches) == 1:
@@ -294,7 +309,7 @@ class VoteExtracter:
 
                 # 11 check if a player's name is a substring of the vote
                 suboccurrences = [p for p in self.lowplayers
-                                if lowvote.count(p) > 0]
+                                if ((lowvote.count(p) > 0) and len(p) > 1)]
                 if len(suboccurrences) == 1:
                     yield self.lowplayers[suboccurrences[0]], result_code
                     break
@@ -303,7 +318,7 @@ class VoteExtracter:
                 # 12 if any splitted part of a playername are vote substring
                 suboccurrences = [p for p in self.lowplayers if
                                 len([s for s in p.split(' ')
-                                    if lowvote.count(s)> 0]) > 0]
+                                    if (lowvote.count(s)> 0 and len(s) > 1)]) > 0]
                 if len(suboccurrences) == 1:
                     yield self.lowplayers[suboccurrences[0]], result_code
                     break
@@ -387,7 +402,7 @@ class VoteExtracter:
 
                 # 18 if every char in vote is char in just one playername
                 matches = [p for p in self.lowplayers 
-                        if set(lowvote) <= set(p)]
+                        if set(lowvote.replace(' ', '')) <= set(p)]
                 if len(matches) == 1:
                     yield self.lowplayers[matches[0]], result_code
                     break
@@ -401,10 +416,28 @@ class VoteExtracter:
                 if vote.rfind(' ') > -1:
                     vote = vote[:vote.rfind(' ')]
                 else:
+                    
+                    min_player = min(distances, key=distances.get)
+                    min_distance = distances[min_player]
+                    gap = 10
+                    for key, value in distances.items():
+                        if key != min_player:
+                            if value - min_distance < gap:
+                                gap = value - min_distance
+
+                    if self.verbose:
+                        print('No match attained.')
+                        print(distances)
+                        print('Minimum LevDistance Player:', min_player, min_distance)
+                        print('Final Result Code', result_code)
+
+
+                    if (gap >= 2 and min_distance < 7) or gap > 2:
+                        yield min_player, -1
+                        break
+
                     break
 
                 # 19 the last resort, the playername closest to the vote
                 #print('LAST RESORT', vote)
                 #yield min(distances, key=distances.get)
-
-

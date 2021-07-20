@@ -1,0 +1,73 @@
+To sharpen global analysis of the votecounter I need:
+
+    An indicator variable tracking whether wagon was hammered or not.
+    I need to clarify what this means, but yeah.
+
+    To make sure votecounter can run in full using just a df.
+    Probably requires tracking diverse events within in df besides votes - e.g. player deaths.
+
+    Asynchronously track for all posts whether each of 18 checks identify a vote or not.
+    Probably also need to identify discrepancies between the vote detected, too.
+    
+    ✔ And have to start by figuring out the components and duration of these tasks. @30m @started(21-07-19 19:13) @done(21-07-19 20:13) @lasted(1h57s)
+
+An indicator variable tracking whether wagon was hammered or not:
+    
+    With this indicator variable, analyses focused on votecounter accuracy can focus on the votes that resulted in predictions about who was lynched and when. 
+
+    When a prediction error happens, that's a discrepancy between the identified wagon and the correct one. I'll be interested in wagons on either player - the one my votecounter detected as hammered and the one I know to have been hammered. So perhaps I want two indicator variables to track as much. And then a third variable that tests for equivalence between these variables.
+
+    Do I want all votes on the relevant wagon or just the hammered ones? And what about unvotes away from the wagon? I mean, technically any apparent vote can be a pivotal vote deciding if my result is accurate or not; any apparent vote could be misassigned to make the wrong lynch happen or the correct lynch not happen. So what's my limiting factor to keep me from being obsessed about this? 
+
+    Also in most cases, isn't a votecounter failure not gonna detect a lynch at all? Egh.
+
+    I want to measure processing depth just for pivotal votes. Pivotal votes are as hard to detect as the correct vote. I guess I'm actually interested in the votes that decide a correct or incorrect prediction. Votes pivotal for correct predictions are easy to identify: they're the votes on the deciding wagon. But if failed predictions often manifest as a failure to find any hammer at all, then there's no clear marker to focus on. I can't just focus on the largest wagon; any vote could be suspect. Is the whole premise of this analysis wrong? Maybe.
+
+To make sure votecounter can run in full using just a df:
+    Honestly, my archive.txt is going to have kill events in the notes so maybe this isn't going to be tough. A nice task I can complete in under an hour.
+
+Asynchronously track for all posts whether each of 18 checks identify a vote or not:
+    Why do I want to do this? I want to be able to automatically decide the ordering of those checks such that accuracy and computation speed is optimized.
+
+    But I think I initially imagined that I'd track an indicator variable for each check. I suppose I am if I run a unique votecounter for every check. 
+
+    If I do run a unique votecounter for each check, how do I find the "optimal" arrangement? I was going to try a greedy strategy where I start with the check with the highest accuracy and go from there, but that's not necessarily optimal if a check only has high accuracy if another check happens first. These checks, after all, do not just return True/False statements.
+
+    On the other hand, the factorial of 18 is a mighty big number, so it's probably infeasible to compare every possible arrangement of checks. This makes this yet another flawed program of comparisons, doesn't it?
+
+    Maybe spotchecking is just the right approach. I should categorize all errors and identify the check that baked in the error. I should turn away from adding extra steps and work on figuring out the limitations of existing ones and replace them. 
+
+Identify and characterize every votecounter failure:
+    Last time, I didn't have the processing step that prompted the failure, so this is something different from the previous effort.
+
+    But let's make sure I'm clear on what I'm trying.
+
+    Review every prediction failure by my votecounter. Tabulate a set of notes characterizing every error, identifying the post, and so on. Don't embed these into archive.txt since they can change with model version. And make it so that in my downstream DataFrames these notes are singled out to support statistical analysis.
+
+    How? Go through each game and then go through each note and make a separate error file tracking it all. Then process these along with the notes in archive.txt. But include no more notes correcting votecounter failures in my main archive.txt.
+
+    If it takes 5 minutes per phase, that's at least 8 hours just to generate the data. Whatever, do it.
+
+Parts to add for new votecounter test:
+    ✔ transition results (in df and simulated) @done(21-07-19 23:14)
+    ✔ votecount simulation up to the post number, then displayed (can simulate from df) @30m @started(21-07-19 22:27) @done(21-07-19 22:56) @lasted(29m46s)
+    ✔ also the final votecount (can simulate from df) @done(21-07-19 23:09)
+    ✔ also a log of all votes up to the final votecount (can simulate from df) @done(21-07-19 23:09)
+
+First pass updates to make:
+    ✔ When transitions can't be predicted due to no majority or long twilight and I've documented as much, it shouldn't appear in my error list. @20m @started(21-07-20 01:17) @done(21-07-20 01:22) @lasted(5m3s)
+
+    ✔ Still need to check after re-processing whether the issues are addressed. @15m @done(21-07-20 02:58)
+
+    ✔ My quality checking script should afford more diagnostic data for scenarios like these. For example, I don't know if the issue is because the vote isn't even noticed or because even the 19th step recursion just never settles on anything. @done(21-07-20 02:58)
+
+Potential Adds:
+
+    ☐ I should add support for alias specification rather than just single-vote correction so all errors like this are properly handled.
+
+    ☐ Watch out for influence of "tried to vote" and similar notes on outputs. Technically it's fine for votecounter performance but could require an asterisk. 
+    I definitely am. How do I weigh that? I need to distinguish toolfails and top-down resets in this context. At first, by review.
+
+    ☐ When a vote starts a little late after tags are initiated, it should still be detected.
+
+    When a vote is especially close to even one far playername, try matching it.

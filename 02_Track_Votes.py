@@ -28,14 +28,13 @@ start_index = 0
 end_index = 0
 
 # range of game days to consider; leave 0 for no limit
-start_day = 1
 end_day = 0
 
 # verbosity; 0 to exclude game information, 1 for just failure information, 2 for all game information
 verbosity = 0
 
 # whether apply hand-made vote labels encoded in data/archive.txt
-include_hand_labels = True
+include_hand_labels = False
 
 # %%
 
@@ -55,6 +54,20 @@ for game_index in trange(start_index, end_index, desc='game loop'):
 
     # extract relevant information about this game
     slots, players, fates, lynched, number, game_transitions, moderators, events, doublevoters, lessOneForMislynch = relevantGameInfo(game)
+
+    # remove manually set vote modifying events if we want to exclude those
+    if not include_hand_labels:
+        
+        for key in list(events.keys()):
+            clean_entries = []
+            for entry in events[key]:
+                if ' voted ' not in entry:
+                    if 'did not vote ' not in entry:
+                        clean_entries.append(entry)
+            if clean_entries:
+                events[key] = clean_entries.copy()
+            else:
+                del events[key]
 
     with open('data/posts/{}.jsonl'.format(number)) as f:
         gameposts =  [json.loads(l) for l in f]
@@ -132,8 +145,8 @@ for game_index in trange(start_index, end_index, desc='game loop'):
                             votecount.update(reset_player, 'UNVOTE', post['number'])
                             phase_df.append([reset_player, 'UNVOTE', post['number'], day, number, False, 0.0])
                             
-                    # if event is a vote specification and we're processing those, set relevant player(s) to vote
-                    elif include_hand_labels and ' voted ' in event:
+                    # if event is a vote specification set relevant player(s) to vote
+                    elif ' voted ' in event:
                         votecount.update(event.split(' voted ')[0], event.split(' voted ')[1], post['number'])
                         phase_df.append(
                             [event.split(' voted ')[0], event.split(' voted ')[1], 
@@ -172,9 +185,11 @@ for game_index in trange(start_index, end_index, desc='game loop'):
             else:
                 break
     
-        phase_df = pd.DataFrame(phase_df, columns=['voter', 'voted', 'post', 'phase', 'thread', 'manual', 'uncertainty'])
-        phase_df['lynch_predicted'] = votecount.choice == correct
-        phase_df['transition_predicted'] = transition_match
+        phase_df = pd.DataFrame(
+            phase_df, 
+            columns=['voter', 'voted', 'post', 'phase', 'thread', 'manual', 'uncertainty'])
+        phase_df['lynch_predicted'] = (votecount.choice == correct) if canPredictLynch else True
+        phase_df['transition_predicted'] = transition_match if canPredictTransition else True
         votes_df.append(phase_df)
         vote_success += votecount.choice == correct
         transition_success += transition_match
@@ -193,10 +208,10 @@ for game_index in trange(start_index, end_index, desc='game loop'):
 
 print()
 print(f'Vote Success Rate: {vote_success/total}, Transition Success Rate: {transition_success/total}, Total Phases Considered: {total}, Total Time: {time.time()-t0}')
+votes_df = pd.concat(votes_df, ignore_index=True)
 
 # %%
 
-votes_df = pd.concat(votes_df, ignore_index=True)
 now = datetime.now()
 votes_df.to_json('data/votes_{}_{}.json'.format(VoteCounter.__name__, now.strftime("%d_%m_%Y")))
 
