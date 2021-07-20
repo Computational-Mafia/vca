@@ -9,10 +9,10 @@
 from VoteCounter import VoteExtracter as VoteCounter
 import pandas as pd
 
-votes_df = pd.read_json('data/votes_VoteExtracter_20_07_2021_pre16769.json')
-thread_number = 16769
-day = 5
-postnumber = 489
+votes_df = pd.read_json('data/votes_VoteExtracter_20_07_2021.json')
+thread_number = 16852
+day = 2
+postnumber = 803
 
 votes_df.head()
 

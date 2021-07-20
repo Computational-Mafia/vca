@@ -41,12 +41,13 @@ votepath3 = '/html/body/p/span/span[@class="{}"]//text()'
 votepath4 = '/html/body/span/span[@class="{}"]//text()'
 votepath5 = '/html/body/p/span[@class="{}"]'
 votepath6 = '/html/body/span[@class="{}"]'
+votepath7 = '/html/body/fieldset/span[@class="{}"]//text()'
 subpath = 'span//text()'
 
 
 # -
 
-# ## Helper Functions
+# ## Helper Functions //*[@id="p2938677"]/div/div[2]/div[1]/fieldset/span
 #
 # ### English Divides
 # The function `englishdivides()` returns a list of ways the input playername can be divided into strings considered legal words by one of the spellchecker dictionaries, with the list sorted from least to greatest by number of divisions. The spellchecker often accepts as legal many single character and two-character strings that I wouldn't recognize as actual words, so this sorting is important. The result is a data structure helpful for predicting how users might abbreviate or otherwise fail to totally specify a player's name in their vote (eg, "FB" for "Firebringer"). 
@@ -87,6 +88,7 @@ def findVotes(post):
                 sel.xpath(votepath2.format(tagclass)) +
                 sel.xpath(votepath3.format(tagclass)) +
                 sel.xpath(votepath4.format(tagclass)) +
+                sel.xpath(votepath7.format(tagclass)) +
                 [''.join(each.xpath(subpath)) for each 
                  in sel.xpath(votepath5.format(tagclass))] +
                 [''.join(each.xpath(subpath)) for each 
@@ -97,6 +99,7 @@ def findVotes(post):
                 sel.xpath(votepath2.format(tagclass)) +
                 sel.xpath(votepath3.format(tagclass)) +
                 sel.xpath(votepath4.format(tagclass)) +
+                sel.xpath(votepath7.format(tagclass)) +
                 [''.join(each.xpath(subpath)) for each 
                  in sel.xpath(votepath5.format(tagclass))] +
                 [''.join(each.xpath(subpath)) for each 
@@ -115,24 +118,17 @@ def findVotes(post):
             # starting at broken tag
             tagline = content[content.find('[b]')+3:].lstrip().rstrip()
             boldtags.append(tagline)
+
+    # commas and line breaks divide bold tags
+    boldtags = [line for tag in boldtags for line in tag.replace(', ', '\n').split('\n')]
     
     #  we want votetags to have priority, so add them to the pool here
     boldtags = boldtags + votetags
     boldtags = [b.rstrip().lstrip() for b in boldtags]
+    
 
-    # they need to have 'vote' or 'veot' early in their string
-    early_enough = []
-    for i in range(len(boldtags)):
-        first_three_words = ' '.join(boldtags[i].split(' ')[:3]).lower()
-        if (first_three_words.count('vote') or 
-            first_three_words.count('veot') > 0 or 
-            first_three_words.count('vtoe') > 0 or 
-            first_three_words.count('ovte') > 0):
-            early_enough.append(True)
-        else:
-            early_enough.append(False)
-
-    boldtags = [boldtags[i] for i in range(len(boldtags)) if early_enough[i]]
+    boldtags = [b for b in boldtags
+                if b[:7].lower().count('vote') or b[:7].lower().count('veot') > 0 or b[:7].lower().count('vtoe') > 0 or b[:7].lower().count('ovte') > 0]
 
     # rfind 'vote' and 'unvote' (and their key mispellings) to locate vote
     for i, v in enumerate(boldtags):
