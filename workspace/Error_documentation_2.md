@@ -4,12 +4,6 @@ Moderator: DemonHybrid
 Current Update: Town Win
 Notes: D1 toolfail; Blood Queen voted Reckamonic in post 10 but votecounter could not match "Dramonerx" to a player
 
-https://forum.mafiascum.net/viewtopic.php?f=53&t=16769
-Game 1133: Mafia in Venice
-Moderator: lewarcher82
-Current Update: Mafia Win
-Notes: D5 toolfail; ICEninja voted RedCoyote in post 489 but votecounter extracted no vote from "[b]Cross fingers, vote RedCoyote.[/b]"
-
 https://forum.mafiascum.net/viewtopic.php?f=53&t=16852
 Game 1140: Mafia Mishmash
 Moderator: havingfitz
@@ -234,9 +228,6 @@ Refreshed to ensure I consider all changes to tool output.
 ### 1094 // 15783
 Think I can't resolve this with some principled algorithm; need alias management to resolve this issue reliably. Closest username is actually Rhinox, with a distance of 6. Other usernames like morthrax are also as close or closer than Reckamonic. 
 
-### 1133 // 16769
-Preserved from last pass. This is a failure of the vote detector rather than the vote extractor; no votes are initially identified. Current hypothesis is that I'm not handling votes that start too late after tag initiated. This could be the right policy most of the time.
-
 ### 1140 // 16852
 Same sort of failure of the vote detector rather than the vote extractor; no votes are initially identified. Maintained hypothesis is that I'm not handling votes that start too late after tag initiated.
 
@@ -289,7 +280,7 @@ Another really niche initial detection fail.
 The ampersand's equivalance to the word "and" is what tripped me up here. I could easily add, but how many votes would it address?
 
 ### 1517 // 33249
-I could similarly account for the edgec case where someone breaks quote tags if I wanted to, but its impact wouldn't be substantial.
+I could similarly account for the edge case where someone breaks quote tags if I wanted to, but its impact wouldn't be substantial.
 
 ### 1544 // 37632
 A clear case of the votecounter being overeager, but at least it's pretty niche.
@@ -374,3 +365,12 @@ Smallpeople343 is voting Empking according to my votecounter, but hammers malpas
 {'SomeRandomGuy': 11, 'Internet Stranger': 16, 'yabbaguy': 7, 'BeautyUndead': 11, 'PeregrineV': 10, 'David Xanatos': 11, 'FightingShadow': 13, 'Ant_to_the_Max': 14, 'Rikana': 6, 'JAMFTW': 5, 'Swiftstrike': 10, 'malpascp': 3, 'Locke Lamora': 11, 'smallpeoples343': 10, 'bristep123': 9, 'Empking': 6, 'Sky': 5}
 
 Furthermore, SomeRandomGuy is voting Empking in the official reading but voting no one in my extractor. This seems correct though, with the mod being wrong/lazy.
+
+### 1133 // 16769
+Preserved from last pass. This is a failure of the vote detector rather than the vote extractor; no votes are initially identified. Current hypothesis is that I'm not handling votes that start too late after tag initiated. This could be the right policy most of the time.
+
+https://forum.mafiascum.net/viewtopic.php?f=53&t=16769
+Game 1133: Mafia in Venice
+Moderator: lewarcher82
+Current Update: Mafia Win
+Notes: D5 toolfail; ICEninja voted RedCoyote in post 489 but votecounter extracted no vote from "[b]Cross fingers, vote RedCoyote.[/b]"

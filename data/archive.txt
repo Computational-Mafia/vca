@@ -5608,7 +5608,7 @@ Players
 Io, Vanilla Townie, lynched day 1
 Dierfire replaced Elhabe21, Vanilla Townie, survived
 HellloooNewman, Town Odd-Night Cop, killed night 1
-Blackvoid replaced MiniDeathStar, Vanilla Townie, killed night 3
+BlackVoid replaced MiniDeathStar, Vanilla Townie, killed night 3
 Kairal, Vanilla Townie, survived
 Flubbernugget, Mafia Goon, lynched day 5
 I Am Innocent, Vanilla Townie, survived

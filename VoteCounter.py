@@ -47,7 +47,7 @@ subpath = 'span//text()'
 
 # -
 
-# ## Helper Functions //*[@id="p2938677"]/div/div[2]/div[1]/fieldset/span
+# ## Helper Functions
 #
 # ### English Divides
 # The function `englishdivides()` returns a list of ways the input playername can be divided into strings considered legal words by one of the spellchecker dictionaries, with the list sorted from least to greatest by number of divisions. The spellchecker often accepts as legal many single character and two-character strings that I wouldn't recognize as actual words, so this sorting is important. The result is a data structure helpful for predicting how users might abbreviate or otherwise fail to totally specify a player's name in their vote (eg, "FB" for "Firebringer"). 
@@ -203,8 +203,9 @@ class VoteExtracter:
                     break
 
                 # check for no lynch votes
-                if (set(regall.sub('', lowvote)) >= set('nolynch')
-                    or ed.eval(regall.sub('', lowvote), 'nolynch') < 2 
+                # set(regall.sub('', lowvote)) >= set('nolynch')
+                if (
+                    ed.eval(regall.sub('', lowvote), 'nolynch') < 3 
                     or ed.eval(regall.sub('', lowvote), 'nl') < 1):
                     yield "NO LYNCH", result_code
                     break
@@ -220,14 +221,14 @@ class VoteExtracter:
                 result_code += 1
 
                 # first check if vote is a 0char misspelling of a playername
-                nearspellings = [d for d in distances if distances[d] <= 0]
+                nearspellings = [d for d in distances if distances[d] < 1]
                 if len(nearspellings) == 1:
                     yield nearspellings[0], result_code
                     break
                 result_code += 1
 
                 # second check if vote is a 1char misspelling of a playername
-                nearspellings = [d for d in distances if distances[d] <= 1]
+                nearspellings = [d for d in distances if distances[d] < 2 and len(d) > 2]
                 if len(nearspellings) == 1:
                     yield nearspellings[0], result_code
                     break
@@ -237,7 +238,7 @@ class VoteExtracter:
                 # the vote match the same in a playername
                 capmatches = [p for p in self.players if
                             ed.eval(regup.sub('', p).lower(),
-                                    regall.sub('', lowvote)) <= 0]
+                                    regall.sub('', lowvote)) < 1]
                 if len(capmatches) == 1:
                     yield capmatches[0], result_code
                     break
@@ -246,7 +247,7 @@ class VoteExtracter:
                 # fourth try to directly infer acronym from english divides
                 acromatches = [p for p in self.players if 
                             ed.eval(self.playerabbrevs[p].lower(),
-                                    regall.sub('', vote).lower()) <= 0]
+                                    regall.sub('', vote).lower()) < 1]
                 if len(acromatches) == 1:
                     yield acromatches[0], result_code
                     break
@@ -262,23 +263,24 @@ class VoteExtracter:
 
                 # 6th check if vote is the shortest english-word acronym of a 
                 # name with levenshtein distance threshold ranging up to 1;
-                acromatches = [p for p in self.players if ed.eval(
-                    self.playerabbrevs[p].lower(),lowvote) <= 1]
+                acromatches = [p for p in self.players if (ed.eval(
+                    self.playerabbrevs[p].lower(),lowvote) < 2)  and (len(lowvote) > 2)]
                 if len(acromatches) == 1:
                     yield acromatches[0], result_code
                     break
                 result_code += 1
 
-                # 7th check if vote is at all a substring of a playername
+                # 7th check if vote is at all a substring of a playername, 
+                # ignoring small votes
                 suboccurrences = [p for p in self.lowplayers
-                                if p.count(lowvote) > 0]
+                                if ((p.count(lowvote) > 0) and (len(lowvote) > 2))]
                 if len(suboccurrences) == 1:
                     yield self.lowplayers[suboccurrences[0]], result_code
                     break
                 result_code += 1
 
                 # 8th check if vote is two char misspelling of a playername
-                nearspellings = [d for d in distances if distances[d] <= 2]
+                nearspellings = [d for d in distances if distances[d] < 3]
                 if len(nearspellings) == 1:
                     yield nearspellings[0], result_code
                     break
@@ -297,7 +299,7 @@ class VoteExtracter:
                 # 10 check if vote's shortest english-word acronym of a name
                 # with levenshtein distance threshold ranging up to 2
                 acromatches = [p for p in self.players if ed.eval(
-                    self.playerabbrevs[p].lower(),lowvote) <= 2]
+                    self.playerabbrevs[p].lower(),lowvote) < 3]
                 if len(acromatches) == 1:
                     yield acromatches[0], result_code
                     break
@@ -336,13 +338,32 @@ class VoteExtracter:
                 acromatches = [p for p in self.players
                             if ed.eval(''.join([each[0] for each in
                                     self.englishdivides[p][0][1:3]]).lower(),
-                                        lowvote) <= 0]
+                                        lowvote) < 1]
                 if len(acromatches) == 1:
                     yield acromatches[0], result_code
                     break
                 result_code += 1
 
-                # 15 if vote is slightly misspelled substring of a playername
+                # 15 check if vote is the shortest english-word acronym of a 
+                # name with levenshtein distance threshold ranging up to 1;
+                # repeating 6 but not minding vote size
+                acromatches = [p for p in self.players if (ed.eval(
+                    self.playerabbrevs[p].lower(),lowvote) < 2)]
+                if len(acromatches) == 1:
+                    yield acromatches[0], result_code
+                    break
+                result_code += 1
+
+                # 16 check if vote is at all a substring of a playername, 
+                # no minding vote size but otherwise repeating 7
+                suboccurrences = [p for p in self.lowplayers
+                                if p.count(lowvote) > 0]
+                if len(suboccurrences) == 1:
+                    yield self.lowplayers[suboccurrences[0]], result_code
+                    break
+                result_code += 1
+
+                # 17 if vote is slightly misspelled substring of a playername
                 threshold = 1
                 suboccurrences = []
                 for p in self.lowplayers:
@@ -362,7 +383,7 @@ class VoteExtracter:
                     break
                 result_code += 1
 
-                # 16 retry 15 with higher threshold
+                # 18 retry 16 with higher threshold
                 threshold = 2
                 suboccurrences = []
                 for p in self.lowplayers:
@@ -382,7 +403,7 @@ class VoteExtracter:
                     break
                 result_code += 1
 
-                # 17 if vote is mix of abbreviations/spaced playername parts
+                # 19 if vote is mix of abbreviations/spaced playername parts
                 suboccurrences = []
                 for p in self.players:
                     broke = p.split(' ')
@@ -396,7 +417,7 @@ class VoteExtracter:
                     break
                 result_code += 1
 
-                # 18 if every char in vote is char in just one playername
+                # 20 if every char in vote is char in just one playername
                 matches = [p for p in self.lowplayers 
                         if set(lowvote.replace(' ', '')) <= set(p)]
                 if len(matches) == 1:
@@ -404,13 +425,17 @@ class VoteExtracter:
                     break
                 result_code += 1
                 
-                # 19 redo the entire process but truncating the input up to the last space (or last char!)
+                # 21 redo the entire process but truncating the input up to the last space (or last char!)
                 #if post:
                 #    print('LAST RESORT', vote, min(distances, key=distances.get), post['number'], post['user'])
                 #else:
                 #    print('LAST RESORT', vote, min(distances, key=distances.get))
-                if vote.rfind(' ') > -1:
+                if result_code > 200:
+                    break
+
+                elif vote.rfind(' ') > -1:
                     vote = vote[:vote.rfind(' ')]
+                    
                 else:
                     
                     min_player = min(distances, key=distances.get)
