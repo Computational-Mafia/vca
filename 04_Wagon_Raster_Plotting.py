@@ -31,7 +31,7 @@ votes_df = pd.read_json('data/votes_VoteExtracter_21_07_2021.json')
 prediction_rates = pd.pivot_table(data=votes_df, index=['thread'], values=['lynch_predicted', 'transition_predicted']).reset_index()
 
 # range of game days to consider; leave 0 for no limit
-end_day = 0
+end_day = 2
 
 # %%
 
@@ -145,7 +145,7 @@ for game_index in trange(len(games), desc='game loop'):
                     results.append(
                         [int(number), day, wagon_index, position, 
                         voted_faction, factions[str(vote)]]
-                        )                
+                        )
 
                 wagon_index += 1
                 break
@@ -153,12 +153,12 @@ for game_index in trange(len(games), desc='game loop'):
 results_df = pd.DataFrame(results, columns=['thread', 'phase', 'wagon', 'position', 'voted_faction', 'voter_faction'])
 
 now = datetime.now()
-results_df.to_json('data/final_wagon_by_faction_{}_{}.json'.format(VoteCounter.__name__, now.strftime("%d_%m_%Y")))
+results_df.to_json('data/final_wagon_by_faction_{}.json'.format(VoteCounter.__name__))
 
 # %%
 
 # load votes dataframe
-df = pd.read_json('data/final_wagon_by_faction_VoteExtracter_21_07_2021.json')
+df = pd.read_json('data/final_wagon_by_faction_VoteExtracter.json')
 df = df.loc[(df.phase == 1)]
 df.head()
 
