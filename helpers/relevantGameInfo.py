@@ -12,7 +12,7 @@ transitions = {line.split(
     '\t')[0]:line.strip().split('\t')[1:] for line in transitions if len(line.strip().split('\t')[1:]) > 0}
 
 
-def relevantGameInfo(game):
+def relevantGameInfo(game, include_factions=False):
     
     # link
     link = game[:game.find('\n')]
@@ -44,7 +44,7 @@ def relevantGameInfo(game):
     
     # living slots/players for each Day
     doublevoters = []
-    slots, players, fates, lynched = [], [], [], {}
+    slots, players, fates, lynched, factions = [], [], [], {}, {}
     for line in game[game.find('\nPlayers\n')+9:].split('\n'):
         line = line.split(', ')
         
@@ -55,6 +55,16 @@ def relevantGameInfo(game):
         # extract role and check for doublevoter
         if 'double voter' in line[1].lower() or 'doublevoter' in line[1].lower():
             doublevoters.append(line[0].split(' replaced '))
+
+        # 
+        if 'town' in line[1].lower():
+            factions[str(slots[-1])] = 'TOWN'
+        elif 'serial' in line[1].lower() or 'third party' in line[1].lower():
+            factions[str(slots[-1])] = 'OTHER'
+        elif 'werewolf' in line[1].lower() or 'mafia' in line[1].lower():
+            factions[str(slots[-1])] = 'MAFIA'
+        else:
+            print(line[1].lower())
         
         # extract last phase slot's vote helped decide Day
         # it's the phase they died, minus one if they were day-killed (not lynched)
@@ -68,5 +78,7 @@ def relevantGameInfo(game):
         # sort any detected lynches into `lynched` array
         if 'lynched' in line[-1].lower():
             lynched[phase] = slots[-1]
-
-    return slots, players, fates, lynched, number, transitions[title_number], moderators, events, doublevoters, lessOneForMislynch
+    if not include_factions:
+        return slots, players, fates, lynched, number, transitions[title_number], moderators, events, doublevoters, lessOneForMislynch
+    else:
+        return slots, players, fates, lynched, factions, number, transitions[title_number], moderators, events, doublevoters, lessOneForMislynch

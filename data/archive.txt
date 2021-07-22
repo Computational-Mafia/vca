@@ -1534,7 +1534,7 @@ rblinker123, Mafia Goon, lynched Day 3
 evilpacman18, Town Vanilla, killed Night 2
 iD-DTMaster, Town Vanilla, survived
 DTMaster, Mafia Goon, lynched Day 1
-gorckat replaced rapidcanyon, Sane Day Cop, lynched Day 2
+gorckat replaced rapidcanyon, Town Sane Day Cop, lynched Day 2
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=22900
@@ -1709,7 +1709,7 @@ Moderator: Zar
 Current Update: Town Win
 
 Players
-MonkeyMan576, Maifa Two-Shot Jack-of-all-Trades, lynched Day 1
+MonkeyMan576, Mafia Two-Shot Jack-of-all-Trades, lynched Day 1
 Johhog, Town Macho Cop, killed Night 1
 Kingmaker, Town Compulsive Bodyguard, killed Night 2
 Yates, Town Rolecop, survived
@@ -2756,7 +2756,7 @@ aphix, Mafia Goon, Survived
 Titus replaced Ant_to_the_Max, Town Neighbour, killed Night 3
 Skelda, Mafia Neighbour, Lynched Day 3
 Kublai Khan, Vanilla Townie, killed Night 3
-implosion, Two shot Vigilante, killed Night 4
+implosion, Town Two shot Vigilante, killed Night 4
 Humble Poirot, Vanilla Townie, Lynched Day 4
 Fusion, Town Jailkeeper, killed Night 1
 EspeciallyTheLies replaced AzBlueM, Vanilla Townie, Endgamed Night 4
@@ -2814,9 +2814,9 @@ Current Update: Mafia Win
 Notes: D2 toolfail; Sir Bastion did not vote Haschel Cedricson in post 1565 but due to broken quote my votecounter detected "[b]Unvote, vote HC[b][/quote" as a vote for Haschel Cedricson; 
 
 Players
-NicCage replaced Illume, Weak Doctor, killed night 1
+NicCage replaced Illume, Town Weak Doctor, killed night 1
 Albert B. Rampage, Vanilla Townie, lynched day 2
-mastin2 replaced AbboTT, Roleblocker, killed night 2
+mastin2 replaced AbboTT, Town Roleblocker, killed night 2
 Mindgamer replaced Amished replaced Blueberry, Mafia One-Shot Rolestopper, survived
 Espeonage, Vanilla Townie, lynched day 1
 Guyett replaced Haschel Cedricson, Vanilla Townie, endgamed day 5
@@ -4284,7 +4284,7 @@ Bellaphant, Vanilla Townie, lynched day 3
 shaddowez replaced Grib, Town Doctor, killed night 1
 catboi, Mafia Goon, endgamed day 5
 Lalendra, Vanilla Townie, killed night 4
-Maxous, Maxous, Investigation-Immune 1-Shot Bulletproof Fruit Vendor Odd-Night Serial Killer, survived
+Maxous, Investigation-Immune 1-Shot Bulletproof Fruit Vendor Odd-Night Serial Killer, survived
 GrayFoxxxx, Vanilla Townie, killed night 1
 Atum, Town Even-Night Vigilante, killed night 2
 
@@ -4507,15 +4507,15 @@ Players
 Slandaar, Town Encryptor Enabler, killed night 2
 MarioManiac4 replaced KTthecreeper, Mafia Goon, survived
 supercool898, Mafia Encryptor, survived
-Nosferatu, ownie, endgamed day 5
+Nosferatu, Townie, endgamed day 5
 Aristophanes replaced Annadog40, Mafia One-Shot Roleblocker, lynched day 4
 Hinduragi replaced makara replaced revalista, Town One-Shot Bulletproof Bodyguard, killed night 4
-Firesong, ownie, lynched day 5
+Firesong, Townie, lynched day 5
 RadiantCowbells, Townie, killed night 1
 Glork, Town Weak Motion Detector, killed night 1
 Smudger, Townie, lynched day 2
-Maxous replaced Shadoxx8, ownie, endgamed day 5
-Soapbar, ownie, endgamed day 5
+Maxous replaced Shadoxx8, Townie, endgamed day 5
+Soapbar, Townie, endgamed day 5
 Rory, Town Odd-Night Vigilante, lynched day 1
 
 
@@ -4606,7 +4606,7 @@ Current Update: Mafia Win
 
 Players
 supercool898, Town Doctor, lynched day 1
-MarioManiac4, Maifa RoleCop, survived
+MarioManiac4, Mafia RoleCop, survived
 Dierfire replaced golden009, Vanilla Townie, endgamed day 4
 Frozen Angel replaced BL0ODK1NG, Vanilla Townie, endgamed day 4
 Keyser Söze, Town Roleblocker, killed night 1
@@ -4766,7 +4766,7 @@ Syndesis, Mafia Goon, lynched day 5
 kirroha, Vanilla Townie, lynched day 4
 implosion, Mafia Traitor, endgamed day 5
 I Am Innocent, Vanilla Townie, killed night 2
-Dwlee99 replaced NinoMasaki, 1shot Vigilante, killed night 4
+Dwlee99 replaced NinoMasaki, Town 1shot Vigilante, killed night 4
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=65380
@@ -5012,18 +5012,18 @@ Current Update: Town Win
 
 Players
 Nero Cain replaced KickAssAndGiggle replaced ConvergentConclusion, Mafia Encryptor, lynched day 5
-MURDERCAT, VT, survived
+MURDERCAT, Vanilla Townie, survived
 KuroiXHF replaced zefiend, Mafia Goon, lynched day 2
 Chumba, Town Doctor, killed night 4
 MathBlade replaced Accountant, Town Gunslinger, killed night 3
 chilledtea, Mafia Roleblocker, lynched day 4
-Titus replaced BlackStar, VT, survived
+Titus replaced BlackStar, Vanilla Townie, survived
 RachMarie replaced NightmareGaunt, Town Cop, killed night 1
-pirate mollie replaced I Am Innocent, VT, killed night 2
-Dunnstral, VT, lynched day 3
-Infinity 324 replaced Derek12, VT, survived
-Pants98 replaced Transcend, VT, lynched day 1
-TehBrawlGuy, VT, killed night 1
+pirate mollie replaced I Am Innocent, Vanilla Townie, killed night 2
+Dunnstral, Vanilla Townie, lynched day 3
+Infinity 324 replaced Derek12, Vanilla Townie, survived
+Pants98 replaced Transcend, Vanilla Townie, lynched day 1
+TehBrawlGuy, Vanilla Townie, killed night 1
 
 
 https://forum.mafiascum.net/viewtopic.php?f=53&t=66752
@@ -5330,10 +5330,10 @@ eagerSnake replaced narcoticcrab, Vanilla Townie, killed night 3
 kagesong, Vanilla Townie, lynched day 1
 shannon, Vanilla Townie, survived
 Thor665 replaced ThinkBig, Hated Townie, survived
-JarJarDrinks, Mason, survived
+JarJarDrinks, Town Mason, survived
 Malachite replaced Tere replaced Save The Dragons, Mafia Encryptor, lynched day 3
 Heartache replaced House replaced Blix900, Vanilla Townie, survived
-TwoFace, Mason, survived
+TwoFace, Town Mason, survived
 Lowell, Town Watcher, killed night 1
 Not_Mafia replaced JeanDarc, Mafia Goon, lynched day 2
 ChaosOmega, Vanilla Townie, killed night 2
@@ -5400,7 +5400,7 @@ malpascp, Vanilla Townie, lynched day 1
 aronagrundy, Town Neighborizer, killed night 3
 Lowell, Mafia Goon, lynched day 5
 GreyICE replaced cmitc1, Town Bodyguard, killed night 1
-bji, replaced AlpacaAlpaca, Mafia Odd-Night Roleblocker, survived
+bji replaced AlpacaAlpaca, Mafia Odd-Night Roleblocker, survived
 Fire Assassin replaced Knighty Knight, Town Tracker, killed night 2
 Thor665 replaced Tracer, Mafia Encryptor, lynched day 3
 
@@ -5677,7 +5677,7 @@ eagerSnake, Vanilla Townie, survived
 gerryoat, Mafia Goon, lynched day 3
 JarJarDrinks, Mafia Goon, lynched day 4
 Garmr, Vanilla Townie, lynched day 1
-CloudKicker, Odd Night Roleblocker, survived
+CloudKicker, Town Odd Night Roleblocker, survived
 XnadrojX, Town Hunter, lynched day 2
 Alisae, Town Neopolitan, killed night 2
 
@@ -5693,7 +5693,7 @@ shannon, Town JOAT (Doctor, Jailkeeper, Bodyguard), endgamed
 BlueBloodedToffee, Vanilla Townie, killed night 3
 TheRealGin-N-Tonic replaced nydushermain, Town JOAT (Cop, Gunsmith, Neapolitan), endgamed
 LicketyQuickety, Vanilla Townie, lynched day 2
-Titus, replaced Pepchoninga, Town JOAT (Tracker/Follower/Motion Detector), lynched day 5
+Titus replaced Pepchoninga, Town JOAT (Tracker/Follower/Motion Detector), lynched day 5
 Lexa, Mafia JOAT (Ninja, Strongman, Roleblocker), survived
 karnos, Mafia Goon, lynched day 1
 ThinkBig replaced KTthecreeper, Vanilla Townie, killed night 4

@@ -70,4 +70,5 @@ Potential Adds:
 
     ☐ When a vote starts a little late after tags are initiated, it should still be detected.
 
-    When a vote is especially close to even one far playername, try matching it.
+    ☐ When a vote is especially close to even one far playername, try matching it after applying other tests.
+

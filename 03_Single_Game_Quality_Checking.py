@@ -23,11 +23,8 @@ votes_df.head()
 
 from IPython.core.display import display, HTML
 import markdown2 as md
-import seaborn as sns
-import numpy as np
 from copy import deepcopy
 import json
-import matplotlib.pyplot as plt
 from helpers.VoteCount import VoteCount
 from helpers.relevantGameInfo import relevantGameInfo
 
