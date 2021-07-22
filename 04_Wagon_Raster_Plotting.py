@@ -8,11 +8,9 @@
 
 # %%
 
-from IPython.core.display import display, HTML
 import markdown2 as md
 import seaborn as sns
 import numpy as np
-from copy import deepcopy
 import json
 import matplotlib.pyplot as plt
 from datetime import datetime
@@ -94,7 +92,6 @@ for game_index in trange(len(games), desc='game loop'):
         votecount = VoteCount(
             relevant_slots, meta={'correct': correct}, 
             lessOneForMislynch=lessOneForMislynch, doublevoters=doublevoters)
-        votecounter = VoteCounter(players=relevant_players)
         phase_df = votes_df.loc[(votes_df.phase==int(day)) & (votes_df.thread==int(number))]
 
         # scan through this game's posts
@@ -117,7 +114,6 @@ for game_index in trange(len(games), desc='game loop'):
                         relevant_players = []
                         for slot in relevant_slots:
                             relevant_players += slot
-                        votecounter = VoteCounter(players=relevant_players)
                         votecount.killplayer(killed_player, post['number'])
 
             # consider votes until voters have made a choice already
@@ -180,7 +176,7 @@ def_aspect = n_list / n_item
 height = length / def_aspect
 
 g = sns.FacetGrid(
-        data=df, dropna=False, aspect = 1, col='voted_faction')
+        data=df, dropna=False, height=8, col='voted_faction')
 g.map_dataframe(
         sns.scatterplot,
         x=y_var,
