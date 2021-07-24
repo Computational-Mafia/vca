@@ -8,7 +8,6 @@
 
 # %%
 
-import markdown2 as md
 import seaborn as sns
 import numpy as np
 import json
@@ -31,7 +30,7 @@ votes_df = pd.read_json('data/votes_VoteExtracter_21_07_2021.json')
 prediction_rates = pd.pivot_table(data=votes_df, index=['thread'], values=['lynch_predicted', 'transition_predicted']).reset_index()
 
 # range of game days to consider; leave 0 for no limit
-end_day = 2
+end_day = 0
 
 # %%
 
@@ -143,51 +142,62 @@ for game_index in trange(len(games), desc='game loop'):
                 # track faction of each voting slot
                 for position, vote in enumerate(final_votes):
                     results.append(
-                        [int(number), day, wagon_index, position, 
-                        voted_faction, factions[str(vote)]]
+                        [int(number), day, wagon_index, len(final_votes) - position - 1, len(final_votes), voted_faction, factions[str(vote)]]
                         )
 
                 wagon_index += 1
                 break
 
-results_df = pd.DataFrame(results, columns=['thread', 'phase', 'wagon', 'position', 'voted_faction', 'voter_faction'])
+results_df = pd.DataFrame(results, columns=['thread', 'phase', 'wagon', 'position', 'votes_to_lim', 'voted_faction', 'voter_faction'])
 
 now = datetime.now()
 results_df.to_json('data/final_wagon_by_faction_{}.json'.format(VoteCounter.__name__))
+
+# %% [markdown]
+# ## Vote Position by Town Faction
 
 # %%
 
 # load votes dataframe
 df = pd.read_json('data/final_wagon_by_faction_VoteExtracter.json')
-df = df.loc[(df.phase == 1)]
-df.head()
+#df = df.loc[df.phase==1]
+df['position'] = max(df.position.values) - df['position']
+df = df.loc[df.voter_faction != 'OTHER']
+df = df.loc[df.voted_faction != 'OTHER']
+df['voted_town'] = df.voted_faction == 'TOWN'
+df['voter_town'] = df.voter_faction == 'TOWN'
+df['voted_mafia'] = df.voted_faction == 'MAFIA'
+df['voter_mafia'] = df.voter_faction == 'MAFIA'
 
+# df.loc[(df.phase < 4) & (df.votes_to_lim > 3)]
+g = sns.FacetGrid(df.loc[(df.phase < 4)], col='voted_faction', row='phase', height=5)
+#g.map_dataframe(sns.lineplot, 'position', 'voter_town', ci=False)
+g.map_dataframe(sns.lineplot, 'position', 'voter_mafia', ci=False)
+plt.subplots_adjust(hspace=0.2, wspace=0.1)
+
+xticklabels = ['']
+for i in reversed(pd.unique(df.position)):
+    xticklabels.append('E-{}'.format(i))
+
+for ax in g.axes.flatten():
+        ax.tick_params(labelbottom=True)
+        ax.set_xlabel('Position on Final Wagon (Last Vote First)', visible=True)
+        ax.set_ylabel('Proportion of Voters Who Are Mafia')
+        ax.set_xticklabels(xticklabels)
+plt.show()
 # %%
 
-length = 10
-n_item = int(df['position'].max())
-n_list = int(df['wagon'].max())
-list_lim = (0, n_list + 1)
-item_lim = (0, n_item + 1)
-x_var, y_var = 'wagon', 'position'
-x_lim, y_lim = list_lim, item_lim
-x_label, y_label = 'Wagon', 'Vote Position'
-def_aspect = n_list / n_item
-height = length / def_aspect
-
-g = sns.FacetGrid(
-        data=df, dropna=False, height=8, col='voted_faction')
-g.map_dataframe(
-        sns.scatterplot,
-        x=y_var,
-        y=x_var,
-        marker='s',
-        hue='voter_faction',
-        legend='auto',
-    )
-
-#g.set_xlabels(x_label)
-#g.set_ylabels(y_label)
-#g.set(xlim=x_lim, ylim=y_lim)
+# load votes dataframe
+df = pd.read_json('data/final_wagon_by_faction_VoteExtracter.json')
+#df = df.loc[df.phase==1]
+df['position'] = max(df.position.values) - df['position']
+df = df.loc[df.voter_faction != 'OTHER']
+df = df.loc[df.voted_faction != 'OTHER']
+df['voted_town'] = df.voted_faction == 'TOWN'
+df['voter_town'] = df.voter_faction == 'TOWN'
+df['voted_mafia'] = df.voted_faction == 'MAFIA'
+df['voter_mafia'] = df.voter_faction == 'MAFIA'
+df = pd.pivot_table(df, index=['phase', 'voted_town', 'position'], values=['voter_town'], aggfunc=[np.size, np.mean, np.sum]).reset_index()
+df.columns = df.columns.get_level_values(0)
 
 # %%

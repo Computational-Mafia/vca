@@ -65,10 +65,10 @@ Potential Adds:
 
     ☐ I should add support for alias specification rather than just single-vote correction so all errors like this are properly handled.
 
-    ☐ Watch out for influence of "tried to vote" and similar notes on outputs. Technically it's fine for votecounter performance but could require an asterisk. 
+    ✔ Watch out for influence of "tried to vote" and similar notes on outputs. Technically it's fine for votecounter performance but could require an asterisk. @done(21-07-24 04:15)
     I definitely am. How do I weigh that? I need to distinguish toolfails and top-down resets in this context. At first, by review.
 
-    ☐ When a vote starts a little late after tags are initiated, it should still be detected.
+    ✔ When a vote starts a little late after tags are initiated, it should still be detected. @done(21-07-24 04:15)
 
-    ☐ When a vote is especially close to even one far playername, try matching it after applying other tests.
+    ✔ When a vote is especially close to even one far playername, try matching it after applying other tests. @done(21-07-24 04:15)
 
