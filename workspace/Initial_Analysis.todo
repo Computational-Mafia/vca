@@ -1,0 +1,30 @@
+General:
+    ☐ Implement tracking of null hypothesis
+    ☐ Plot sample sizes for any points
+    ☐ Implement meaningful confidence intervals
+
+Position:
+    ☐ Is position of scum on a wagon alignment-indicative of the voted?
+    ☐ Is position of of a player on a town or mafia wagon alignment-indicative of the voter?
+    ☐ What about just hammered wagons?
+
+Self Votes:
+    ☐ Is self-voting alignment-indicative in general?
+    ☐ Is the position of a self-vote alignment-indicative?
+
+    Y-axis here is always voter_town or voter_mafia. X-axis can be phase, position, whatever.
+
+    I should also try to plot a null hypothesis with each point, as well as a sample size. A confidence interval to mark reliable contrast against thee null hypotehsis would be great, too.
+
+Eh let's get more concrete. 
+Before my gym trip, I want to get the position analysis out the door. I want to make sure that 
+☐ the plot is pretty (not transparent), 
+✔ that the sample size for each point is tagged, @done(21-07-24 05:41)
+☐ that a current null hypothesis for each point is tagged, and 
+✔ that a meaningful confidence interval is configured. @done(21-07-24 05:17)
+
+A simpler plot relating voter faction with rate of voted_mafia is maybe a clearer context to work out the null hypothesis thing.
+
+✔ Let's go ahead and do the sample size tagging, too. @30m @started(21-07-24 05:17) @done(21-07-24 05:43) @lasted(26m16s)
+
+✔ Let's generate a null hypothesis dataset @40m @started(21-07-24 06:21) @done(21-07-25 01:30) @lasted(19h9m38s)

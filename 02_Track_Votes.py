@@ -14,6 +14,7 @@ import pandas as pd
 import time
 from datetime import datetime
 from tqdm.notebook import trange
+import numpy as np
 
 # %% [markdown]
 # ## Parameters
@@ -53,7 +54,8 @@ for game_index in trange(start_index, end_index, desc='game loop'):
     game = games[game_index]
 
     # extract relevant information about this game
-    slots, players, fates, lynched, number, game_transitions, moderators, events, doublevoters, lessOneForMislynch = relevantGameInfo(game)
+    slots, players, fates, lynched, factions, number, game_transitions, moderators, events, doublevoters, lessOneForMislynch = relevantGameInfo(
+        game, include_factions=True)
 
     # remove manually set vote modifying events if we want to exclude those
     if not include_hand_labels:
@@ -87,15 +89,16 @@ for game_index in trange(start_index, end_index, desc='game loop'):
         canPredictTransition, canPredictLynch = True, True
         if f'd{day} long twilight' in game[:game.find('\n\n')].split('\n')[-1][len("Notes: "):].lower():
             canPredictTransition = False
-        if f'd{day} hammer after deadline' in game[:game.find('\n\n')].split('\n')[-1][len("Notes: "):].lower():
+        if f'd{day} hammer after deadline' in game[:game.find(
+            '\n\n')].split('\n')[-1][len("Notes: "):].lower():
             canPredictLynch = False
         if f'd{day} no majority' in game[:game.find('\n\n')].split('\n')[-1][len("Notes: "):].lower():
-            correct = None
+            correct = []
             canPredictTransition = False
         elif f'd{day} no lynch' in game[:game.find('\n\n')].split('\n')[-1][len("Notes: "):].lower():
             correct = 'NO LYNCH'
         else:
-            correct = lynched[day] if day in lynched else None
+            correct = lynched[day] if day in lynched else []
         
         ## initialize for phase-specific posts, players, slots, votecount, votecounter
         start_point = 0 if day == 1 else int(game_transitions[day-2])
@@ -109,6 +112,7 @@ for game_index in trange(start_index, end_index, desc='game loop'):
             lessOneForMislynch=lessOneForMislynch, doublevoters=doublevoters)
         votecounter = VoteCounter(players=relevant_players)
         phase_df = []
+        last_vote = {str(slot): 0 for slot in relevant_slots}
 
         # also initialize for phase-specific transition prediction
         tphase, transition_start, transition_end = time.time(), None, None
@@ -118,7 +122,8 @@ for game_index in trange(start_index, end_index, desc='game loop'):
         for post_index in range(start_point, end_point):#, desc='post loop', leave=False):
             post = gameposts[post_index]
 
-            # first process special events tracked in game notes (e.g. day kills, votecount resets, missed votes)
+            # first process special events tracked in game notes 
+            # (e.g. day kills, votecount resets, missed votes)
             if post['number'] in events:
                 post_events = events[post['number']]
                 for event in post_events:
@@ -141,16 +146,40 @@ for game_index in trange(start_index, end_index, desc='game loop'):
                         reset_players = ([s[0] for s in relevant_slots] 
                                         if event.split(' ')[0].lower() == 'votecount'
                                          else [event.split(' ')[0]])
+                                         
                         for reset_player in reset_players:
                             votecount.update(reset_player, 'UNVOTE', post['number'])
-                            phase_df.append([reset_player, 'UNVOTE', post['number'], day, number, False, 0.0])
+                            
+                            wagon = votecount.todict()['Not Voting']
+                            last_vote[str(wagon[-1])] = len(phase_df)
+                            phase_df.append(
+                                [reset_player, 'UNVOTE', post['number'], day, number, False, 0.0, 0, len(relevant_slots), np.nan, factions[str(wagon[-1])], False, False])
                             
                     # if event is a vote specification set relevant player(s) to vote
                     elif ' voted ' in event:
-                        votecount.update(event.split(' voted ')[0], event.split(' voted ')[1], post['number'])
+                        votecount.update(
+                            event.split(' voted ')[0], event.split(' voted ')[1], post['number'])
+
+                        voted = event.split(' voted ')[1]
+                        if voted == 'UNVOTE':
+
+                            voted_slot = 'Not Voting'
+                            voted_faction = np.nan
+                        elif voted == 'NO LYNCH':
+                            voted_slot = 'No Lynch'
+                            voted_faction = np.nan
+                        else:
+                            voted_slot = str(next(s for s in relevant_slots if s.count(voted) > 0))
+                            voted_faction = factions[str(voted_slot)]
+
+                        wagon = votecount.todict()[voted_slot]
+                        last_vote[str(wagon[-1])] = len(phase_df)
+                        vote_position = len(wagon)
+
                         phase_df.append(
-                            [event.split(' voted ')[0], event.split(' voted ')[1], 
-                            post['number'], day, number, True, 0.0])
+                            [event.split(' voted ')[0], voted, post['number'], 
+                            day, number, True, 0.0, vote_position, len(relevant_slots), 
+                            voted_faction, factions[str(wagon[-1])], False, voted in correct])
 
             # consider votes until voters have made a choice already
             elif not votecount.choice:
@@ -163,7 +192,23 @@ for game_index in trange(start_index, end_index, desc='game loop'):
                 # stop considering votes in post if votecount.choice
                 for voted, uncertainty in votecounter.fromPost(post):
                     votecount.update(post['user'], voted, post['number'])
-                    phase_df.append([post['user'], voted, post['number'], day, number, False, uncertainty])
+
+                    if voted == 'UNVOTE':
+                        voted_slot = 'Not Voting'
+                        voted_faction = np.nan
+                    elif voted == 'NO LYNCH':
+                        voted_slot = 'No Lynch'
+                        voted_faction = np.nan
+                    else:
+                        voted_slot = str(next(s for s in relevant_slots if s.count(voted) > 0))
+                        voted_faction = factions[str(voted_slot)]
+
+                    wagon = votecount.todict()[voted_slot]
+                    last_vote[str(wagon[-1])] = len(phase_df)
+                    vote_position = len(wagon)
+
+                    phase_df.append(
+                        [post['user'], voted, post['number'], day, number, False, uncertainty, vote_position, len(relevant_slots), voted_faction, factions[str(wagon[-1])], False, voted in correct])
                     if votecount.choice:
                         break
 
@@ -179,7 +224,8 @@ for game_index in trange(start_index, end_index, desc='game loop'):
                     transition_end = int(post['number'])
 
                     # track match between inferred and transcribed transition post#
-                    transition_match = int(game_transitions[day-1]) in list(range(transition_start, transition_end))
+                    transition_match = int(
+                        game_transitions[day-1]) in list(range(transition_start, transition_end))
 
             # finish if votecount.choice, transition_start, and transition_end all populated
             else:
@@ -187,7 +233,8 @@ for game_index in trange(start_index, end_index, desc='game loop'):
     
         phase_df = pd.DataFrame(
             phase_df, 
-            columns=['voter', 'voted', 'post', 'phase', 'thread', 'manual', 'uncertainty'])
+            columns=['voter', 'voted', 'post', 'phase', 'thread', 'manual', 'uncertainty', 'position', 'total_living', 'voted_faction', 'voter_faction', 'terminal', 'target_eliminated'])
+        phase_df.iloc[[last_vote[key] for key in last_vote], phase_df.columns.get_loc('terminal')] = True
         phase_df['lynch_predicted'] = (votecount.choice == correct) if canPredictLynch else True
         phase_df['transition_predicted'] = transition_match if canPredictTransition else True
         votes_df.append(phase_df)

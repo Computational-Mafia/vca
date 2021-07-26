@@ -39,4 +39,10 @@
 # #g.set_ylabels(y_label)
 # #g.set(xlim=x_lim, ylim=y_lim)
 
-# %%
+# %% [markdown]
+# # Wagon Raster Plotting
+# Here we want to demo a potential way to streamline visualization of many game wagons: a raster plot of a subset of wagons hued based on the faction of the person making the vote. With that foundation we might be set up to work on more complex visualizations (e.g. tracking changes in wagon sizes across a phase) or to perform contrastive statistical tests.
+
+# %% [markdown]
+# ## Setup
+# For each D1 the votecounter successfully predicts w/o help (and a lynch has happened), simulate votecounter until a hammer is detected. match each vote to a faction. The sequence is what we want in our DF. The raster plot is effectively a scatter plot tracking 3 variables. I need in my df for each vote a wagon index, a position on wagon, and a faction. Since the number of votes required to achieve a lynch can vary, I may be interested in aligning position indices such that hammer votes all have the same x-position rather than such that initial votes all have the same x-position.
