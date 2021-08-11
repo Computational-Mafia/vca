@@ -1,0 +1,83 @@
+[align=center][size=200]Week 1: Hammered Wagons and Slot Factions[/size][/align]
+Our first batch of analyses focus specifically on characterizing how different factions position themselves on the [b]hammered wagon[/b] of a phase - the wagon that eliminates a player and ends the Day. 
+
+To help shed some light on questions like these, I identified the votes in my dataset that were part of a phase's hammered wagon and tracked across all these votes whether they were made by TOWN or MAFIA and then visualized the proportion of votes from each faction between various features. To help interpret these results, I also plot (in gray) the proportions you'd expect to see if voter faction had nothing to do with how people vote. To put it simply:
+
+[list]
+[*] Colored lines and objects in the plots below come from my actual data
+[*] Gray lines indicate what you'd see if faction had nothing to do with how people vote
+[*] Error bars indicate how far away colored lines should probably be from the gray lines before you get excited[/list]
+
+[spoiler=Details]
+When aggregating across many games with different setups, it can be hard to interpret when a proportion is genuinely interesting and not just the base rate you'd expect if TOWN and MAFIA voting behavior were indistinguishable. If this [b]null hypothesis[/b] were true, then we would be able to label slots in our dataset as MAFIA or TOWN at random and still get the same analysis results. To help put our results in context, I did exactly that: I repeatedly shuffled slot identities in the dataset around and performed my analyses on each shuffling. When analysis outcomes on my real dataset differ enough from those using my null hypothesis dataset, we can feel more sure that we're registering a real effect of slot faction on voting behavior. This technique is called [url=https://en.wikipedia.org/wiki/Resampling_(statistics)#Monte_Carlo_testing]monte carlo testing[/url], and it's very cool. But honestly it's been tough to implement, so let me know if you see any signs of flaws with my approach.[/spoiler]
+
+[size=150]Do MAFIA disproportionately show up on hammered wagons?[/size]
+We can track across phases the rate at which players on a hammered wagon are MAFIA, and contrast that with what we'd expect if being TOWN or MAFIA makes no difference in how you vote. We can also [i]only consider phases that don't end the game[/i] - i.e. the phases that someone in-game a TOWN player might look back to to find MAFIA. Doing that, unless my code is wrong, we find that the ratio of MAFIA on hammered wagons may depend considerably on both game phase and on the faction of the slot voted on.
+
+First, we find that on balance, phases we have enough data for end with MAFIA on the hammered wagon at a rate meaningfully lower than what you'd expect if factions vote the same. It's a small difference though, so not much to write home about.
+
+[img]https://i.imgur.com/3U0J9bd.png[/img]
+
+When we focus exclusively either on wagons where the eliminated slot is TOWN or where the eliminated slot is MAFIA though, we make a striking observation: As a game goes on (e.g. in Days 3, 4, and 5), MAFIA disproportionately end Days away from hammered wagons on TOWN while disproportionately ending Days on hammered wagons that vote out other MAFIA.
+
+[img]https://i.imgur.com/jRMY9Hc.png[/img]
+
+Since the MAFIA faction's win condition to eventually outnumber TOWN, this result may seem pretty unintuitive. Importantly (at least as a sanity check), this pattern completely reverses if you do also include the last phase of each game in the analysis. This makes sense, because in these final phases, whether the limmed player is TOWN or MAFIA is decisive about who wins the game.
+
+[spoiler="Same Analysis But Just the Final Day of Each Game"]
+[img]https://i.imgur.com/jDOvjZk.png[/img]
+[/spoiler]
+
+So MAFIA do readily switch up this pattern when it would be throwing to do otherwise. But what's going on in those other phases?
+
+"Towncred" is the only reason MAFIA ever really have to help vote out other MAFIA or avoid helping vote out TOWN. My hunch is that on Days 3-5, lims are especially likely to be foregone conclusions among the TOWN thanks to power role night actions and/or the emergence of consensus reads. In these cases, MAFIA have no room to drive eliminations on their own and instead focus on collecting credit (for Mafia lims) or avoiding blame (for mislims). Even though TOWN are aware that MAFIA might apply this strategy, the MAFIA still sees value in it despite the downsides. Alternatively, perhaps they suffer from a Curse of Knowledge and more readily acknowledge the merits of players' accurate reads and demerits of wrong reads (this wouldn't explain why Day moderates the effect though!). Whether one or another account explains what we're seeing, the above plots are the result.
+
+[size=150]Do mafia disproportionately commit to hammered wagons at particular points?[/size]
+If it were true that (on balance) MAFIA worry more about towncred than optimizing their numbers advantange when they choose where to land their vote before the Day ends, we should expect an additional effect of faction on a slot's [i]position[/i] on hammered wagons. For example, we might expect MAFIA to pay extra attention to who ends up casting the hammer vote ending the Day and finally confirming a slot's elimination.
+
+There are a few ways to track a player's position on a wagon, and which is best to use depends on the analysis question we're interested in. For example, we can track either the [i]entry position[/i] of a vote -- how many voters were on the wagon when you first joined it -- or the [i]terminal position[/i] -- the number of votes made before yours in the wagon that never changed. For example, of you vote someone and I vote someone but then you unvote and the Day ends, my vote's entry position is 2 but its terminal position is 1. 
+
+When comparing wagons across phases, it's also pertinent whether we track the absolute position of a vote or specifically how close a vote gets a wagon to a hammer. Being the third vote on a wagon has drastically different weight in a game where it takes 7 votes to eliminate someone compared to when it just takes 4. Similarly, the attention an E-2 vote gets might depend a lot on how many votes it took to get there. Basically, I'm saying these analyses get pretty weird if you think about it enough! I'm here going to cherry-pick the analysis variations I find interesting.
+
+First we consider whether different distances of a vote position from hammer on a hammered wagon feature more or less MAFIA than you'd expect if faction didn't affect voting behavior. To help shed light on the results above, we'll look at the overall stats as well as the stats for Days 1-2 and Days 3-5 - again always excluding the final phases of each game where applicable.
+
+[img]https://i.imgur.com/4J0Rrk4.png[/img]
+
+[spoiler="Distance from Elimination Subsets"]
+[img]https://i.imgur.com/iBgIhNi.png[/img]
+[img]https://i.imgur.com/yNe0nTl.png[/img]
+[/spoiler]
+
+We do find across phases that MAFIA hammer other MAFIA especially (but still only a bit) more often than you'd expect if faction didn't affect how people vote. But while we continue to see the same avoidance of participation in mislims among MAFIA, it's hard to identify consistent patterns in the final position of MAFIA on hammered TOWN wagons from these plots that we might develop an interpretable theory from.
+
+We also see some evidence that on D1/D2 MAFIA are loathe to show up as early as E-6 on a teammate's wagon and stay there until the wagon is hammered. However, since our sample size of games/phases where E-6 votes are possible is necessarily smaller than those of games/phases where E-3 or other E-<6 votes are possible, we might want to try further analysis.
+
+Instead of looking at how far away a wagon is from being hammered at each vote, let's instead align our counts at the absolute size of the wagon at each vote - its [i]entry position[/i]. 
+
+[img]https://i.imgur.com/rEY0SW3.png[/img]
+
+[spoiler="Entry Position Subsets"]
+[img]https://i.imgur.com/6NEKsv2.png[/img]
+[img]https://i.imgur.com/1Q6M5Xa.png[/img]
+[/spoiler]
+
+Considering vote position this way highlights some patterns not evident in the previous analysis. Sharpening our previous observation, we find that in the earlygame (D1 and D2) regardless of exactly how many votes it takes in a given phase to eliminate someone, MAFIA are biased [i]against[/i] ending a phase as the first vote on a hammered MAFIA wagon in much the same way that they are biased [i]toward[/i] being the hammer. 
+
+Furthermore, we observe that much of MAFIA's avoidance of participation in TOWN mislims is concentrated around the wagon's early positions; when the wagon gets more support, it seems MAFIA vote more like random - though the story gets complicated again near the very end of the wagon.
+
+We'll explore one final approach to analyzing wagon position even as stuff might vary between phases like the number of players around. We'll track for each vote the "percentage completion" of the corresponding wagon. For example, a wagon with two votes on it when it takes 5 to eliminate is 40% complete. For plotting, we'll group these percentages into 10% bins. The idea is that this might be a better way to factor how player count and wagon size interact to define the weight of a given vote than absolute position or distance from hammer. One great feature of this approach is that the final bin collects all hammer votes, and the initial bin collects all initial votes, so the plots are more interpretable at least in those areas.
+
+[img]https://i.imgur.com/1PTcyNS.png[/img]
+[spoiler="Binning by Percentage Completion Subsets"]
+[img]https://i.imgur.com/nLwLnVM.png[/img]
+[img]https://i.imgur.com/Owjg1Ur.png[/img]
+[/spoiler]
+
+This approach seems to do the trick. It helps localize MAFIA hestitancy to participate in miselims to the early positions in a TOWN miselim, and the similar but weaker early positional avoidance pattern for MAFIA lims, too. And of course it's got me confident that MAFIA really are a bit biased toward hammering their buds when presented the opportunity -- even in Days 1 and 2.
+
+[size=150]Conclusions[/size]
+These comments probably make too much of a big deal about a lot of weak patterns that don't really decisively speak to one single account of How Mafia Vote. The deviations from our null hypothesis identified here aren't very big even if we do suppose they're real and might be observed in games yet-to-be-played. When you factor in the consequences of performing MANY statistical tests and comparisons as I do here, the weight of any "significant" result lessens a bit. 
+
+But this is a good start I think. So far we've only considered a sliver of the voting data I've collected -- just the 7 or less votes per phase that actually get someone voted out -- but are nonetheless identifying what I'd be willing to bet really are small but systematic patterns in how players with mafia role pms pursue their win conditions. These patterns suggest that while MAFIA do an impressive job of mimicking TOWN behavior, on balance their knowledge of the setup and strategies for countering common scumhunting approaches actually distinguish their behavior from other players.
+
+But I guess it'll take more work to find out for sure.

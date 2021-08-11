@@ -11,10 +11,7 @@ from datetime import datetime
 import json
 import random
 
-# open game archive, separate by game
-with open('data/archive.txt', encoding='utf-8') as f:
-    games = f.read().split('\n\n\n')  
-
+# %%
 # load votes dataframe
 votes_df = pd.read_json('data/votes.json')
 votes_df['iteration'] = 0
@@ -22,10 +19,9 @@ columns = votes_df.columns.to_list()
 
 # range of game days to consider; leave 0 for no limit
 end_day = 0
-iteration_total = 3
+iteration_total = 1000
 
 # %%
-#!%%timeit
 
 # open game archive, separate by game
 with open('data/archive.txt', encoding='utf-8') as f:
@@ -59,12 +55,11 @@ for game_index in trange(len(games), desc='game loop'):
         voter = phase_df[:, columns.index('voter')].copy()
         voted = phase_df[:, columns.index('voted')].copy()
 
-        for iteration in trange(
-            iteration_total, desc='iteration_loop', leave=False):
+        for iteration in trange(iteration_total, desc='iteration_loop', leave=False):
             
             # collector for our votes in this phase and iteration
             random.shuffle(shuffling)
-            phase_df[:, columns.index('iteration')] = int(number) * iteration_total + iteration
+            phase_df[:, columns.index('iteration')] = iteration
             
             # voter, voted, voter_faction, and voted_faction 
             # must all be reassigned based shuffle
@@ -79,4 +74,12 @@ for game_index in trange(len(games), desc='game loop'):
                         relevant_slots[shuffling[slot_index]])]
 
             null_df.append(pd.DataFrame(phase_df, columns=columns))
-    break
+
+# %%
+
+results_df = pd.concat(null_df, ignore_index=True)
+results_df.to_pickle('data/null_hypothesis.pkl')
+
+# %%
+#results_df.to_json('data/null_hypothesis.json')
+#now = datetime.now()
